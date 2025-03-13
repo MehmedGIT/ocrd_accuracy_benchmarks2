@@ -11,6 +11,7 @@ DOCKER_PWD="/data"
 WORKSPACES_ROOT="$SCRIPT_DIR/workspaces"
 WORKFLOWS_ROOT="$SCRIPT_DIR/workflows"
 
+NF_PATH_REPORTS="$SCRIPT_DIR/nf_reports"
 NF_PATH_DEFAULT_WF="$WORKFLOWS_ROOT/default_workflow.nf"
 NF_PATH_ODEM_WF="$WORKFLOWS_ROOT/odem_workflow.nf"
 NF_PATH_DINGLEHOPPER_WF="$WORKFLOWS_ROOT/dinglehopper.nf"
@@ -26,7 +27,7 @@ function run_nf_workflow() {
 	echo "Input file grp: $4"
 	nextflow run "$1" \
 	-ansi-log true \
-	-with-report \
+	-with-report "$NF_PATH_REPORTS/$2"\
 	--docker_image="$DOCKER_IMAGE" \
 	--models_path="$MODELS_DIR" \
 	--docker_models_dir="$DOCKER_MODELS_DIR" \

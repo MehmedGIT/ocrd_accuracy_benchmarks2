@@ -35,7 +35,7 @@ function run_nf_workflow() {
 	--docker_pwd="$DOCKER_PWD" \
 	--workspace_path="$2" \
 	--mets_path="$3" \
-	--input_file_grp="$4" 
+	--input_file_grp="$4"
 }
 
 function recognize_and_evaluate() {
@@ -51,6 +51,5 @@ function recognize_and_evaluate() {
 }
 
 for ws_dir in $WORKSPACES_ROOT/*; do
-	recognize_and_evaluate $NF_PATH_DEFAULT_WF $ws_dir
-    recognize_and_evaluate $NF_PATH_ODEM_WF $ws_dir
+    recognize_and_evaluate $NF_PATH_DEFAULT_WF $ws_dir
 done

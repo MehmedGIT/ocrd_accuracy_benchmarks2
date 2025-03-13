@@ -39,7 +39,7 @@ function run_nf_workflow() {
 function recognize_and_evaluate() {
 	# S1 - workflow path
 	# $2 - workspace dir
-	WS_DIR_PATH="$2/data"
+	WS_DIR_PATH="$2"
 	METS_PATH="$WS_DIR_PATH/mets.xml"
 	echo "Processing workspace: $WS_DIR_PATH"
 	run_nf_workflow $1 $WS_DIR_PATH $METS_PATH "OCR-D-IMG"

@@ -21,13 +21,14 @@ function run_nf_workflow() {
 	# $2 - workspace dir path
 	# $3 - mets path
 	# $4 - input file group
-
+	REPORT_PATH="$NF_PATH_REPORTS/$(basename $1 .nf)/$(basename $2)"
 	echo "Running nextflow workflow: $1"
 	echo "Workspace dir: $2"
 	echo "Input file grp: $4"
+	echo "Report path: $REPORT_PATH"
 	nextflow run "$1" \
 	-ansi-log true \
-	-with-report "$NF_PATH_REPORTS/$2"\
+	-with-report "$REPORT_PATH"\
 	--docker_image="$DOCKER_IMAGE" \
 	--models_path="$MODELS_DIR" \
 	--docker_models_dir="$DOCKER_MODELS_DIR" \
@@ -40,6 +41,7 @@ function run_nf_workflow() {
 function recognize_and_evaluate() {
 	# S1 - workflow path
 	# $2 - workspace dir
+	# $3 - report file name
 	WS_DIR_PATH="$2"
 	METS_PATH="$WS_DIR_PATH/mets.xml"
 	echo "Processing workspace: $WS_DIR_PATH"

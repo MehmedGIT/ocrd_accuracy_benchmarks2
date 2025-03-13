@@ -28,7 +28,7 @@ function run_nf_workflow() {
 	echo "Report path: $REPORT_PATH"
 	nextflow run "$1" \
 	-ansi-log true \
-	-with-report "$REPORT_PATH"\
+	-with-report "$REPORT_PATH" \
 	--docker_image="$DOCKER_IMAGE" \
 	--models_path="$MODELS_DIR" \
 	--docker_models_dir="$DOCKER_MODELS_DIR" \
@@ -51,5 +51,6 @@ function recognize_and_evaluate() {
 }
 
 for ws_dir in $WORKSPACES_ROOT/*; do
+	recognize_and_evaluate $NF_PATH_DEFAULT_WF $ws_dir
     recognize_and_evaluate $NF_PATH_ODEM_WF $ws_dir
 done

@@ -2,10 +2,10 @@
 
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 
-MODELS_DIR="~/ocrd_models"
+MODELS_DIR="~/ocrd_models/ocrd-resources"
 echo "OCR-D models dir: $MODELS_DIR"
 DOCKER_IMAGE="ocrd/all:maximum"
-DOCKER_MODELS_DIR="/usr/local/share"
+DOCKER_MODELS_DIR="/usr/local/share/ocrd-resources"
 DOCKER_PWD="/data"
 
 WORKSPACES_ROOT="$SCRIPT_DIR/workspaces"

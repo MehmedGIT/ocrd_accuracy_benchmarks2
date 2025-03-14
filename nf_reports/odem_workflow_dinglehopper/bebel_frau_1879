@@ -18,11 +18,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Nextflow workflow report for run id [ecstatic_poisson]">
+  <meta name="description" content="Nextflow workflow report for run id [goofy_knuth]">
   <meta name="author" content="Paolo Di Tommaso, Phil Ewels">
   <link rel="icon" type="image/png" href="https://www.nextflow.io/img/favicon.png" />
 
-  <title>[ecstatic_poisson] Nextflow Workflow Report</title>
+  <title>[goofy_knuth] Nextflow Workflow Report</title>
 
   <style type="text/css">
   /*!
@@ -137,7 +137,7 @@ table.DTCR_clonedTable.dataTable{position:absolute !important;background-color:r
         <li class="nav-item"><a class="nav-link" href="#tasks">Tasks</a></li>
       </ul>
       <span class="navbar-text">
-        [ecstatic_poisson]
+        [goofy_knuth]
       </span>
     </div>
   </nav>
@@ -146,67 +146,27 @@ table.DTCR_clonedTable.dataTable{position:absolute !important;background-color:r
     <div class="container">
 
       <h1 class="display-3">Nextflow workflow report</h1>
-      <h2 class="text-muted mb-4"><samp>[ecstatic_poisson]</samp> </h2>
+      <h2 class="text-muted mb-4"><samp>[goofy_knuth]</samp> </h2>
 
       
-          <div class="alert alert-danger mb-4">
-              <h4>Workflow execution completed unsuccessfully!</h4>
-              <p>The exit status of the task that caused the workflow execution to fail was: <code>1</code>.</p>
-              <p>The full error message was:</p>
-              <pre>Error executing process > 'ocrd_dinglehopper_0'
-
-Caused by:
-  Process `ocrd_dinglehopper_0` terminated with an error exit status (1)
-
-Command executed:
-
-  docker run --rm -u $(id -u) -v /home/mm/Desktop/ocrd_accuracy_benchmarks2/workspaces/bebel_frau_1879:/data -v ~/ocrd_models/ocrd-resources:/usr/local/share/ocrd-resources -w /data -- ocrd/all:latest ocrd-dinglehopper -m mets.xml -I OCR-D-GT-SEG-PAGE,OCR-D-OCR -O OCR-D-EVAL-SEG-LINE -P textequiv_level line
-
-Command exit status:
-  1
-
-Command output:
-  (empty)
-
-Command error:
-  Traceback (most recent call last):
-    File "/usr/local/bin/ocrd-dinglehopper", line 8, in <module>
-      sys.exit(ocrd_dinglehopper())
-    File "/usr/local/lib/python3.8/site-packages/click/core.py", line 1161, in __call__
-      return self.main(*args, **kwargs)
-    File "/usr/local/lib/python3.8/site-packages/click/core.py", line 1082, in main
-      rv = self.invoke(ctx)
-    File "/usr/local/lib/python3.8/site-packages/click/core.py", line 1443, in invoke
-      return ctx.invoke(self.callback, **ctx.params)
-    File "/usr/local/lib/python3.8/site-packages/click/core.py", line 788, in invoke
-      return __callback(*args, **kwargs)
-    File "/build/dinglehopper/src/dinglehopper/ocrd_cli.py", line 22, in ocrd_dinglehopper
-      return ocrd_cli_wrap_processor(OcrdDinglehopperEvaluate, *args, **kwargs)
-    File "/build/core/src/ocrd/decorators/__init__.py", line 128, in ocrd_cli_wrap_processor
-      raise Exception("Invalid input/output file grps:\n\t%s" % '\n\t'.join(report.errors))
-  Exception: Invalid input/output file grps:
-  	Input fileGrp[@USE='OCR-D-OCR'] not in METS!
-
-Work dir:
-  /home/mm/Desktop/ocrd_accuracy_benchmarks2/work/d1/3aa4ba7fdd5294f2871ebb607552b0
-
-Tip: view the complete command output by changing to the process work dir and entering the command `cat .command.out`</pre>
+          <div class="alert alert-success mb-4">
+              Workflow execution completed successfully!
           </div>
       
 
       <dl>
         <dt>Run times</dt>
         <dd>
-          <span id="workflow_start">13-Mar-2025 16:28:15</span> - <span id="workflow_complete">13-Mar-2025 16:28:17</span>
-          (<span id="completed_fromnow"></span>duration: <strong>2.1s</strong>)
+          <span id="workflow_start">14-Mar-2025 11:50:37</span> - <span id="workflow_complete">14-Mar-2025 11:50:39</span>
+          (<span id="completed_fromnow"></span>duration: <strong>2.3s</strong>)
         </dd>
 
         <dl>
           <div class="progress" style="height: 1.6rem; margin: 1.2rem auto; border-radius: 0.20rem;">
-            <div style="width: 0.0%" class="progress-bar bg-success" data-toggle="tooltip" data-placement="top" title="0 tasks succeeded"><span class="text-truncate">&nbsp; 0 succeeded &nbsp;</span></div>
+            <div style="width: 100.0%" class="progress-bar bg-success" data-toggle="tooltip" data-placement="top" title="1 tasks succeeded"><span class="text-truncate">&nbsp; 1 succeeded &nbsp;</span></div>
             <div style="width: 0.0%" class="progress-bar bg-secondary" data-toggle="tooltip" data-placement="top" title="0 tasks were cached"><span class="text-truncate">&nbsp; 0 cached &nbsp;</span></div>
             <div style="width: 0.0%" class="progress-bar bg-warning" data-toggle="tooltip" data-placement="top" title="0 tasks reported and error and were ignored"><span class="text-truncate">&nbsp; 0 ignored &nbsp;</span></div>
-            <div style="width: 100.0%" class="progress-bar bg-danger" data-toggle="tooltip" data-placement="top" title="1 tasks failed"><span class="text-truncate">&nbsp; 1 failed &nbsp;</span></div>
+            <div style="width: 0.0%" class="progress-bar bg-danger" data-toggle="tooltip" data-placement="top" title="0 tasks failed"><span class="text-truncate">&nbsp; 0 failed &nbsp;</span></div>
           </div>
         </dl>
 
@@ -238,7 +198,7 @@ Tip: view the complete command output by changing to the process work dir and en
         
 
         <dt class="col-sm-3">Workflow session</dt>
-        <dd class="col-sm-9"><code>a23b4585-e9be-4d74-8fa4-73c96d360f1c</code></dd>
+        <dd class="col-sm-9"><code>e7c6ca74-8dbe-4636-9470-8f06868b000c</code></dd>
 
         
 
@@ -1070,7 +1030,7 @@ $(function() {
 
   // Nextflow report data
   window.data = { "trace":[
-{"task_id":"1","hash":"d1\/3aa4ba","native_id":"349704","process":"ocrd_dinglehopper_0","module":"-","container":"-","tag":"-","name":"ocrd_dinglehopper_0","status":"FAILED","exit":"1","submit":"1741879696079","start":"1741879696172","complete":"1741879697223","duration":"1144","realtime":"1051","%cpu":"-","%mem":"-","rss":"-","vmem":"-","peak_rss":"-","peak_vmem":"-","rchar":"-","wchar":"-","syscr":"-","syscw":"-","read_bytes":"-","write_bytes":"-","attempt":"1","workdir":"\/home\/mm\/Desktop\/ocrd_accuracy_benchmarks2\/work\/d1\/3aa4ba7fdd5294f2871ebb607552b0","script":"\n        docker run --rm -u $(id -u) -v \/home\/mm\/Desktop\/ocrd_accuracy_benchmarks2\/workspaces\/bebel_frau_1879:\/data -v ~\/ocrd_models\/ocrd-resources:\/usr\/local\/share\/ocrd-resources -w \/data -- ocrd\/all:latest ocrd-dinglehopper -m mets.xml -I OCR-D-GT-SEG-PAGE,OCR-D-OCR -O OCR-D-EVAL-SEG-LINE -P textequiv_level line\n        ","scratch":"-","queue":"-","cpus":"1","memory":"-","disk":"-","time":"-","env":"-","error_action":"TERMINATE","vol_ctxt":"-","inv_ctxt":"-","hostname":"-"}], "summary":[{"cpuUsage":null,"process":"ocrd_dinglehopper_0","mem":null,"memUsage":null,"timeUsage":null,"vmem":null,"reads":null,"cpu":null,"time":{"mean":1051,"min":1051,"q1":1051,"q2":1051,"q3":1051,"max":1051,"minLabel":"ocrd_dinglehopper_0","maxLabel":"ocrd_dinglehopper_0","q1Label":"ocrd_dinglehopper_0","q2Label":"ocrd_dinglehopper_0","q3Label":"ocrd_dinglehopper_0"},"writes":null}] };
+{"task_id":"1","hash":"e7\/d01af0","native_id":"746461","process":"ocrd_dinglehopper_0","module":"-","container":"-","tag":"-","name":"ocrd_dinglehopper_0","status":"COMPLETED","exit":"0","submit":"1741949438608","start":"1741949438696","complete":"1741949439940","duration":"1332","realtime":"1284","%cpu":"1.6","%mem":"0.1","rss":"29155328","vmem":"2129444864","peak_rss":"29155328","peak_vmem":"2196029440","rchar":"95496","wchar":"3466","syscr":"255","syscw":"25","read_bytes":"0","write_bytes":"0","attempt":"1","workdir":"\/home\/mm\/Desktop\/ocrd_accuracy_benchmarks2\/work\/e7\/d01af0b7f7e3778089ba373962720d","script":"\n        docker run --rm -u $(id -u) -v \/home\/mm\/Desktop\/ocrd_accuracy_benchmarks2\/workspaces\/bebel_frau_1879:\/data -v ~\/ocrd_models\/ocrd-resources:\/usr\/local\/share\/ocrd-resources -w \/data -- ocrd\/all:latest ocrd-dinglehopper -m mets.xml -I OCR-D-GT-SEG-PAGE,OCR-D-OCR -O OCR-D-EVAL-SEG-LINE -P textequiv_level line\n        ","scratch":"-","queue":"-","cpus":"1","memory":"-","disk":"-","time":"-","env":"-","error_action":"-","vol_ctxt":"67","inv_ctxt":"2","hostname":"-"}], "summary":[{"cpuUsage":{"mean":1.6,"min":1.6,"q1":1.6,"q2":1.6,"q3":1.6,"max":1.6,"minLabel":"ocrd_dinglehopper_0","maxLabel":"ocrd_dinglehopper_0","q1Label":"ocrd_dinglehopper_0","q2Label":"ocrd_dinglehopper_0","q3Label":"ocrd_dinglehopper_0"},"process":"ocrd_dinglehopper_0","mem":{"mean":29155328,"min":29155328,"q1":29155328,"q2":29155328,"q3":29155328,"max":29155328,"minLabel":"ocrd_dinglehopper_0","maxLabel":"ocrd_dinglehopper_0","q1Label":"ocrd_dinglehopper_0","q2Label":"ocrd_dinglehopper_0","q3Label":"ocrd_dinglehopper_0"},"memUsage":null,"timeUsage":null,"vmem":{"mean":2196029440,"min":2196029440,"q1":2196029440,"q2":2196029440,"q3":2196029440,"max":2196029440,"minLabel":"ocrd_dinglehopper_0","maxLabel":"ocrd_dinglehopper_0","q1Label":"ocrd_dinglehopper_0","q2Label":"ocrd_dinglehopper_0","q3Label":"ocrd_dinglehopper_0"},"reads":{"mean":95496,"min":95496,"q1":95496,"q2":95496,"q3":95496,"max":95496,"minLabel":"ocrd_dinglehopper_0","maxLabel":"ocrd_dinglehopper_0","q1Label":"ocrd_dinglehopper_0","q2Label":"ocrd_dinglehopper_0","q3Label":"ocrd_dinglehopper_0"},"cpu":{"mean":1.6,"min":1.6,"q1":1.6,"q2":1.6,"q3":1.6,"max":1.6,"minLabel":"ocrd_dinglehopper_0","maxLabel":"ocrd_dinglehopper_0","q1Label":"ocrd_dinglehopper_0","q2Label":"ocrd_dinglehopper_0","q3Label":"ocrd_dinglehopper_0"},"time":{"mean":1284,"min":1284,"q1":1284,"q2":1284,"q3":1284,"max":1284,"minLabel":"ocrd_dinglehopper_0","maxLabel":"ocrd_dinglehopper_0","q1Label":"ocrd_dinglehopper_0","q2Label":"ocrd_dinglehopper_0","q3Label":"ocrd_dinglehopper_0"},"writes":{"mean":3466,"min":3466,"q1":3466,"q2":3466,"q3":3466,"max":3466,"minLabel":"ocrd_dinglehopper_0","maxLabel":"ocrd_dinglehopper_0","q1Label":"ocrd_dinglehopper_0","q2Label":"ocrd_dinglehopper_0","q3Label":"ocrd_dinglehopper_0"}}] };
 
   </script>
 

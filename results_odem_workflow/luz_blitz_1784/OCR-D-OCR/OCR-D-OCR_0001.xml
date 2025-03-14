@@ -1,0 +1,668 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd" pcGtsId="OCR-D-OCR_0001">
+    <pc:Metadata>
+        <pc:Creator>OCR-D/core 2.71.0</pc:Creator>
+        <pc:Created>2025-03-14T15:24:45.152581</pc:Created>
+        <pc:LastChange>2025-03-14T15:24:45.152581</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-cis-ocropy-binarize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="300" type="dpi"/>
+                <pc:Label value="ocropy" type="method"/>
+                <pc:Label value="0.5" type="threshold"/>
+                <pc:Label value="False" type="grayscale"/>
+                <pc:Label value="0.0" type="maxskew"/>
+                <pc:Label value="0" type="noise_maxsize"/>
+                <pc:Label value="page" type="level-of-operation"/>
+            </pc:Labels>
+            <pc:Labels externalModel="ocrd-tool" externalId="version">
+                <pc:Label value="0.1.5" type="ocrd-cis-ocropy-binarize"/>
+                <pc:Label value="2.71.0" type="ocrd/core"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/cropping" value="ocrd-anybaseocr-crop">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="300" type="dpi"/>
+                <pc:Label value="50.0" type="rulerRatioMax"/>
+                <pc:Label value="3.0" type="rulerRatioMin"/>
+                <pc:Label value="0.3" type="rulerAreaMax"/>
+                <pc:Label value="0.01" type="rulerAreaMin"/>
+                <pc:Label value="0.95" type="rulerWidthMax"/>
+                <pc:Label value="0.05" type="columnAreaMin"/>
+                <pc:Label value="0.04" type="columnSepWidthMax"/>
+                <pc:Label value="0.25" type="marginTop"/>
+                <pc:Label value="0.75" type="marginBottom"/>
+                <pc:Label value="0.3" type="marginLeft"/>
+                <pc:Label value="0.7" type="marginRight"/>
+                <pc:Label value="10" type="padding"/>
+            </pc:Labels>
+            <pc:Labels externalModel="ocrd-tool" externalId="version">
+                <pc:Label value="1.10.0" type="ocrd-anybaseocr-crop"/>
+                <pc:Label value="2.71.0" type="ocrd/core"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/despeckling" value="ocrd-cis-ocropy-denoise">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="300" type="dpi"/>
+                <pc:Label value="3.0" type="noise_maxsize"/>
+                <pc:Label value="page" type="level-of-operation"/>
+            </pc:Labels>
+            <pc:Labels externalModel="ocrd-tool" externalId="version">
+                <pc:Label value="0.1.5" type="ocrd-cis-ocropy-denoise"/>
+                <pc:Label value="2.71.0" type="ocrd/core"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/deskewing" value="ocrd-cis-ocropy-deskew">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="page" type="level-of-operation"/>
+                <pc:Label value="5.0" type="maxskew"/>
+            </pc:Labels>
+            <pc:Labels externalModel="ocrd-tool" externalId="version">
+                <pc:Label value="0.1.5" type="ocrd-cis-ocropy-deskew"/>
+                <pc:Label value="2.71.0" type="ocrd/core"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-segment-region">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="5.0" type="padding"/>
+                <pc:Label value="False" type="find_tables"/>
+                <pc:Label value="300" type="dpi"/>
+                <pc:Label value="False" type="shrink_polygons"/>
+                <pc:Label value="False" type="find_staves"/>
+                <pc:Label value="False" type="sparse_text"/>
+                <pc:Label value="True" type="overwrite_segments"/>
+                <pc:Label value="region" type="segmentation_level"/>
+                <pc:Label value="region" type="textequiv_level"/>
+                <pc:Label value="False" type="block_polygons"/>
+                <pc:Label value="True" type="overwrite_text"/>
+                <pc:Label value="False" type="raw_lines"/>
+                <pc:Label value="" type="char_whitelist"/>
+                <pc:Label value="" type="char_blacklist"/>
+                <pc:Label value="" type="char_unblacklist"/>
+                <pc:Label value="{}" type="tesseract_parameters"/>
+                <pc:Label value="{}" type="xpath_parameters"/>
+                <pc:Label value="{}" type="xpath_model"/>
+                <pc:Label value="False" type="auto_model"/>
+                <pc:Label value="DEFAULT" type="oem"/>
+            </pc:Labels>
+            <pc:Labels externalModel="ocrd-tool" externalId="version">
+                <pc:Label value="0.19.1 (tesseract 5.4.1)" type="ocrd-tesserocr-segment-region"/>
+                <pc:Label value="2.71.0" type="ocrd/core"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-segment-repair">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="True" type="plausibilize"/>
+                <pc:Label value="0.7" type="plausibilize_merge_min_overlap"/>
+                <pc:Label value="False" type="sanitize"/>
+                <pc:Label value="5" type="sanitize_padding"/>
+                <pc:Label value="0" type="simplify"/>
+                <pc:Label value="0" type="spread"/>
+                <pc:Label value="region" type="spread_level"/>
+            </pc:Labels>
+            <pc:Labels externalModel="ocrd-tool" externalId="version">
+                <pc:Label value="0.1.24" type="ocrd-segment-repair"/>
+                <pc:Label value="2.71.0" type="ocrd/core"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-clip">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="region" type="level-of-operation"/>
+                <pc:Label value="0" type="dpi"/>
+                <pc:Label value="0.7" type="min_fraction"/>
+            </pc:Labels>
+            <pc:Labels externalModel="ocrd-tool" externalId="version">
+                <pc:Label value="0.1.5" type="ocrd-cis-ocropy-clip"/>
+                <pc:Label value="2.71.0" type="ocrd/core"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-cis-ocropy-segment">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="300" type="dpi"/>
+                <pc:Label value="region" type="level-of-operation"/>
+                <pc:Label value="20" type="maxcolseps"/>
+                <pc:Label value="20" type="maxseps"/>
+                <pc:Label value="10" type="maximages"/>
+                <pc:Label value="4" type="csminheight"/>
+                <pc:Label value="10" type="hlminwidth"/>
+                <pc:Label value="0.01" type="gap_height"/>
+                <pc:Label value="1.5" type="gap_width"/>
+                <pc:Label value="True" type="overwrite_order"/>
+                <pc:Label value="True" type="overwrite_separators"/>
+                <pc:Label value="True" type="overwrite_regions"/>
+                <pc:Label value="True" type="overwrite_lines"/>
+                <pc:Label value="2.4" type="spread"/>
+            </pc:Labels>
+            <pc:Labels externalModel="ocrd-tool" externalId="version">
+                <pc:Label value="0.1.5" type="ocrd-cis-ocropy-segment"/>
+                <pc:Label value="2.71.0" type="ocrd/core"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/dewarping" value="ocrd-cis-ocropy-dewarp">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="0" type="dpi"/>
+                <pc:Label value="4.0" type="range"/>
+                <pc:Label value="1.0" type="smoothness"/>
+                <pc:Label value="0.05" type="max_neighbour"/>
+            </pc:Labels>
+            <pc:Labels externalModel="ocrd-tool" externalId="version">
+                <pc:Label value="0.1.5" type="ocrd-cis-ocropy-dewarp"/>
+                <pc:Label value="2.71.0" type="ocrd/core"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="Fraktur" type="model"/>
+                <pc:Label value="0" type="dpi"/>
+                <pc:Label value="0" type="padding"/>
+                <pc:Label value="word" type="segmentation_level"/>
+                <pc:Label value="word" type="textequiv_level"/>
+                <pc:Label value="False" type="overwrite_segments"/>
+                <pc:Label value="True" type="overwrite_text"/>
+                <pc:Label value="False" type="shrink_polygons"/>
+                <pc:Label value="False" type="block_polygons"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="False" type="find_staves"/>
+                <pc:Label value="False" type="sparse_text"/>
+                <pc:Label value="False" type="raw_lines"/>
+                <pc:Label value="" type="char_whitelist"/>
+                <pc:Label value="" type="char_blacklist"/>
+                <pc:Label value="" type="char_unblacklist"/>
+                <pc:Label value="{}" type="tesseract_parameters"/>
+                <pc:Label value="{}" type="xpath_parameters"/>
+                <pc:Label value="{}" type="xpath_model"/>
+                <pc:Label value="False" type="auto_model"/>
+                <pc:Label value="DEFAULT" type="oem"/>
+            </pc:Labels>
+            <pc:Labels externalModel="ocrd-tool" externalId="version">
+                <pc:Label value="0.19.1 (tesseract 5.4.1)" type="ocrd-tesserocr-recognize"/>
+                <pc:Label value="2.71.0" type="ocrd/core"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="GT-PAGE/luz_blitz_1784_0007.tif" imageWidth="1728" imageHeight="2646" orientation="0.625">
+        <pc:AlternativeImage filename="OCR-D-BINPAGE/OCR-D-BINPAGE_0001.IMG-BIN.png" comments=",binarized"/>
+        <pc:AlternativeImage filename="OCR-D-SEG-PAGE-ANYOCR/OCR-D-SEG-PAGE-ANYOCR_0001.IMG-CROP.png" comments=",binarized,cropped"/>
+        <pc:AlternativeImage filename="OCR-D-DENOISE-OCROPY/OCR-D-DENOISE-OCROPY_0001.IMG-DESPECK.png" comments=",binarized,cropped,despeckled"/>
+        <pc:AlternativeImage filename="OCR-D-DESKEW-OCROPY/OCR-D-DESKEW-OCROPY_0001.IMG-DESKEW.png" comments=",binarized,cropped,despeckled,deskewed"/>
+        <pc:AlternativeImage filename="OCR-D-SEG-BLOCK-TESSERACT/OCR-D-SEG-BLOCK-TESSERACT_0001.IMG-BIN.png" comments=",binarized,cropped,despeckled,deskewed,binarized,clipped"/>
+        <pc:Border>
+            <pc:Coords points="43,202 37,2504 1488,2520 1475,205"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="1" regionRef="region0001"/>
+                <pc:RegionRefIndexed index="2" regionRef="region0002"/>
+                <pc:RegionRefIndexed index="3" regionRef="region0003"/>
+                <pc:RegionRefIndexed index="4" regionRef="region0004"/>
+                <pc:RegionRefIndexed index="5" regionRef="region0005"/>
+                <pc:RegionRefIndexed index="6" regionRef="region0006"/>
+                <pc:RegionRefIndexed index="9" regionRef="region0009"/>
+                <pc:RegionRefIndexed index="10" regionRef="region0010"/>
+                <pc:RegionRefIndexed index="12" regionRef="region0012"/>
+                <pc:RegionRefIndexed index="16" regionRef="region0016"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region0001" orientation="0.625" type="caption" readingDirection="left-to-right" textLineOrder="top-to-bottom">
+            <pc:AlternativeImage filename="OCR-D-CLIP/OCR-D-CLIP_0001_region0001.IMG-CLIP.png" comments="binarized,despeckled,binarized,clipped"/>
+            <pc:Coords points="489,334 864,330 865,438 490,442"/>
+            <pc:TextLine id="region0001_line0001">
+                <pc:AlternativeImage filename="OCR-D-DEWARP/OCR-D-DEWARP_0001_region0001_region0001_line0001.IMG-DEWARP.png" comments="binarized,despeckled,binarized,dewarped"/>
+                <pc:Coords points="490,409 569,408 570,407 629,407 630,406 631,407 633,407 634,408 642,407 643,406 644,406 645,405 730,404 731,405 757,405 758,406 791,406 792,407 797,407 798,408 798,409 799,410 799,411 802,414 803,414 804,415 818,414 819,413 820,413 822,411 822,410 824,408 824,407 825,406 864,406 863,336 861,334 861,333 859,331 858,331 857,330 846,330 846,331 843,331 842,332 841,332 837,336 828,336 827,335 827,334 825,332 824,332 822,330 802,330 792,331 789,334 789,335 788,336 788,337 787,338 781,338 780,337 780,336 779,335 779,333 778,332 778,331 770,331 756,331 754,334 754,335 753,336 753,338 752,339 743,339 742,338 671,339 670,338 652,338 648,334 647,334 645,332 640,332 633,333 628,338 613,338 612,337 591,337 590,336 579,336 576,333 554,333 553,335 551,333 542,333 532,334 531,335 529,335 528,336 521,336 520,335 503,335 502,334 489,334"/>
+                <pc:Baseline points="490,400 864,396"/>
+                <pc:Word id="region0001_line0001_word0000">
+                    <pc:Coords points="859,352 494,356 494,408 569,408 570,407 629,407 630,406 631,407 633,407 634,408 642,407 643,406 644,406 645,405 730,404 731,405 757,405 758,406 791,406 792,407 797,407 798,408 798,409 799,410 799,411 802,414 803,414 804,415 818,414 819,413 820,413 822,411 822,410 824,408 824,407 825,406 859,406"/>
+                    <pc:TextEquiv conf="0.042978057861328">
+                        <pc:Unicode>“Unterriht</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:TextEquiv conf="0.042978057861328">
+                    <pc:Unicode>“Unterriht</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv conf="0.042978057861328">
+                <pc:Unicode>“Unterriht</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0002" orientation="0.625" readingDirection="left-to-right" textLineOrder="top-to-bottom">
+            <pc:AlternativeImage filename="OCR-D-CLIP/OCR-D-CLIP_0001_region0002.IMG-CLIP.png" comments="binarized,despeckled,binarized,clipped"/>
+            <pc:Coords points="427,491 1003,484 1005,677 429,684"/>
+            <pc:TextLine id="region0002_line0001">
+                <pc:AlternativeImage filename="OCR-D-DEWARP/OCR-D-DEWARP_0001_region0002_region0002_line0001.IMG-DEWARP.png" comments="binarized,despeckled,binarized,dewarped"/>
+                <pc:Coords points="657,516 655,516 654,517 580,518 579,517 427,518 428,632 471,632 472,633 485,633 486,632 590,631 591,632 727,630 728,629 741,629 742,630 762,630 763,631 777,631 778,632 789,632 790,633 800,633 801,634 811,634 812,635 822,634 823,635 834,635 836,636 850,636 852,637 873,637 874,638 920,637 926,643 927,643 928,644 950,644 951,643 952,643 955,640 955,639 957,637 1004,636 1002,525 955,526 951,522 950,522 949,521 937,521 936,522 934,522 933,523 930,523 929,524 927,524 926,525 925,525 924,526 862,527 861,528 832,528 831,527 814,528 813,527 807,527 806,526 806,523 805,522 805,521 801,517 800,517 799,516 788,516 787,517 786,517 784,519 783,519 780,522 780,523 779,524 775,524 774,523 767,523 766,522 760,522 759,521 752,521 751,520 743,520 742,519 734,519 733,518 722,519 721,518 705,518 704,517 670,517 669,516 668,516 667,515 658,515"/>
+                <pc:Baseline points="428,622 1003,626"/>
+                <pc:Word id="region0002_line0001_word0000">
+                    <pc:Coords points="529,567 433,568 433,632 471,632 472,633 485,633 486,632 529,631"/>
+                    <pc:TextEquiv conf="0.848989562988281">
+                        <pc:Unicode>B</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0001_word0001">
+                    <pc:Coords points="703,555 642,555 642,631 703,630"/>
+                    <pc:TextEquiv conf="0.526924667358398">
+                        <pc:Unicode>[l</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0001_word0002">
+                    <pc:Coords points="805,558 766,558 766,631 777,631 778,632 789,632 790,633 800,633 801,634 805,634"/>
+                    <pc:TextEquiv conf="0.707642059326172">
+                        <pc:Unicode>1</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0001_word0003">
+                    <pc:Coords points="968,559 915,559 915,637 920,637 926,643 927,643 928,644 950,644 951,643 952,643 955,640 955,639 957,637 968,636"/>
+                    <pc:TextEquiv conf="0.402456703186035">
+                        <pc:Unicode>6</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:TextEquiv conf="0.621503248214722">
+                    <pc:Unicode>B [l 1 6</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv conf="0.621503248214722">
+                <pc:Unicode>B [l 1 6</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0003" orientation="0.625" readingDirection="left-to-right" textLineOrder="top-to-bottom">
+            <pc:AlternativeImage filename="OCR-D-CLIP/OCR-D-CLIP_0001_region0003.IMG-CLIP.png" comments="binarized,despeckled,binarized,clipped"/>
+            <pc:Coords points="564,664 855,661 855,724 564,727"/>
+            <pc:TextLine id="region0003_line0001">
+                <pc:AlternativeImage filename="OCR-D-DEWARP/OCR-D-DEWARP_0001_region0003_region0003_line0001.IMG-DEWARP.png" comments="binarized,despeckled,binarized,dewarped"/>
+                <pc:Coords points="732,665 693,666 692,667 678,667 677,668 673,668 670,665 669,665 668,664 655,664 654,665 653,665 652,666 651,666 647,670 635,671 634,672 622,672 621,673 607,673 606,674 580,674 579,675 578,674 570,674 569,675 564,675 564,725 568,725 569,726 600,726 601,725 611,725 612,726 644,725 645,724 655,724 656,725 683,725 684,724 744,723 745,724 761,724 763,722 787,722 788,723 789,723 790,724 800,724 801,723 802,723 803,722 819,721 821,723 850,723 852,721 854,721 854,669 845,669 844,668 819,668 818,668 801,668 800,667 785,667 784,666 768,666 767,665 757,665 756,664 756,663 755,662 734,662"/>
+                <pc:Baseline points="564,715 854,710"/>
+                <pc:Word id="region0003_line0001_word0000">
+                    <pc:Coords points="682,678 569,679 569,726 600,726 601,725 611,725 612,726 644,725 645,724 655,724 656,725 682,725"/>
+                    <pc:TextEquiv conf="0.952363815307617">
+                        <pc:Unicode>und</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0003_line0001_word0001">
+                    <pc:Coords points="850,673 738,674 738,723 744,723 745,724 761,724 763,722 787,722 788,723 789,723 790,724 801,723 801,723 802,723 803,722 819,721 821,723 850,723"/>
+                    <pc:TextEquiv conf="0.952363815307617">
+                        <pc:Unicode>den</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:TextEquiv conf="0.952363815307617">
+                    <pc:Unicode>und den</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv conf="0.952363815307617">
+                <pc:Unicode>und den</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0004" orientation="0.625" readingDirection="left-to-right" textLineOrder="top-to-bottom">
+            <pc:AlternativeImage filename="OCR-D-CLIP/OCR-D-CLIP_0001_region0004.IMG-CLIP.png" comments="binarized,despeckled,binarized,clipped"/>
+            <pc:Coords points="114,750 1384,736 1388,1099 118,1113"/>
+            <pc:TextLine id="region0004_line0001">
+                <pc:AlternativeImage filename="OCR-D-DEWARP/OCR-D-DEWARP_0001_region0004_region0004_line0001.IMG-DEWARP.png" comments="binarized,despeckled,binarized,dewarped"/>
+                <pc:Coords points="797,744 796,744 795,745 792,745 791,746 790,746 788,748 787,748 786,749 784,749 783,750 782,750 779,753 779,754 777,756 776,756 775,757 774,757 765,766 765,767 764,768 764,772 763,773 763,776 762,777 762,778 761,779 761,795 760,796 749,796 748,797 734,797 733,798 718,799 717,800 701,800 700,801 680,801 679,802 648,802 647,803 640,803 638,801 638,800 635,798 634,798 633,797 626,797 625,796 616,796 615,797 614,797 613,798 612,798 611,799 610,799 607,802 600,802 599,801 594,801 593,800 589,800 588,799 586,799 585,798 583,798 582,797 580,797 578,795 577,795 574,792 573,792 566,785 565,785 563,783 562,783 560,781 559,781 558,780 557,780 556,779 554,779 553,778 552,778 551,777 549,777 548,776 545,776 544,776 541,776 540,775 536,775 535,774 529,774 528,773 520,773 519,772 509,772 508,771 494,771 493,770 476,770 475,769 472,769 471,768 471,767 468,764 467,764 466,763 450,764 449,765 448,765 447,766 446,766 443,769 442,769 441,768 431,768 430,767 430,759 429,758 429,757 428,756 428,755 425,752 424,752 423,751 422,751 421,750 409,750 408,751 403,751 402,752 401,752 398,755 398,756 397,757 397,759 396,760 396,762 395,763 395,764 394,765 392,765 391,764 382,764 381,763 381,755 380,754 380,753 378,751 377,751 376,750 374,750 373,749 364,749 363,750 360,751 359,752 358,752 353,757 352,757 349,760 348,760 346,762 326,762 325,761 309,761 306,758 305,758 304,757 303,757 300,754 299,754 298,753 290,753 289,752 279,752 278,753 273,753 272,754 271,754 269,757 268,757 265,760 264,760 263,761 255,761 252,758 251,758 250,757 249,757 248,756 247,756 246,755 245,755 244,754 240,754 239,753 223,753 222,754 216,754 215,755 214,755 213,756 211,756 210,757 209,757 208,758 207,758 206,759 205,759 204,760 203,760 202,761 130,762 129,763 114,763 115,854 116,922 246,921 249,924 250,924 251,925 266,925 267,924 268,924 271,920 305,920 306,919 338,919 339,918 368,917 369,916 398,916 399,917 442,917 443,918 443,929 444,930 444,931 445,932 445,933 450,938 451,938 452,939 453,939 454,939 456,939 457,940 460,940 461,941 473,941 474,940 477,940 478,939 479,939 480,938 481,938 482,937 483,937 484,936 485,936 487,934 487,933 488,932 488,931 489,930 489,929 490,928 490,924 491,923 491,916 492,915 508,915 509,914 516,914 516,913 519,913 520,912 523,912 524,911 525,911 526,910 527,910 528,909 529,909 530,908 531,908 532,907 533,907 534,906 535,906 538,903 539,903 542,900 543,900 545,897 546,897 548,895 549,895 550,894 552,894 553,893 554,893 555,892 558,892 559,891 562,891 563,890 566,890 567,889 573,889 574,888 581,888 582,887 594,887 595,886 616,886 618,888 619,888 620,889 628,889 629,888 634,888 635,887 636,887 637,885 656,885 657,886 666,886 667,887 672,887 673,888 676,888 677,889 679,889 680,890 682,890 683,891 684,891 686,893 687,893 690,896 691,896 695,900 696,900 698,902 699,902 701,904 702,904 703,905 704,905 705,906 706,906 707,907 708,907 709,908 711,908 712,909 714,909 715,910 718,910 719,911 722,911 723,912 727,912 729,912 735,912 736,913 744,913 745,914 759,914 760,915 825,914 826,915 827,915 828,916 840,916 841,915 842,915 843,914 945,913 946,912 1026,911 1027,912 1077,912 1078,913 1089,913 1090,912 1128,911 1129,912 1143,912 1144,911 1324,909 1324,908 1384,907 1383,765 1194,767 1193,766 1147,767 1146,766 1114,766 1113,765 1113,763 1112,762 1112,761 1109,758 1108,758 1107,757 1098,757 1097,758 1095,758 1094,760 1089,760 1088,761 1087,761 1085,763 1085,764 1082,767 1061,767 1059,765 1059,764 1056,761 1055,761 1054,760 1049,760 1048,759 1039,759 1038,760 1037,760 1034,763 1033,763 1032,764 1031,764 1030,765 1029,765 1027,767 996,768 995,767 979,767 978,766 970,766 969,765 964,765 963,764 959,764 958,763 955,763 954,762 951,762 950,761 947,761 946,760 943,760 942,759 939,759 938,758 934,758 933,757 929,757 928,756 928,755 923,750 922,750 918,746 917,746 915,744 914,744 913,743 912,743 911,743 910,743 909,742 879,742 877,744 876,743 876,742 839,742 823,742 821,745 819,746 818,745 817,745 816,744 807,744 806,743 798,743"/>
+                <pc:Baseline points="115,913 412,904 555,882 658,879 854,903 1384,900"/>
+                <pc:Word id="region0004_line0001_word0000">
+                    <pc:Coords points="119,808 120,922 246,921 249,924 250,924 251,925 266,925 267,924 268,924 271,920 305,920 306,919 338,919 339,918 368,917 369,916 398,916 399,917 442,917 443,918 443,929 444,930 444,931 445,932 445,933 450,938 451,938 452,939 453,939 454,939 456,939 457,940 460,940 461,941 473,941 474,940 477,940 478,939 479,939 480,938 481,938 482,937 483,937 484,936 485,936 487,934 487,933 488,932 488,931 489,930 489,929 490,928 490,924 491,923 491,916 492,915 508,915 509,914 516,914 516,913 519,913 520,912 523,912 524,911 525,911 526,910 527,910 528,909 529,909 530,908 531,908 532,907 533,907 534,906 535,906 538,903 539,903 542,900 543,900 545,897 546,897 548,895 549,895 550,894 552,894 553,893 554,893 555,892 558,892 559,891 562,891 563,890 566,890 567,889 573,889 574,888 581,888 582,887 594,887 595,886 616,886 618,888 619,888 620,889 628,889 629,888 634,888 635,887 636,887 637,885 656,885 657,886 666,886 667,887 672,887 673,888 676,888 677,889 679,889 680,890 682,890 683,891 684,891 686,893 687,893 690,896 691,896 695,900 696,900 698,902 699,902 701,904 702,904 703,905 704,905 705,906 706,906 707,907 708,907 709,908 709,908 708,802 647,803 647,803 640,803 640,803"/>
+                    <pc:TextEquiv conf="0.243041076660156">
+                        <pc:Unicode>_Blig-</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0004_line0001_word0001">
+                    <pc:Coords points="766,790 761,790 761,795 760,796 749,796 748,797 734,797 733,798 718,799 717,800 701,800 700,801 680,801 679,802 648,802 647,803 640,803 638,801 638,800 635,798 634,798 633,797 626,797 625,796 616,796 615,797 614,797 613,798 612,798 611,799 610,799 607,802 600,802 599,801 594,801 593,800 589,800 588,799 586,799 586,887 594,887 595,886 616,886 618,888 619,888 620,889 628,889 629,888 634,888 635,887 636,887 637,885 656,885 657,886 666,886 667,887 672,887 673,888 676,888 677,889 679,889 680,890 682,890 683,891 684,891 686,893 687,893 690,896 691,896 695,900 696,900 698,902 699,902 701,904 702,904 703,905 704,905 705,906 706,906 707,907 708,907 709,908 711,908 712,909 714,909 715,910 718,910 719,911 722,911 723,912 727,912 729,912 735,912 736,913 744,913 745,914 759,914 760,915 767,914"/>
+                    <pc:TextEquiv conf="0.518051567077637">
+                        <pc:Unicode>oer</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0004_line0001_word0002">
+                    <pc:Coords points="1222,790 770,795 771,914 825,914 826,915 827,915 828,916 840,916 841,915 842,915 843,914 945,913 946,912 1026,911 1027,912 1077,912 1078,913 1089,913 1090,912 1128,911 1129,912 1143,912 1144,911 1223,910"/>
+                    <pc:TextEquiv conf="0.599107437133789">
+                        <pc:Unicode>Weller</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:TextEquiv conf="0.453400026957194">
+                    <pc:Unicode>_Blig- oer Weller</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0004_line0002">
+                <pc:AlternativeImage filename="OCR-D-DEWARP/OCR-D-DEWARP_0001_region0004_region0004_line0002.IMG-DEWARP.png" comments="binarized,despeckled,binarized,dewarped"/>
+                <pc:Coords points="474,957 473,958 472,958 471,959 470,959 469,960 468,960 465,963 459,963 458,964 457,964 455,966 455,967 454,968 215,971 214,972 179,972 178,974 157,974 156,975 140,975 139,976 138,976 136,978 136,979 135,980 136,1060 137,1061 137,1062 139,1064 140,1064 141,1065 161,1065 162,1066 162,1088 163,1089 163,1090 165,1092 166,1092 167,1093 356,1091 357,1092 373,1091 374,1090 381,1090 382,1089 393,1089 396,1092 397,1092 398,1093 406,1093 407,1092 408,1092 411,1089 446,1089 447,1088 488,1087 489,1086 521,1086 522,1087 552,1086 553,1087 588,1087 589,1088 630,1088 631,1089 632,1089 633,1090 642,1089 643,1088 644,1088 645,1087 665,1087 666,1088 1145,1083 1146,1082 1237,1081 1238,1080 1239,1080 1241,1078 1241,1077 1242,1076 1242,1064 1243,1063 1261,1063 1262,1062 1263,1062 1265,1060 1265,1059 1266,1058 1265,978 1264,977 1264,976 1262,974 1261,974 1260,973 1177,974 1176,973 988,975 987,974 846,975 845,974 800,975 797,972 796,972 795,971 794,971 793,970 782,970 781,971 780,971 776,975 732,975 731,974 731,964 730,963 730,962 728,961 727,961 726,960 710,960 709,961 708,961 705,964 705,965 704,966 704,967 703,968 703,972 702,973 702,974 701,975 695,975 694,974 676,974 675,973 662,973 661,972 650,972 649,971 640,971 639,970 630,971 629,970 620,970 619,969 608,969 607,968 593,968 592,967 588,967 587,966 587,964 586,963 586,962 582,958 581,958 580,957 569,957 568,958 567,958 566,959 565,959 564,960 563,960 562,961 561,961 560,962 552,962 551,963 550,963 548,965 548,966 547,967 505,968 504,967 504,965 503,964 503,963 500,960 499,960 498,959 495,959 494,958 491,958 490,957"/>
+                <pc:Baseline points="162,1079 1242,1069"/>
+                <pc:Word id="region0004_line0002_word0000">
+                    <pc:Coords points="1060,992 223,1001 224,1092 356,1091 357,1092 373,1091 374,1090 381,1090 382,1089 393,1089 396,1092 397,1092 398,1093 406,1093 407,1092 408,1092 411,1089 446,1089 447,1088 488,1087 489,1086 521,1086 522,1087 552,1086 553,1087 588,1087 589,1088 630,1088 631,1089 632,1089 633,1090 642,1089 643,1088 644,1088 645,1087 665,1087 666,1088 1061,1083"/>
+                    <pc:TextEquiv conf="0.">
+                        <pc:Unicode>Ableiter</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0004_line0002_word0001">
+                    <pc:Coords points="1059,988 980,989 981,1084 1060,1083"/>
+                    <pc:TextEquiv conf="0.">
+                        <pc:Unicode>n</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:TextEquiv conf="1.">
+                    <pc:Unicode>Ableiter n</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv conf="0.726700013478597">
+                <pc:Unicode>_Blig- oer Weller
+Ableiter n</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0005" orientation="0.625" readingDirection="left-to-right" textLineOrder="top-to-bottom">
+            <pc:AlternativeImage filename="OCR-D-CLIP/OCR-D-CLIP_0001_region0005.IMG-CLIP.png" comments="binarized,despeckled,binarized,clipped"/>
+            <pc:Coords points="266,1106 1115,1096 1116,1188 267,1198"/>
+            <pc:TextLine id="region0005_line0001">
+                <pc:AlternativeImage filename="OCR-D-DEWARP/OCR-D-DEWARP_0001_region0005_region0005_line0001.IMG-DEWARP.png" comments="binarized,despeckled,binarized,dewarped"/>
+                <pc:Coords points="541,1122 540,1122 538,1124 537,1124 535,1126 534,1126 532,1128 532,1129 531,1130 525,1130 524,1129 518,1129 515,1126 514,1126 513,1125 505,1125 504,1126 496,1126 495,1125 488,1125 487,1124 478,1124 477,1123 445,1124 444,1123 430,1123 429,1124 394,1124 393,1125 387,1125 386,1126 383,1126 382,1127 380,1127 379,1128 377,1128 376,1129 374,1129 373,1130 370,1130 369,1131 365,1131 364,1132 358,1133 357,1134 340,1134 339,1135 319,1135 318,1134 266,1135 267,1189 267,1195 302,1194 303,1195 304,1195 305,1196 323,1196 324,1195 325,1195 327,1193 328,1193 329,1192 344,1192 345,1191 363,1191 364,1189 395,1189 396,1190 447,1190 448,1191 460,1190 461,1189 492,1189 492,1188 536,1188 538,1189 538,1191 539,1192 539,1193 540,1194 557,1193 560,1190 560,1189 561,1187 623,1187 625,1188 637,1188 638,1189 639,1188 643,1192 670,1192 673,1189 709,1189 711,1191 712,1191 713,1192 729,1192 730,1191 731,1190 733,1188 742,1188 743,1187 770,1187 770,1186 802,1186 804,1187 851,1186 853,1187 861,1187 861,1186 916,1185 917,1184 961,1184 962,1185 963,1186 965,1188 966,1188 967,1189 978,1189 979,1188 980,1188 983,1184 993,1184 996,1186 996,1187 998,1189 1026,1188 1030,1183 1057,1183 1058,1182 1065,1182 1066,1183 1077,1183 1078,1184 1078,1185 1081,1187 1081,1188 1109,1187 1111,1185 1112,1185 1114,1182 1114,1127 1045,1128 1044,1129 1007,1129 1006,1128 1006,1124 1005,1123 1005,1122 1002,1120 1001,1120 1000,1119 990,1119 989,1120 988,1120 987,1121 986,1121 983,1124 982,1124 981,1123 981,1122 978,1119 977,1119 976,1118 963,1118 962,1119 960,1119 959,1120 957,1120 956,1121 955,1121 953,1123 953,1124 951,1126 951,1127 949,1129 943,1129 942,1128 929,1128 928,1127 921,1127 920,1126 915,1126 914,1125 910,1126 909,1125 906,1125 905,1124 901,1124 900,1123 896,1123 895,1122 888,1122 887,1121 876,1121 875,1120 802,1121 801,1122 790,1122 789,1123 782,1123 781,1124 777,1124 775,1122 774,1122 773,1121 761,1121 760,1122 759,1122 757,1124 756,1124 752,1128 746,1128 745,1129 737,1129 736,1130 725,1131 724,1132 707,1132 706,1133 676,1133 675,1132 624,1133 623,1132 589,1132 588,1131 566,1131 565,1130 561,1130 560,1129 560,1127 559,1126 559,1125 557,1123 556,1123 555,1122 554,1122 553,1121 551,1121 550,1120 542,1121"/>
+                <pc:Baseline points="266,1183 1114,1171"/>
+                <pc:Word id="region0005_line0001_word0000">
+                    <pc:Coords points="376,1146 304,1147 305,1193 328,1193 329,1192 344,1192 345,1191 363,1191 364,1189 377,1189"/>
+                    <pc:TextEquiv conf="0.964497375488281">
+                        <pc:Unicode>zur</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0005_line0001_word0001">
+                    <pc:Coords points="669,1134 421,1137 422,1190 447,1190 448,1191 460,1190 461,1189 492,1189 492,1188 536,1188 538,1189 538,1191 539,1192 539,1193 540,1194 549,1193 557,1193 560,1190 560,1189 561,1187 623,1187 625,1188 637,1188 638,1189 639,1188 643,1192 670,1192"/>
+                    <pc:TextEquiv conf="0.924277572631836">
+                        <pc:Unicode>Belehrung</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0005_line0001_word0002">
+                    <pc:Coords points="786,1135 703,1136 704,1189 732,1189 733,1188 742,1188 743,1187 770,1187 770,1186 787,1186"/>
+                    <pc:TextEquiv conf="0.92122444152832">
+                        <pc:Unicode>ynd</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0005_line0001_word0003">
+                    <pc:Coords points="1110,1129 827,1132 828,1186 851,1186 853,1187 861,1187 861,1186 916,1185 917,1184 961,1184 962,1185 963,1186 965,1188 980,1187 983,1184 993,1184 996,1186 996,1187 996,1187 1027,1187 1030,1183 1057,1183 1058,1182 1065,1182 1066,1183 1077,1183 1078,1184 1078,1185 1080,1186 1110,1186 1111,1185"/>
+                    <pc:TextEquiv conf="0.950874938964844">
+                        <pc:Unicode>Beruhigung</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:TextEquiv conf="0.94021858215332">
+                    <pc:Unicode>zur Belehrung ynd Beruhigung</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv conf="0.94021858215332">
+                <pc:Unicode>zur Belehrung ynd Beruhigung</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0006" orientation="0.625" readingDirection="left-to-right" textLineOrder="top-to-bottom">
+            <pc:AlternativeImage filename="OCR-D-CLIP/OCR-D-CLIP_0001_region0006.IMG-CLIP.png" comments="binarized,despeckled,binarized,clipped"/>
+            <pc:Coords points="243,1219 1170,1209 1171,1322 244,1332"/>
+            <pc:TextLine id="region0006_line0001">
+                <pc:AlternativeImage filename="OCR-D-DEWARP/OCR-D-DEWARP_0001_region0006_region0006_line0001.IMG-DEWARP.png" comments="binarized,despeckled,binarized,dewarped"/>
+                <pc:Coords points="247,1220 243,1220 244,1277 244,1277 245,1278 250,1278 251,1279 253,1279 254,1280 262,1280 263,1279 264,1279 268,1275 279,1274 280,1273 302,1273 303,1272 310,1272 311,1273 321,1273 322,1272 325,1272 326,1273 348,1273 349,1274 369,1273 370,1274 389,1274 390,1275 395,1275 397,1277 397,1279 398,1280 399,1281 402,1284 403,1284 404,1285 412,1285 413,1284 414,1284 416,1282 417,1282 420,1278 420,1277 422,1275 443,1275 444,1274 452,1274 453,1273 460,1272 461,1271 519,1271 520,1272 589,1271 590,1270 597,1270 599,1272 599,1273 602,1276 604,1276 605,1277 612,1277 613,1278 614,1278 615,1277 624,1277 625,1276 626,1276 627,1275 630,1275 632,1273 632,1272 634,1270 648,1269 649,1268 666,1268 668,1270 668,1273 669,1274 669,1275 670,1275 671,1276 672,1276 673,1277 675,1277 676,1278 684,1278 686,1279 691,1279 691,1278 692,1278 693,1277 693,1276 694,1275 694,1270 695,1269 736,1268 737,1269 820,1269 821,1268 919,1266 920,1267 929,1267 930,1266 936,1266 937,1267 946,1267 947,1266 954,1266 955,1265 967,1265 968,1266 968,1271 969,1272 969,1273 971,1275 972,1275 973,1276 976,1276 977,1277 999,1277 1001,1278 1002,1278 1003,1279 1013,1278 1014,1277 1015,1277 1015,1276 1020,1276 1021,1275 1027,1275 1028,1274 1030,1274 1031,1273 1032,1273 1033,1272 1034,1272 1037,1269 1037,1268 1038,1267 1041,1267 1042,1266 1051,1266 1052,1265 1084,1265 1085,1266 1086,1266 1087,1267 1098,1266 1099,1265 1149,1265 1150,1266 1151,1266 1152,1267 1161,1267 1162,1266 1163,1266 1164,1265 1167,1265 1168,1264 1169,1264 1169,1217 1161,1217 1160,1216 1152,1216 1151,1217 1130,1217 1129,1218 1107,1218 1106,1217 1106,1216 1105,1215 1105,1214 1102,1211 1101,1211 1100,1210 1092,1211 1091,1212 1090,1212 1089,1213 1088,1213 1085,1216 1085,1217 1083,1219 1066,1219 1065,1220 1057,1220 1056,1219 1048,1219 1047,1220 1013,1220 1012,1219 1000,1220 999,1219 986,1219 985,1218 977,1218 976,1217 975,1217 974,1216 957,1216 956,1217 955,1217 954,1218 949,1218 948,1217 933,1217 932,1216 930,1216 929,1215 929,1214 927,1212 926,1212 926,1212 915,1212 915,1212 914,1212 913,1214 911,1214 910,1215 909,1215 907,1217 873,1217 870,1214 869,1214 868,1213 856,1213 855,1214 853,1214 852,1215 851,1215 848,1218 848,1219 847,1220 839,1220 838,1221 826,1221 825,1222 811,1223 810,1224 785,1224 784,1225 773,1225 772,1224 731,1224 729,1223 728,1223 727,1222 718,1222 717,1223 716,1223 715,1224 701,1224 700,1223 696,1223 695,1222 695,1218 694,1217 694,1216 692,1214 675,1214 674,1215 673,1215 672,1216 671,1216 669,1218 668,1218 665,1221 665,1222 664,1223 663,1222 663,1219 662,1218 662,1217 660,1215 659,1215 659,1215 649,1215 649,1215 647,1215 646,1216 645,1216 644,1217 643,1217 637,1224 633,1224 632,1225 609,1225 608,1224 604,1224 603,1223 601,1223 600,1222 599,1222 598,1221 597,1221 596,1220 595,1220 594,1219 592,1219 591,1218 587,1218 586,1217 579,1217 578,1216 559,1216 559,1216 547,1216 547,1216 536,1217 535,1218 526,1218 525,1219 522,1219 521,1220 519,1220 518,1221 516,1221 515,1222 512,1222 511,1223 507,1223 506,1224 494,1224 493,1223 483,1223 482,1222 476,1222 475,1221 475,1220 472,1217 471,1217 471,1217 459,1217 459,1217 458,1217 454,1222 419,1222 415,1218 414,1218 413,1217 403,1217 402,1218 401,1218 400,1219 399,1219 398,1220 397,1220 396,1221 395,1221 394,1222 390,1218 389,1218 388,1217 378,1218 378,1218 377,1218 377,1218 367,1218 367,1218 366,1218 365,1219 364,1219 361,1223 360,1223 358,1225 352,1225 351,1224 330,1224 329,1223 323,1223 321,1221 321,1220 319,1218 302,1218 299,1221 299,1222 298,1223 287,1223 286,1222 280,1222 279,1221 278,1221 277,1220 277,1219 277,1219 250,1219 248,1219"/>
+                <pc:Baseline points="243,1265 1169,1255"/>
+                <pc:Word id="region0006_line0001_word0000">
+                    <pc:Coords points="422,1226 248,1228 249,1278 250,1278 251,1279 253,1279 254,1280 262,1280 263,1279 264,1279 268,1275 279,1274 280,1273 302,1273 303,1272 310,1272 311,1273 321,1273 322,1272 325,1272 326,1273 348,1273 349,1274 369,1273 370,1274 389,1274 390,1275 395,1275 397,1277 397,1279 398,1280 398,1280 418,1280 420,1278 420,1277 422,1275"/>
+                    <pc:TextEquiv conf="0.217039031982422">
+                        <pc:Unicode>ſonderlich</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0006_line0001_word0001">
+                    <pc:Coords points="459,1228 516,1228 516,1266 459,1266"/>
+                    <pc:TextEquiv conf="0.931646881103516">
+                        <pc:Unicode>der</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0006_line0001_word0002">
+                    <pc:Coords points="549,1223 549,1272 589,1271 590,1270 597,1270 599,1272 599,1273 600,1274 632,1273 632,1273 632,1272 634,1270 648,1269 649,1268 666,1268 668,1270 668,1273 694,1273 694,1270 695,1269 736,1268 737,1269 767,1269 767,1224 731,1224 729,1223 728,1223 727,1222 718,1222 717,1223 716,1223 715,1224 701,1224 700,1223 696,1223 695,1222 695,1222 665,1222 665,1222 664,1223 663,1222 663,1222 639,1222 637,1224 633,1224 632,1225 609,1225 608,1224 604,1224 603,1223 601,1223 601,1223"/>
+                    <pc:TextEquiv conf="0.921555099487305">
+                        <pc:Unicode>Ungelehrten</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0006_line0001_word0003">
+                    <pc:Coords points="806,1225 877,1224 877,1262 806,1263"/>
+                    <pc:TextEquiv conf="0.950205612182617">
+                        <pc:Unicode>und</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0006_line0001_word0004">
+                    <pc:Coords points="913,1223 972,1222 972,1261 913,1262"/>
+                    <pc:TextEquiv conf="0.955417709350586">
+                        <pc:Unicode>des</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0006_line0001_word0005">
+                    <pc:Coords points="1165,1220 995,1222 995,1272 1034,1271 1037,1269 1037,1268 1038,1267 1041,1267 1042,1266 1051,1266 1052,1265 1084,1265 1085,1266 1086,1266 1087,1267 1098,1266 1099,1265 1149,1265 1150,1266 1151,1266 1152,1267 1161,1267 1162,1266 1163,1266 1164,1265 1165,1265"/>
+                    <pc:TextEquiv conf="0.942613372802734">
+                        <pc:Unicode>gemeinen</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:TextEquiv conf="0.819746284484863">
+                    <pc:Unicode>ſonderlich der Ungelehrten und des gemeinen</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0006_line0002">
+                <pc:AlternativeImage filename="OCR-D-DEWARP/OCR-D-DEWARP_0001_region0006_region0006_line0002.IMG-DEWARP.png" comments="binarized,despeckled,binarized,dewarped"/>
+                <pc:Coords points="642,1274 641,1275 627,1276 626,1277 625,1277 624,1278 615,1278 614,1279 613,1279 612,1278 605,1278 604,1277 583,1277 582,1278 567,1278 566,1279 562,1279 562,1280 561,1280 559,1282 559,1283 558,1284 558,1315 559,1316 559,1317 562,1320 563,1320 564,1321 571,1321 572,1322 572,1323 573,1324 573,1325 575,1327 793,1325 794,1324 835,1323 836,1322 844,1322 845,1321 846,1321 848,1319 848,1318 849,1317 849,1285 848,1284 848,1283 846,1281 845,1281 844,1280 786,1281 785,1282 778,1282 777,1281 776,1281 775,1280 773,1280 772,1279 763,1279 762,1280 761,1280 758,1283 749,1283 748,1284 728,1285 727,1286 720,1286 719,1285 708,1285 707,1284 703,1284 702,1283 700,1283 699,1282 697,1282 696,1281 695,1281 694,1280 693,1280 692,1279 691,1280 686,1280 685,1279 677,1279 675,1278 673,1278 672,1277 671,1277 670,1276 666,1276 665,1275 651,1275 650,1274"/>
+                <pc:Baseline points="558,1314 849,1312"/>
+                <pc:Word id="region0006_line0002_word0000">
+                    <pc:Coords points="626,1286 626,1325 789,1323 789,1284 735,1285 728,1285 727,1286 720,1286 719,1285 708,1285 708,1285"/>
+                    <pc:TextEquiv conf="0.481812286376953">
+                        <pc:Unicode>Mannes.</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:TextEquiv conf="0.481812286376953">
+                    <pc:Unicode>Mannes.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv conf="0.650779285430908">
+                <pc:Unicode>ſonderlich der Ungelehrten und des gemeinen
+Mannes.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0009" orientation="0.625" readingDirection="left-to-right" textLineOrder="top-to-bottom">
+            <pc:AlternativeImage filename="OCR-D-CLIP/OCR-D-CLIP_0001_region0009.IMG-CLIP.png" comments="binarized,despeckled,binarized,clipped"/>
+            <pc:Coords points="229,1400 1181,1390 1184,1665 232,1675"/>
+            <pc:TextLine id="region0009_line0001">
+                <pc:AlternativeImage filename="OCR-D-DEWARP/OCR-D-DEWARP_0001_region0009_region0009_line0001.IMG-DEWARP.png" comments="binarized,despeckled,binarized,dewarped"/>
+                <pc:Coords points="505,1398 505,1400 503,1402 501,1400 500,1400 499,1399 490,1399 489,1400 488,1400 486,1402 485,1402 484,1401 476,1401 475,1402 373,1403 372,1404 371,1404 369,1406 369,1407 368,1408 368,1449 369,1450 369,1451 371,1453 372,1453 373,1454 381,1454 382,1455 382,1458 383,1459 383,1460 385,1462 386,1462 387,1463 482,1462 483,1463 492,1463 493,1462 541,1462 542,1463 550,1462 551,1461 605,1461 606,1462 656,1461 657,1462 703,1462 705,1463 754,1462 755,1463 770,1463 772,1465 772,1466 774,1468 775,1468 776,1469 777,1469 778,1470 788,1470 789,1469 790,1469 793,1466 793,1465 795,1463 797,1463 801,1467 802,1467 803,1468 804,1468 805,1469 814,1469 815,1468 816,1468 818,1466 818,1465 820,1463 895,1462 897,1464 897,1465 900,1468 901,1468 902,1469 913,1469 914,1468 915,1468 917,1465 917,1464 918,1463 918,1462 919,1461 938,1461 939,1462 940,1462 941,1463 949,1463 950,1462 951,1462 952,1461 1033,1460 1034,1459 1035,1459 1037,1457 1037,1456 1038,1455 1038,1448 1039,1447 1043,1447 1044,1446 1045,1446 1047,1444 1047,1443 1048,1442 1048,1401 1047,1400 1047,1399 1045,1397 1044,1397 1043,1396 998,1397 997,1398 957,1398 956,1399 953,1399 952,1398 938,1398 937,1399 932,1399 931,1400 924,1400 922,1398 921,1398 920,1397 905,1398 904,1399 903,1399 902,1400 901,1400 898,1403 890,1403 889,1404 872,1404 871,1403 870,1403 869,1402 861,1402 860,1403 859,1403 857,1405 829,1405 827,1403 827,1402 825,1400 824,1400 823,1399 821,1400 820,1399 818,1399 817,1398 809,1398 808,1399 804,1399 803,1400 802,1400 798,1404 798,1405 797,1406 795,1406 794,1405 780,1405 779,1404 768,1404 767,1403 751,1403 750,1402 748,1402 746,1400 745,1400 744,1399 739,1399 738,1398 725,1399 724,1400 722,1400 721,1401 720,1401 718,1403 690,1403 689,1404 672,1404 671,1405 658,1405 657,1406 639,1407 638,1408 626,1408 625,1407 625,1405 624,1404 624,1403 621,1400 620,1400 619,1399 610,1399 609,1400 608,1400 607,1401 606,1401 603,1404 603,1405 601,1407 597,1407 596,1406 585,1406 584,1405 574,1405 573,1404 561,1404 560,1403 554,1403 553,1402 543,1403 539,1399 538,1399 537,1398 526,1398 525,1399 523,1397 514,1397 505,1397"/>
+                <pc:Baseline points="370,1452 1038,1451"/>
+                <pc:Word id="region0009_line0001_word0000">
+                    <pc:Coords points="558,1408 468,1409 468,1462 482,1462 483,1463 492,1463 493,1462 541,1462 541,1462 549,1462 550,1462 551,1461 558,1461"/>
+                    <pc:TextEquiv conf="0.953662872314453">
+                        <pc:Unicode>Mit</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0009_line0001_word0001">
+                    <pc:Coords points="587,1413 685,1412 685,1458 587,1459"/>
+                    <pc:TextEquiv conf="0.892462539672852">
+                        <pc:Unicode>einer</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0009_line0001_word0002">
+                    <pc:Coords points="951,1408 713,1411 714,1463 754,1462 755,1463 770,1463 772,1465 772,1466 772,1466 793,1466 793,1466 793,1465 795,1463 797,1463 800,1466 818,1466 818,1465 820,1463 895,1462 897,1464 897,1465 917,1464 917,1464 918,1463 918,1462 919,1461 938,1461 939,1462 940,1462 941,1463 949,1463 950,1462 951,1462 952,1461"/>
+                    <pc:TextEquiv conf="0.560229568481445">
+                        <pc:Unicode>Kupfertafel</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:TextEquiv conf="0.802118326822917">
+                    <pc:Unicode>Mit einer Kupfertafel</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0009_line0002">
+                <pc:AlternativeImage filename="OCR-D-DEWARP/OCR-D-DEWARP_0001_region0009_region0009_line0002.IMG-DEWARP.png" comments="binarized,despeckled,binarized,dewarped"/>
+                <pc:Coords points="652,1498 651,1499 650,1499 649,1500 601,1501 600,1500 558,1500 557,1501 556,1501 554,1503 554,1504 553,1505 553,1543 554,1544 554,1545 556,1547 557,1547 558,1548 570,1548 571,1549 655,1548 656,1549 747,1548 748,1549 864,1548 865,1547 866,1547 868,1545 868,1544 869,1543 869,1506 868,1505 868,1504 866,1502 865,1502 864,1501 762,1502 761,1501 697,1502 696,1501 664,1501 662,1499 661,1499 660,1498"/>
+                <pc:Baseline points="553,1540 869,1539"/>
+                <pc:Word id="region0009_line0002_word0000">
+                    <pc:Coords points="610,1511 772,1509 772,1543 610,1545"/>
+                    <pc:TextEquiv conf="0.647292785644531">
+                        <pc:Unicode>“von</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:TextEquiv conf="0.647292785644531">
+                    <pc:Unicode>“von</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0009_line0003">
+                <pc:AlternativeImage filename="OCR-D-DEWARP/OCR-D-DEWARP_0001_region0009_region0009_line0003.IMG-DEWARP.png" comments="binarized,despeckled,binarized,dewarped"/>
+                <pc:Coords points="1061,1569 1060,1570 1059,1570 1058,1571 1026,1571 1025,1572 1011,1572 1010,1573 1003,1574 1002,1575 997,1575 996,1576 991,1576 990,1575 987,1575 986,1574 977,1574 976,1575 972,1575 971,1576 970,1576 965,1581 959,1581 958,1582 950,1582 949,1583 940,1583 939,1584 937,1582 937,1581 934,1578 933,1578 931,1576 930,1576 929,1575 919,1575 918,1576 917,1576 916,1577 915,1578 912,1581 912,1582 911,1583 911,1584 909,1586 856,1586 855,1585 839,1585 838,1584 825,1584 824,1583 799,1584 798,1583 798,1582 794,1578 793,1578 792,1577 783,1577 782,1578 779,1578 778,1579 777,1579 775,1581 775,1582 773,1584 752,1584 751,1585 740,1585 739,1586 730,1587 729,1588 727,1588 726,1587 726,1585 725,1584 725,1583 720,1578 719,1578 718,1577 707,1577 706,1578 705,1578 701,1582 701,1583 700,1584 700,1586 699,1587 699,1588 698,1589 687,1589 686,1588 679,1588 678,1587 674,1587 673,1586 671,1586 670,1585 669,1585 668,1584 667,1584 666,1583 665,1583 664,1582 663,1582 662,1581 660,1581 659,1580 656,1580 655,1579 650,1579 649,1578 636,1579 635,1578 575,1578 574,1579 560,1579 559,1580 553,1580 552,1581 549,1581 548,1583 546,1583 545,1584 543,1584 542,1585 541,1585 540,1586 539,1586 538,1587 536,1587 535,1588 533,1588 532,1589 530,1589 529,1590 525,1590 524,1591 515,1591 514,1592 481,1592 480,1591 461,1591 460,1590 452,1591 451,1592 449,1592 448,1591 421,1591 420,1590 419,1590 418,1589 408,1589 407,1590 405,1590 404,1589 392,1589 391,1588 376,1588 375,1587 375,1586 374,1585 374,1584 371,1581 370,1581 368,1579 367,1579 366,1578 355,1579 354,1580 353,1580 351,1582 350,1582 349,1583 348,1583 347,1584 345,1584 344,1585 343,1585 341,1587 341,1588 340,1589 338,1589 337,1588 331,1588 330,1587 327,1587 326,1586 323,1586 322,1585 319,1585 318,1584 315,1584 314,1583 311,1583 310,1582 305,1582 304,1581 297,1581 296,1580 283,1580 282,1579 258,1580 257,1579 248,1579 247,1580 231,1580 232,1662 286,1661 287,1660 301,1660 302,1659 310,1659 311,1658 317,1658 318,1657 323,1657 324,1656 329,1656 330,1655 336,1655 337,1654 344,1654 345,1653 350,1653 352,1655 352,1656 354,1658 355,1658 356,1659 366,1659 367,1657 370,1657 371,1656 372,1656 374,1654 374,1653 376,1651 384,1651 385,1650 402,1650 403,1649 423,1649 424,1648 519,1647 520,1648 528,1648 529,1649 534,1649 535,1650 537,1650 538,1651 540,1651 541,1652 543,1652 544,1653 546,1653 547,1654 549,1654 550,1654 553,1654 554,1655 559,1655 560,1656 599,1656 600,1657 616,1657 617,1656 641,1656 642,1654 651,1654 652,1653 658,1653 659,1652 665,1652 666,1651 671,1651 672,1650 678,1650 679,1649 686,1649 687,1648 696,1648 697,1647 708,1647 709,1646 726,1646 726,1645 741,1644 743,1645 752,1645 752,1644 802,1644 803,1643 818,1643 819,1644 873,1643 874,1644 884,1644 885,1643 907,1643 908,1644 936,1643 938,1644 963,1644 965,1645 974,1645 975,1646 975,1647 977,1649 978,1649 979,1650 992,1650 993,1649 994,1649 995,1648 996,1648 999,1645 1086,1644 1087,1645 1100,1644 1101,1645 1108,1645 1109,1646 1115,1646 1116,1647 1122,1647 1123,1648 1128,1648 1129,1649 1136,1649 1137,1650 1149,1650 1150,1651 1157,1651 1158,1652 1176,1652 1177,1651 1183,1651 1182,1585 1174,1585 1173,1584 1165,1584 1164,1585 1160,1585 1159,1584 1143,1584 1142,1583 1136,1583 1135,1582 1132,1582 1131,1581 1128,1581 1127,1580 1126,1580 1125,1579 1124,1579 1123,1578 1122,1578 1121,1577 1120,1577 1119,1576 1118,1576 1117,1575 1116,1575 1115,1574 1113,1574 1112,1573 1109,1573 1108,1572 1102,1572 1101,1571 1088,1572 1087,1571 1075,1571 1074,1570 1073,1570 1072,1569"/>
+                <pc:Baseline points="232,1653 432,1638 609,1644 882,1632 1182,1640"/>
+                <pc:Word id="region0009_line0003_word0000">
+                    <pc:Coords points="532,1593 236,1596 236,1661 286,1661 287,1660 301,1660 302,1659 310,1659 311,1658 317,1658 318,1657 323,1657 324,1656 329,1656 330,1655 336,1655 337,1654 344,1654 345,1653 350,1653 352,1655 352,1656 354,1658 355,1658 356,1659 366,1659 367,1657 370,1657 371,1656 372,1656 374,1654 374,1653 376,1651 384,1651 385,1650 402,1650 403,1649 423,1649 424,1648 519,1647 520,1648 528,1648 529,1649 532,1649"/>
+                    <pc:TextEquiv conf="0.946116714477539">
+                        <pc:Unicode>Johann</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0009_line0003_word0001">
+                    <pc:Coords points="999,1591 589,1595 590,1656 599,1656 600,1657 616,1657 617,1656 641,1656 642,1654 651,1654 652,1653 658,1653 659,1652 665,1652 666,1651 671,1651 672,1650 678,1650 679,1649 686,1649 687,1648 696,1648 697,1647 708,1647 709,1646 726,1646 726,1645 741,1644 743,1645 752,1645 752,1644 802,1644 803,1643 818,1643 819,1644 873,1643 874,1644 884,1644 885,1643 907,1643 908,1644 936,1643 938,1644 963,1644 965,1645 974,1645 975,1646 975,1647 977,1649 978,1649 979,1650 992,1650 993,1649 994,1649 995,1648 996,1648 999,1645 1000,1645"/>
+                    <pc:TextEquiv conf="0.614644622802734">
+                        <pc:Unicode>Friederich</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0009_line0003_word0002">
+                    <pc:Coords points="1053,1586 1054,1644 1086,1644 1087,1645 1100,1644 1101,1645 1108,1645 1109,1646 1115,1646 1116,1647 1122,1647 1123,1648 1128,1648 1129,1649 1136,1649 1136,1649 1179,1649 1178,1585"/>
+                    <pc:TextEquiv conf="0.935286636352539">
+                        <pc:Unicode>Luz</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:TextEquiv conf="0.832015991210938">
+                    <pc:Unicode>Johann Friederich Luz</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv conf="0.760475701226129">
+                <pc:Unicode>Mit einer Kupfertafel
+“von
+Johann Friederich Luz</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0010" orientation="0.625" readingDirection="left-to-right" textLineOrder="top-to-bottom">
+            <pc:AlternativeImage filename="OCR-D-CLIP/OCR-D-CLIP_0001_region0010.IMG-CLIP.png" comments="binarized,despeckled,binarized,clipped"/>
+            <pc:Coords points="428,1654 989,1648 989,1705 428,1711"/>
+            <pc:TextLine id="region0010_line0001">
+                <pc:AlternativeImage filename="OCR-D-DEWARP/OCR-D-DEWARP_0001_region0010_region0010_line0001.IMG-DEWARP.png" comments="binarized,despeckled,binarized,dewarped"/>
+                <pc:Coords points="545,1655 538,1655 537,1656 532,1656 531,1657 528,1657 527,1658 525,1658 524,1659 521,1659 520,1660 516,1660 515,1661 506,1661 505,1660 500,1660 499,1659 493,1659 492,1658 490,1658 489,1657 488,1657 487,1656 485,1656 484,1655 476,1655 475,1656 472,1656 471,1657 466,1657 465,1656 464,1656 463,1655 460,1655 459,1654 449,1655 448,1656 447,1656 446,1657 445,1657 444,1658 428,1658 428,1710 447,1710 448,1709 481,1708 482,1707 507,1707 508,1706 538,1706 539,1705 558,1704 559,1703 586,1703 589,1706 590,1706 591,1707 601,1707 602,1706 603,1706 606,1703 617,1703 618,1702 640,1702 641,1702 657,1702 658,1703 679,1703 681,1705 682,1705 683,1706 699,1706 700,1705 701,1705 703,1703 723,1703 724,1702 805,1701 806,1702 809,1702 810,1703 810,1704 812,1706 830,1705 834,1701 861,1701 862,1702 862,1703 864,1705 881,1705 885,1701 898,1701 899,1702 920,1701 921,1702 921,1703 922,1704 940,1704 941,1703 941,1702 942,1701 960,1701 961,1700 963,1700 964,1701 972,1701 973,1700 988,1700 988,1655 950,1655 949,1654 949,1653 945,1649 944,1649 943,1648 933,1649 933,1649 931,1649 930,1650 929,1650 924,1655 919,1655 918,1656 903,1657 902,1656 885,1656 883,1654 883,1653 880,1650 879,1650 878,1649 867,1649 866,1650 865,1650 864,1651 863,1651 861,1653 861,1654 859,1656 811,1657 810,1656 801,1656 800,1655 795,1655 794,1654 791,1654 790,1653 787,1653 786,1652 781,1652 780,1651 775,1651 774,1650 739,1651 739,1651 721,1652 720,1653 716,1653 715,1654 710,1654 709,1655 704,1655 703,1656 688,1656 687,1657 654,1657 653,1658 628,1659 627,1658 627,1657 623,1653 622,1653 621,1652 615,1652 612,1652 611,1653 610,1653 608,1655 608,1656 606,1658 598,1658 597,1657 592,1657 591,1656 587,1656 586,1655 580,1655 579,1654 577,1654 575,1652 558,1653 547,1653"/>
+                <pc:Baseline points="428,1699 988,1690"/>
+                <pc:Word id="region0010_line0001_word0000">
+                    <pc:Coords points="524,1664 433,1665 433,1707 508,1706 508,1706 524,1706"/>
+                    <pc:TextEquiv conf="0.483515129089355">
+                        <pc:Unicode>Pbexr</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0010_line0001_word0001">
+                    <pc:Coords points="546,1663 662,1661 662,1701 546,1703"/>
+                    <pc:TextEquiv conf="0.617778739929199">
+                        <pc:Unicode>Caplan</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0010_line0001_word0002">
+                    <pc:Coords points="686,1669 719,1669 719,1702 686,1702"/>
+                    <pc:TextEquiv conf="0.965271377563477">
+                        <pc:Unicode>zu</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0010_line0001_word0003">
+                    <pc:Coords points="984,1657 741,1659 741,1702 805,1701 806,1702 809,1702 809,1702 833,1702 834,1701 861,1701 862,1702 862,1702 884,1702 885,1701 898,1701 899,1702 907,1702 920,1701 921,1702 942,1701 942,1701 960,1701 961,1700 963,1700 964,1701 972,1701 973,1700 984,1700"/>
+                    <pc:TextEquiv conf="0.771209106445312">
+                        <pc:Unicode>Gunzenhauſen.</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:TextEquiv conf="0.709443588256836">
+                    <pc:Unicode>Pbexr Caplan zu Gunzenhauſen.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv conf="0.709443588256836">
+                <pc:Unicode>Pbexr Caplan zu Gunzenhauſen.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0012" orientation="0.625" readingDirection="left-to-right" textLineOrder="top-to-bottom">
+            <pc:AlternativeImage filename="OCR-D-CLIP/OCR-D-CLIP_0001_region0012.IMG-CLIP.png" comments="binarized,despeckled,binarized,clipped"/>
+            <pc:Coords points="285,2154 1194,2144 1195,2276 286,2286"/>
+            <pc:TextLine id="region0012_line0001">
+                <pc:AlternativeImage filename="OCR-D-DEWARP/OCR-D-DEWARP_0001_region0012_region0012_line0001.IMG-DEWARP.png" comments="binarized,despeckled,binarized,dewarped"/>
+                <pc:Coords points="475,2152 474,2153 392,2154 391,2155 390,2155 388,2157 388,2158 387,2159 387,2194 388,2195 388,2196 391,2198 392,2198 393,2199 407,2199 408,2200 408,2209 409,2210 409,2211 411,2213 412,2213 413,2214 417,2214 418,2215 424,2215 425,2216 431,2216 432,2217 445,2217 446,2218 476,2217 477,2218 481,2218 482,2219 495,2219 496,2218 499,2218 500,2217 501,2217 502,2216 506,2216 507,2215 514,2215 515,2214 522,2214 523,2213 534,2213 535,2212 588,2211 590,2213 590,2214 593,2217 594,2217 595,2218 606,2218 607,2217 608,2217 612,2213 612,2212 613,2211 642,2211 643,2210 680,2209 681,2208 693,2208 694,2207 701,2207 702,2206 707,2206 708,2205 713,2205 714,2204 719,2204 720,2203 728,2203 729,2202 753,2201 754,2202 761,2202 762,2203 767,2203 768,2204 771,2204 772,2205 776,2205 777,2206 780,2206 781,2207 787,2207 788,2208 798,2208 799,2209 808,2209 809,2210 846,2209 847,2210 854,2210 855,2211 855,2212 857,2214 858,2214 859,2215 861,2215 862,2216 870,2216 871,2215 872,2215 873,2214 874,2214 877,2211 883,2211 884,2212 885,2212 886,2213 887,2213 888,2214 896,2214 897,2213 898,2213 899,2212 919,2212 920,2212 921,2212 922,2213 933,2213 934,2212 938,2212 940,2214 941,2214 942,2215 951,2215 952,2214 953,2214 954,2213 955,2213 956,2212 1000,2212 1001,2211 1022,2210 1023,2209 1035,2209 1036,2208 1037,2208 1039,2206 1039,2205 1040,2204 1039,2174 1038,2173 1038,2172 1036,2170 1035,2170 1034,2169 980,2170 979,2169 979,2161 978,2160 978,2159 976,2157 975,2157 974,2156 973,2156 972,2155 934,2155 933,2154 923,2154 922,2153 922,2152 921,2151 921,2150 918,2148 902,2148 899,2151 899,2152 898,2153 898,2155 897,2156 866,2156 865,2155 865,2154 864,2153 864,2152 863,2151 863,2150 861,2148 846,2148 844,2150 844,2151 841,2154 835,2154 834,2153 828,2153 827,2152 825,2153 823,2151 822,2151 821,2150 820,2150 819,2149 801,2149 800,2150 799,2150 797,2152 768,2152 765,2149 747,2149 743,2153 736,2153 735,2155 718,2155 717,2156 710,2156 709,2155 677,2155 673,2151 672,2151 671,2150 662,2150 661,2151 660,2151 659,2152 658,2152 655,2155 624,2156 623,2155 622,2155 620,2153 620,2152 619,2151 572,2151 571,2152 570,2152 567,2155 565,2155 564,2156 554,2156 553,2157 537,2158 536,2157 529,2157 528,2156 522,2156 521,2155 513,2155 512,2154 501,2154 500,2153 493,2153 492,2152"/>
+                <pc:Baseline points="407,2200 487,2204 746,2191 886,2201 1040,2200"/>
+                <pc:Word id="region0012_line0001_word0000">
+                    <pc:Coords points="676,2164 469,2166 469,2217 476,2217 477,2218 481,2218 482,2219 495,2219 496,2218 499,2218 500,2217 501,2217 502,2216 506,2216 507,2215 514,2215 515,2214 522,2214 523,2213 534,2213 535,2212 588,2211 590,2213 590,2214 593,2217 594,2217 595,2218 606,2218 607,2217 608,2217 612,2213 612,2212 613,2211 642,2211 643,2210 676,2209"/>
+                    <pc:TextEquiv conf="0.929217758178711">
+                        <pc:Unicode>Frankfurt</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0012_line0001_word0001">
+                    <pc:Coords points="773,2204 772,2167 703,2168 704,2205 713,2205 714,2204 719,2204 720,2203 728,2203 729,2202 753,2201 754,2202 761,2202 762,2203 767,2203 768,2204 771,2204 771,2204"/>
+                    <pc:TextEquiv conf="0.967396545410156">
+                        <pc:Unicode>und</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0012_line0001_word0002">
+                    <pc:Coords points="961,2160 800,2162 801,2209 808,2209 809,2210 846,2209 847,2210 854,2210 855,2211 855,2212 857,2214 858,2214 859,2215 861,2215 861,2215 871,2215 871,2215 872,2215 873,2214 874,2214 877,2211 883,2211 884,2212 885,2212 886,2213 887,2213 888,2214 896,2214 897,2213 898,2213 899,2212 919,2212 920,2212 921,2212 922,2213 933,2213 934,2212 938,2212 940,2214 941,2214 941,2214 952,2214 952,2214 953,2214 954,2213 955,2213 956,2212 962,2212"/>
+                    <pc:TextEquiv conf="0.482292747497559">
+                        <pc:Unicode>Leipzig,</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:TextEquiv conf="0.792969017028809">
+                    <pc:Unicode>Frankfurt und Leipzig,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0012_line0002">
+                <pc:AlternativeImage filename="OCR-D-DEWARP/OCR-D-DEWARP_0001_region0012_region0012_line0002.IMG-DEWARP.png" comments="binarized,despeckled,binarized,dewarped"/>
+                <pc:Coords points="395,2219 394,2220 383,2220 382,2221 378,2221 377,2222 375,2222 374,2223 373,2223 372,2224 371,2224 365,2231 363,2231 362,2232 358,2232 357,2233 356,2232 347,2232 346,2231 341,2231 340,2230 336,2230 335,2229 334,2229 333,2228 333,2227 330,2224 329,2224 328,2223 318,2223 317,2224 316,2224 315,2225 310,2225 309,2226 286,2226 286,2277 314,2277 315,2278 350,2278 351,2279 354,2279 355,2280 355,2281 356,2282 356,2283 358,2285 372,2284 373,2283 374,2283 379,2278 427,2278 428,2277 468,2276 469,2277 477,2277 478,2278 483,2278 484,2279 491,2279 492,2280 506,2280 508,2282 509,2282 510,2283 530,2283 531,2282 532,2282 534,2280 559,2279 560,2278 572,2278 573,2277 589,2277 590,2276 655,2275 656,2274 691,2274 692,2275 717,2275 718,2276 779,2275 780,2274 781,2274 782,2275 782,2277 783,2278 783,2279 784,2280 803,2280 805,2278 805,2277 806,2276 806,2275 807,2274 819,2274 820,2273 842,2272 843,2271 991,2270 992,2271 1027,2270 1028,2271 1029,2271 1030,2272 1042,2272 1043,2271 1047,2271 1048,2270 1077,2270 1078,2269 1098,2269 1100,2271 1101,2271 1102,2272 1112,2271 1113,2270 1117,2270 1118,2269 1119,2269 1120,2268 1194,2267 1194,2231 1183,2231 1182,2230 1166,2230 1165,2229 1155,2229 1154,2228 1149,2228 1148,2227 1144,2227 1143,2226 1141,2226 1140,2225 1138,2225 1137,2224 1134,2224 1133,2223 1129,2223 1128,2222 1124,2222 1123,2221 1121,2221 1120,2220 1119,2220 1118,2219 1107,2219 1106,2220 1105,2220 1104,2219 1083,2220 1082,2219 1072,2219 1071,2220 1007,2221 1006,2222 989,2222 988,2223 970,2223 969,2224 939,2224 938,2225 909,2226 908,2225 907,2225 904,2222 903,2222 902,2221 894,2221 893,2222 892,2222 891,2223 890,2223 887,2226 832,2226 831,2225 819,2226 818,2225 810,2225 809,2224 806,2224 805,2223 805,2222 802,2219 801,2219 800,2218 789,2218 788,2219 787,2219 786,2220 783,2220 782,2219 775,2219 774,2218 756,2218 754,2216 753,2216 752,2215 741,2215 740,2216 736,2216 735,2218 733,2218 732,2219 715,2219 714,2220 706,2220 705,2221 698,2221 697,2222 691,2222 690,2223 683,2223 682,2224 680,2224 678,2222 677,2222 676,2221 666,2221 665,2222 664,2222 662,2224 661,2224 659,2226 648,2226 647,2227 638,2228 637,2229 628,2229 627,2230 616,2230 615,2231 596,2231 595,2230 584,2230 583,2229 583,2228 582,2227 582,2226 579,2223 578,2223 577,2222 569,2222 568,2223 567,2223 566,2224 565,2224 564,2225 563,2225 560,2228 559,2228 557,2230 541,2231 540,2232 529,2232 528,2231 517,2231 516,2232 507,2232 506,2231 495,2231 494,2230 490,2230 485,2225 484,2225 482,2223 481,2223 480,2222 478,2222 477,2221 474,2221 473,2220 468,2220 467,2219 453,2220 452,2219"/>
+                <pc:Baseline points="286,2268 1194,2258"/>
+                <pc:Word id="region0012_line0002_word0000">
+                    <pc:Coords points="291,2232 291,2277 314,2277 315,2278 376,2277 376,2231 363,2231 362,2232 358,2232 357,2233 356,2232 347,2232 346,2231"/>
+                    <pc:TextEquiv conf="0.715507049560547">
+                        <pc:Unicode>bey</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0012_line0002_word0001">
+                    <pc:Coords points="405,2228 405,2275 575,2273 575,2226 561,2226 560,2228 559,2228 557,2230 541,2231 540,2232 529,2232 528,2231 517,2231 516,2232 507,2232 506,2231 495,2231 494,2230 490,2230 487,2227"/>
+                    <pc:TextEquiv conf="0.956411361694336">
+                        <pc:Unicode>Weigel</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0012_line0002_word0002">
+                    <pc:Coords points="604,2267 687,2266 687,2229 627,2230 627,2230 616,2230 615,2231 604,2231"/>
+                    <pc:TextEquiv conf="0.964473876953125">
+                        <pc:Unicode>und</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0012_line0002_word0003">
+                    <pc:Coords points="716,2225 716,2275 717,2275 718,2276 723,2276 779,2275 780,2274 781,2274 782,2275 782,2275 806,2275 807,2274 819,2274 820,2273 842,2272 843,2271 967,2270 967,2224 939,2224 938,2225 909,2226 908,2225 907,2225 905,2223 891,2223 891,2223 890,2223 887,2226 832,2226 831,2225 819,2226 818,2225 810,2225 809,2224 806,2224 806,2224"/>
+                    <pc:TextEquiv conf="0.937103576660156">
+                        <pc:Unicode>Schneider</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0012_line0002_word0004">
+                    <pc:Coords points="1000,2229 1132,2227 1132,2263 1000,2265"/>
+                    <pc:TextEquiv conf="0.387928924560547">
+                        <pc:Unicode>1784</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:TextEquiv conf="0.792284957885742">
+                    <pc:Unicode>bey Weigel und Schneider 1784</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv conf="0.792626987457275">
+                <pc:Unicode>Frankfurt und Leipzig,
+bey Weigel und Schneider 1784</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:ImageRegion id="region0016" orientation="0.625">
+            <pc:Coords points="37,2504 1488,2520 1475,205 43,202"/>
+        </pc:ImageRegion>
+        <pc:SeparatorRegion id="region0000">
+            <pc:Coords points="152,222 1217,210 1217,204 152,202"/>
+        </pc:SeparatorRegion>
+        <pc:SeparatorRegion id="region0007">
+            <pc:Coords points="463,1350 947,1345 947,1361 463,1366"/>
+        </pc:SeparatorRegion>
+        <pc:SeparatorRegion id="region0008">
+            <pc:Coords points="1433,1418 1452,1418 1439,204 1420,204"/>
+        </pc:SeparatorRegion>
+        <pc:SeparatorRegion id="region0011">
+            <pc:Coords points="286,2100 1030,2092 1031,2110 287,2118"/>
+        </pc:SeparatorRegion>
+        <pc:SeparatorRegion id="region0013">
+            <pc:Coords points="52,2398 40,1348 37,2398"/>
+        </pc:SeparatorRegion>
+        <pc:SeparatorRegion id="region0014">
+            <pc:Coords points="1424,472 1456,472 1477,2446 1445,2447"/>
+        </pc:SeparatorRegion>
+        <pc:SeparatorRegion id="region0015">
+            <pc:Coords points="1426,580 1455,580 1475,2446 1446,2447"/>
+        </pc:SeparatorRegion>
+        <pc:SeparatorRegion id="region0017">
+            <pc:Coords points="1463,683 1482,2519 1488,2520 1477,683"/>
+        </pc:SeparatorRegion>
+        <pc:SeparatorRegion id="region0018">
+            <pc:Coords points="1380,2506 833,2512 1380,2518"/>
+        </pc:SeparatorRegion>
+    </pc:Page>
+</pc:PcGts>

@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:DC="http://purl.org/dc/elements/1.1/" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:mets="http://www.loc.gov/METS/" xmlns:DV="http://dfg-viewer.de/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" xsi:schemaLocation="http://www.loc.gov/mods/v3 https://www.loc.gov/standards/mods/mods-3-7.xsd http://www.loc.gov/mets/ http://www.loc.gov/standards/mets/version111/mets.xsd">
+  <mets:metsHdr CREATEDATE="2018-05-17T16:12:30.035+02:00">
+    <mets:agent OTHERTYPE="SOFTWARE" ROLE="CREATOR" TYPE="OTHER">
+      <mets:name>DFG-Koordinierungsprojekt zur Weiterentwicklung von Verfahren der Optical Character Recognition (OCR-D)</mets:name>
+      <mets:note>OCR-D</mets:note>
+    </mets:agent>
+    <mets:agent TYPE="OTHER" OTHERTYPE="SOFTWARE" ROLE="OTHER" OTHERROLE="preprocessing/optimization/binarization">
+      <mets:name>ocrd-cis-ocropy-binarize v0.1.5</mets:name>
+      <mets:note xmlns:ocrd="https://ocr-d.de" ocrd:option="input-file-grp">OCR-D-IMG</mets:note>
+      <mets:note xmlns:ocrd="https://ocr-d.de" ocrd:option="output-file-grp">OCR-D-BIN</mets:note>
+      <mets:note xmlns:ocrd="https://ocr-d.de" ocrd:option="parameter">{"method": "ocropy", "threshold": 0.5, "grayscale": false, "maxskew": 0.0, "noise_maxsize": 0, "dpi": 0, "level-of-operation": "page"}</mets:note>
+      <mets:note xmlns:ocrd="https://ocr-d.de" ocrd:option="page-id"/>
+    </mets:agent>
+    <mets:agent TYPE="OTHER" OTHERTYPE="SOFTWARE" ROLE="OTHER" OTHERROLE="preprocessing/optimization/cropping">
+      <mets:name>ocrd-tesserocr-crop v0.19.1 (tesseract 5.4.1)</mets:name>
+      <mets:note xmlns:ocrd="https://ocr-d.de" ocrd:option="input-file-grp">OCR-D-BIN</mets:note>
+      <mets:note xmlns:ocrd="https://ocr-d.de" ocrd:option="output-file-grp">OCR-D-CROP</mets:note>
+      <mets:note xmlns:ocrd="https://ocr-d.de" ocrd:option="parameter">{"dpi": 0, "padding": 4}</mets:note>
+      <mets:note xmlns:ocrd="https://ocr-d.de" ocrd:option="page-id"/>
+    </mets:agent>
+    <mets:agent TYPE="OTHER" OTHERTYPE="SOFTWARE" ROLE="OTHER" OTHERROLE="preprocessing/optimization/binarization">
+      <mets:name>ocrd-skimage-binarize v0.1.8</mets:name>
+      <mets:note xmlns:ocrd="https://ocr-d.de" ocrd:option="input-file-grp">OCR-D-CROP</mets:note>
+      <mets:note xmlns:ocrd="https://ocr-d.de" ocrd:option="output-file-grp">OCR-D-BIN2</mets:note>
+      <mets:note xmlns:ocrd="https://ocr-d.de" ocrd:option="parameter">{"method": "li", "level-of-operation": "page", "dpi": 0, "window_size": 301, "k": 0.34}</mets:note>
+      <mets:note xmlns:ocrd="https://ocr-d.de" ocrd:option="page-id"/>
+    </mets:agent>
+    <mets:agent TYPE="OTHER" OTHERTYPE="SOFTWARE" ROLE="OTHER" OTHERROLE="preprocessing/optimization/despeckling">
+      <mets:name>ocrd-skimage-denoise v0.1.8</mets:name>
+      <mets:note xmlns:ocrd="https://ocr-d.de" ocrd:option="input-file-grp">OCR-D-BIN2</mets:note>
+      <mets:note xmlns:ocrd="https://ocr-d.de" ocrd:option="output-file-grp">OCR-D-BIN-DENOISE</mets:note>
+      <mets:note xmlns:ocrd="https://ocr-d.de" ocrd:option="parameter">{"level-of-operation": "page", "dpi": 0, "protect": 0.0, "maxsize": 1.0}</mets:note>
+      <mets:note xmlns:ocrd="https://ocr-d.de" ocrd:option="page-id"/>
+    </mets:agent>
+    <mets:agent TYPE="OTHER" OTHERTYPE="SOFTWARE" ROLE="OTHER" OTHERROLE="preprocessing/optimization/deskewing">
+      <mets:name>ocrd-tesserocr-deskew v0.19.1 (tesseract 5.4.1)</mets:name>
+      <mets:note xmlns:ocrd="https://ocr-d.de" ocrd:option="input-file-grp">OCR-D-BIN-DENOISE</mets:note>
+      <mets:note xmlns:ocrd="https://ocr-d.de" ocrd:option="output-file-grp">OCR-D-BIN-DENOISE-DESKEW</mets:note>
+      <mets:note xmlns:ocrd="https://ocr-d.de" ocrd:option="parameter">{"operation_level": "page", "dpi": 0, "min_orientation_confidence": 1.5}</mets:note>
+      <mets:note xmlns:ocrd="https://ocr-d.de" ocrd:option="page-id"/>
+    </mets:agent>
+    <mets:agent TYPE="OTHER" OTHERTYPE="SOFTWARE" ROLE="OTHER" OTHERROLE="layout/segmentation/region">
+      <mets:name>ocrd-cis-ocropy-segment v0.1.5</mets:name>
+      <mets:note xmlns:ocrd="https://ocr-d.de" ocrd:option="input-file-grp">OCR-D-BIN-DENOISE-DESKEW</mets:note>
+      <mets:note xmlns:ocrd="https://ocr-d.de" ocrd:option="output-file-grp">OCR-D-SEG</mets:note>
+      <mets:note xmlns:ocrd="https://ocr-d.de" ocrd:option="parameter">{"dpi": 0, "level-of-operation": "region", "maxcolseps": 20, "maxseps": 20, "maximages": 10, "csminheight": 4, "hlminwidth": 10, "gap_height": 0.01, "gap_width": 1.5, "overwrite_order": true, "overwrite_separators": true, "overwrite_regions": true, "overwrite_lines": true, "spread": 2.4}</mets:note>
+      <mets:note xmlns:ocrd="https://ocr-d.de" ocrd:option="page-id"/>
+    </mets:agent>
+    <mets:agent TYPE="OTHER" OTHERTYPE="SOFTWARE" ROLE="OTHER" OTHERROLE="preprocessing/optimization/dewarping">
+      <mets:name>ocrd-cis-ocropy-dewarp v0.1.5</mets:name>
+      <mets:note xmlns:ocrd="https://ocr-d.de" ocrd:option="input-file-grp">OCR-D-SEG</mets:note>
+      <mets:note xmlns:ocrd="https://ocr-d.de" ocrd:option="output-file-grp">OCR-D-SEG-LINE-RESEG-DEWARP</mets:note>
+      <mets:note xmlns:ocrd="https://ocr-d.de" ocrd:option="parameter">{"dpi": 0, "range": 4.0, "smoothness": 1.0, "max_neighbour": 0.05}</mets:note>
+      <mets:note xmlns:ocrd="https://ocr-d.de" ocrd:option="page-id"/>
+    </mets:agent>
+    <mets:agent TYPE="OTHER" OTHERTYPE="SOFTWARE" ROLE="OTHER" OTHERROLE="recognition/text-recognition">
+      <mets:name>ocrd-calamari-recognize v1.0.6 (calamari 1.0.7, tensorflow 2.12.1)</mets:name>
+      <mets:note xmlns:ocrd="https://ocr-d.de" ocrd:option="input-file-grp">OCR-D-SEG-LINE-RESEG-DEWARP</mets:note>
+      <mets:note xmlns:ocrd="https://ocr-d.de" ocrd:option="output-file-grp">OCR-D-OCR</mets:note>
+      <mets:note xmlns:ocrd="https://ocr-d.de" ocrd:option="parameter">{"checkpoint_dir": "qurator-gt4histocr-1.0", "voter": "confidence_voter_default_ctc", "textequiv_level": "line", "glyph_conf_cutoff": 0.001}</mets:note>
+      <mets:note xmlns:ocrd="https://ocr-d.de" ocrd:option="page-id"/>
+    </mets:agent>
+    <mets:agent TYPE="OTHER" OTHERTYPE="SOFTWARE" ROLE="OTHER" OTHERROLE="recognition/text-recognition">
+      <mets:name>ocrd-dinglehopper v0.9.7</mets:name>
+      <mets:note xmlns:ocrd="https://ocr-d.de" ocrd:option="input-file-grp">OCR-D-GT-SEG-PAGE,OCR-D-OCR</mets:note>
+      <mets:note xmlns:ocrd="https://ocr-d.de" ocrd:option="output-file-grp">OCR-D-EVAL-SEG-LINE</mets:note>
+      <mets:note xmlns:ocrd="https://ocr-d.de" ocrd:option="parameter">{"textequiv_level": "line", "metrics": true}</mets:note>
+      <mets:note xmlns:ocrd="https://ocr-d.de" ocrd:option="page-id"/>
+    </mets:agent>
+  </mets:metsHdr>
+  <mets:dmdSec ID="dmdSec_0001">
+    <mets:mdWrap MDTYPE="MODS">
+      <mets:xmlData>
+        <mods:mods>
+          <mods:location>
+            <mods:physicalLocation>Staatsbibliothek zu Berlin – Preußischer Kulturbesitz</mods:physicalLocation>
+            <mods:shelfLocator>SBB-PK, Inc 3545</mods:shelfLocator>
+            <mods:url>https://stabikat.de/Record/772599319</mods:url>
+          </mods:location>
+          <mods:originInfo>
+            <mods:place>
+              <mods:placeTerm type="text">Rom</mods:placeTerm>
+            </mods:place>
+            <mods:dateIssued encoding="w3cdtf" keyDate="yes">1500</mods:dateIssued>
+            <mods:publisher>Johann Besicken und Martin von Amsterdam</mods:publisher>
+          </mods:originInfo>
+          <mods:originInfo>
+            <mods:dateCaptured encoding="w3cdtf"/>
+            <mods:edition>[Electronic ed.]</mods:edition>
+          </mods:originInfo>
+          <mods:classification authority="DTA">Gebrauchsliteratur</mods:classification>
+          <mods:classification authority="DTA">Geschichte</mods:classification>
+          <mods:titleInfo>
+            <mods:title>Mirabilia urbis Romae</mods:title>
+            <mods:subTitle/>
+          </mods:titleInfo>
+          <mods:language>
+            <mods:languageTerm authority="iso639-2b" type="code">lat</mods:languageTerm>
+          </mods:language>
+          <mods:relatedItem type="series">
+            <mods:titleInfo>
+              <mods:title/>
+            </mods:titleInfo>
+          </mods:relatedItem>
+          <mods:name type="personal">
+            <mods:role>
+              <mods:roleTerm authority="marcrelator" type="code">aut</mods:roleTerm>
+            </mods:role>
+            <mods:namePart type="family">N.N.</mods:namePart>
+            <mods:namePart type="given">N.N.</mods:namePart>
+            <mods:displayForm>N.N.</mods:displayForm>
+          </mods:name>
+          <mods:physicalDescription>
+            <mods:extent>60 Bl.</mods:extent>
+          </mods:physicalDescription>
+          <mods:extension>
+            <zvdd:zvddWrap xmlns:zvdd="http://zvdd.gdz-cms.de/">
+              <zvdd:titleWord>Mirabilia urbis Romae</zvdd:titleWord>
+            </zvdd:zvddWrap>
+          </mods:extension>
+        </mods:mods>
+      </mets:xmlData>
+    </mets:mdWrap>
+  </mets:dmdSec>
+  <mets:amdSec ID="amdSec_0001">
+    <mets:rightsMD ID="rights_0001">
+      <mets:mdWrap MDTYPE="OTHER" OTHERMDTYPE="DVRIGHTS" MIMETYPE="text/xml">
+        <mets:xmlData>
+          <DV:rights>
+            <DV:owner>Koordinierte Förderinitiative zur Weiterentwicklung von Verfahren für die Optical-Character-Recognition OCR-D</DV:owner>
+            <DV:ownerLogo>https://ocr-d.de/goto/logo</DV:ownerLogo>
+            <DV:ownerSiteURL>http://ocr-d.de/</DV:ownerSiteURL>
+            <DV:ownerContact>mailto:ocrd@bbaw.de</DV:ownerContact>
+          </DV:rights>
+        </mets:xmlData>
+      </mets:mdWrap>
+    </mets:rightsMD>
+    <mets:digiprovMD ID="digiprovMD_0001">
+      <mets:mdWrap MIMETYPE="text/xml" MDTYPE="OTHER" OTHERMDTYPE="DVLINKS">
+        <mets:xmlData>
+          <DV:links>
+            <DV:reference/>
+            <DV:presentation/>
+          </DV:links>
+        </mets:xmlData>
+      </mets:mdWrap>
+    </mets:digiprovMD>
+  </mets:amdSec>
+  <mets:fileSec>
+    <mets:fileGrp USE="OCR-D-GT-SEG-PAGE">
+      <mets:file MIMETYPE="application/vnd.prima.page+xml" ID="OCR-D-GT-SEG-PAGE_0001" GROUPID="OCR-D-IMG_0001">
+        <mets:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="FILE" xlink:href="GT-PAGE/nn_mirabilia_1500_0009.xml"/>
+      </mets:file>
+      <mets:file MIMETYPE="application/vnd.prima.page+xml" ID="OCR-D-GT-SEG-PAGE_0002" GROUPID="OCR-D-IMG_0002">
+        <mets:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="FILE" xlink:href="GT-PAGE/nn_mirabilia_1500_0019.xml"/>
+      </mets:file>
+      <mets:file MIMETYPE="application/vnd.prima.page+xml" ID="OCR-D-GT-SEG-PAGE_0003" GROUPID="OCR-D-IMG_0003">
+        <mets:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="FILE" xlink:href="GT-PAGE/nn_mirabilia_1500_0087.xml"/>
+      </mets:file>
+    </mets:fileGrp>
+    <mets:fileGrp USE="OCR-D-GT-SEG-BLOCK">
+      <mets:file MIMETYPE="application/vnd.prima.page+xml" ID="OCR-D-GT-SEG-BLOCK_0001" GROUPID="OCR-D-IMG_0001">
+        <mets:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="FILE" xlink:href="GT-PAGE/nn_mirabilia_1500_0009.xml"/>
+      </mets:file>
+      <mets:file MIMETYPE="application/vnd.prima.page+xml" ID="OCR-D-GT-SEG-BLOCK_0002" GROUPID="OCR-D-IMG_0002">
+        <mets:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="FILE" xlink:href="GT-PAGE/nn_mirabilia_1500_0019.xml"/>
+      </mets:file>
+      <mets:file MIMETYPE="application/vnd.prima.page+xml" ID="OCR-D-GT-SEG-BLOCK_0003" GROUPID="OCR-D-IMG_0003">
+        <mets:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="FILE" xlink:href="GT-PAGE/nn_mirabilia_1500_0087.xml"/>
+      </mets:file>
+    </mets:fileGrp>
+    <mets:fileGrp USE="OCR-D-GT-SEG-LINE">
+      <mets:file MIMETYPE="application/vnd.prima.page+xml" ID="OCR-D-GT-SEG-LINE_0001" GROUPID="OCR-D-IMG_0001">
+        <mets:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="FILE" xlink:href="GT-PAGE/nn_mirabilia_1500_0009.xml"/>
+      </mets:file>
+      <mets:file MIMETYPE="application/vnd.prima.page+xml" ID="OCR-D-GT-SEG-LINE_0002" GROUPID="OCR-D-IMG_0002">
+        <mets:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="FILE" xlink:href="GT-PAGE/nn_mirabilia_1500_0019.xml"/>
+      </mets:file>
+      <mets:file MIMETYPE="application/vnd.prima.page+xml" ID="OCR-D-GT-SEG-LINE_0003" GROUPID="OCR-D-IMG_0003">
+        <mets:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="FILE" xlink:href="GT-PAGE/nn_mirabilia_1500_0087.xml"/>
+      </mets:file>
+    </mets:fileGrp>
+    <mets:fileGrp USE="OCR-D-IMG">
+      <mets:file MIMETYPE="image/tif" ID="OCR-D-IMG_0001" GROUPID="OCR-D-IMG_0001">
+        <mets:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="FILE" xlink:href="GT-PAGE/nn_mirabilia_1500_0009.tif"/>
+      </mets:file>
+      <mets:file MIMETYPE="image/tif" ID="OCR-D-IMG_0002" GROUPID="OCR-D-IMG_0002">
+        <mets:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="FILE" xlink:href="GT-PAGE/nn_mirabilia_1500_0019.tif"/>
+      </mets:file>
+      <mets:file MIMETYPE="image/tif" ID="OCR-D-IMG_0003" GROUPID="OCR-D-IMG_0003">
+        <mets:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="FILE" xlink:href="GT-PAGE/nn_mirabilia_1500_0087.tif"/>
+      </mets:file>
+    </mets:fileGrp>
+    <mets:fileGrp USE="OCR-D-BIN">
+      <mets:file ID="OCR-D-BIN_0001.IMG-BIN" MIMETYPE="image/png">
+        <mets:FLocat xlink:href="OCR-D-BIN/OCR-D-BIN_0001.IMG-BIN.png" LOCTYPE="OTHER" OTHERLOCTYPE="FILE"/>
+      </mets:file>
+      <mets:file ID="OCR-D-BIN_0001" MIMETYPE="application/vnd.prima.page+xml">
+        <mets:FLocat xlink:href="OCR-D-BIN/OCR-D-BIN_0001.xml" LOCTYPE="OTHER" OTHERLOCTYPE="FILE"/>
+      </mets:file>
+      <mets:file ID="OCR-D-BIN_0002.IMG-BIN" MIMETYPE="image/png">
+        <mets:FLocat xlink:href="OCR-D-BIN/OCR-D-BIN_0002.IMG-BIN.png" LOCTYPE="OTHER" OTHERLOCTYPE="FILE"/>
+      </mets:file>
+      <mets:file ID="OCR-D-BIN_0002" MIMETYPE="application/vnd.prima.page+xml">
+        <mets:FLocat xlink:href="OCR-D-BIN/OCR-D-BIN_0002.xml" LOCTYPE="OTHER" OTHERLOCTYPE="FILE"/>
+      </mets:file>
+      <mets:file ID="OCR-D-BIN_0003.IMG-BIN" MIMETYPE="image/png">
+        <mets:FLocat xlink:href="OCR-D-BIN/OCR-D-BIN_0003.IMG-BIN.png" LOCTYPE="OTHER" OTHERLOCTYPE="FILE"/>
+      </mets:file>
+      <mets:file ID="OCR-D-BIN_0003" MIMETYPE="application/vnd.prima.page+xml">
+        <mets:FLocat xlink:href="OCR-D-BIN/OCR-D-BIN_0003.xml" LOCTYPE="OTHER" OTHERLOCTYPE="FILE"/>
+      </mets:file>
+    </mets:fileGrp>
+    <mets:fileGrp USE="OCR-D-CROP">
+      <mets:file ID="OCR-D-CROP_0001.IMG-CROP" MIMETYPE="image/png">
+        <mets:FLocat xlink:href="OCR-D-CROP/OCR-D-CROP_0001.IMG-CROP.png" LOCTYPE="OTHER" OTHERLOCTYPE="FILE"/>
+      </mets:file>
+      <mets:file ID="OCR-D-CROP_0001" MIMETYPE="application/vnd.prima.page+xml">
+        <mets:FLocat xlink:href="OCR-D-CROP/OCR-D-CROP_0001.xml" LOCTYPE="OTHER" OTHERLOCTYPE="FILE"/>
+      </mets:file>
+      <mets:file ID="OCR-D-CROP_0002.IMG-CROP" MIMETYPE="image/png">
+        <mets:FLocat xlink:href="OCR-D-CROP/OCR-D-CROP_0002.IMG-CROP.png" LOCTYPE="OTHER" OTHERLOCTYPE="FILE"/>
+      </mets:file>
+      <mets:file ID="OCR-D-CROP_0002" MIMETYPE="application/vnd.prima.page+xml">
+        <mets:FLocat xlink:href="OCR-D-CROP/OCR-D-CROP_0002.xml" LOCTYPE="OTHER" OTHERLOCTYPE="FILE"/>
+      </mets:file>
+      <mets:file ID="OCR-D-CROP_0003.IMG-CROP" MIMETYPE="image/png">
+        <mets:FLocat xlink:href="OCR-D-CROP/OCR-D-CROP_0003.IMG-CROP.png" LOCTYPE="OTHER" OTHERLOCTYPE="FILE"/>
+      </mets:file>
+      <mets:file ID="OCR-D-CROP_0003" MIMETYPE="application/vnd.prima.page+xml">
+        <mets:FLocat xlink:href="OCR-D-CROP/OCR-D-CROP_0003.xml" LOCTYPE="OTHER" OTHERLOCTYPE="FILE"/>
+      </mets:file>
+    </mets:fileGrp>
+    <mets:fileGrp USE="OCR-D-BIN2">
+      <mets:file ID="OCR-D-BIN2_0001.IMG-BIN" MIMETYPE="image/png">
+        <mets:FLocat xlink:href="OCR-D-BIN2/OCR-D-BIN2_0001.IMG-BIN.png" LOCTYPE="OTHER" OTHERLOCTYPE="FILE"/>
+      </mets:file>
+      <mets:file ID="OCR-D-BIN2_0001" MIMETYPE="application/vnd.prima.page+xml">
+        <mets:FLocat xlink:href="OCR-D-BIN2/OCR-D-BIN2_0001.xml" LOCTYPE="OTHER" OTHERLOCTYPE="FILE"/>
+      </mets:file>
+      <mets:file ID="OCR-D-BIN2_0002.IMG-BIN" MIMETYPE="image/png">
+        <mets:FLocat xlink:href="OCR-D-BIN2/OCR-D-BIN2_0002.IMG-BIN.png" LOCTYPE="OTHER" OTHERLOCTYPE="FILE"/>
+      </mets:file>
+      <mets:file ID="OCR-D-BIN2_0002" MIMETYPE="application/vnd.prima.page+xml">
+        <mets:FLocat xlink:href="OCR-D-BIN2/OCR-D-BIN2_0002.xml" LOCTYPE="OTHER" OTHERLOCTYPE="FILE"/>
+      </mets:file>
+      <mets:file ID="OCR-D-BIN2_0003.IMG-BIN" MIMETYPE="image/png">
+        <mets:FLocat xlink:href="OCR-D-BIN2/OCR-D-BIN2_0003.IMG-BIN.png" LOCTYPE="OTHER" OTHERLOCTYPE="FILE"/>
+      </mets:file>
+      <mets:file ID="OCR-D-BIN2_0003" MIMETYPE="application/vnd.prima.page+xml">
+        <mets:FLocat xlink:href="OCR-D-BIN2/OCR-D-BIN2_0003.xml" LOCTYPE="OTHER" OTHERLOCTYPE="FILE"/>
+      </mets:file>
+    </mets:fileGrp>
+    <mets:fileGrp USE="OCR-D-BIN-DENOISE">
+      <mets:file ID="OCR-D-BIN-DENOISE_0001.IMG-DEN" MIMETYPE="image/png">
+        <mets:FLocat xlink:href="OCR-D-BIN-DENOISE/OCR-D-BIN-DENOISE_0001.IMG-DEN.png" LOCTYPE="OTHER" OTHERLOCTYPE="FILE"/>
+      </mets:file>
+      <mets:file ID="OCR-D-BIN-DENOISE_0001" MIMETYPE="application/vnd.prima.page+xml">
+        <mets:FLocat xlink:href="OCR-D-BIN-DENOISE/OCR-D-BIN-DENOISE_0001.xml" LOCTYPE="OTHER" OTHERLOCTYPE="FILE"/>
+      </mets:file>
+      <mets:file ID="OCR-D-BIN-DENOISE_0002.IMG-DEN" MIMETYPE="image/png">
+        <mets:FLocat xlink:href="OCR-D-BIN-DENOISE/OCR-D-BIN-DENOISE_0002.IMG-DEN.png" LOCTYPE="OTHER" OTHERLOCTYPE="FILE"/>
+      </mets:file>
+      <mets:file ID="OCR-D-BIN-DENOISE_0002" MIMETYPE="application/vnd.prima.page+xml">
+        <mets:FLocat xlink:href="OCR-D-BIN-DENOISE/OCR-D-BIN-DENOISE_0002.xml" LOCTYPE="OTHER" OTHERLOCTYPE="FILE"/>
+      </mets:file>
+      <mets:file ID="OCR-D-BIN-DENOISE_0003.IMG-DEN" MIMETYPE="image/png">
+        <mets:FLocat xlink:href="OCR-D-BIN-DENOISE/OCR-D-BIN-DENOISE_0003.IMG-DEN.png" LOCTYPE="OTHER" OTHERLOCTYPE="FILE"/>
+      </mets:file>
+      <mets:file ID="OCR-D-BIN-DENOISE_0003" MIMETYPE="application/vnd.prima.page+xml">
+        <mets:FLocat xlink:href="OCR-D-BIN-DENOISE/OCR-D-BIN-DENOISE_0003.xml" LOCTYPE="OTHER" OTHERLOCTYPE="FILE"/>
+      </mets:file>
+    </mets:fileGrp>
+    <mets:fileGrp USE="OCR-D-BIN-DENOISE-DESKEW">
+      <mets:file ID="OCR-D-BIN-DENOISE-DESKEW_0001.IMG-DESKEW" MIMETYPE="image/png">
+        <mets:FLocat xlink:href="OCR-D-BIN-DENOISE-DESKEW/OCR-D-BIN-DENOISE-DESKEW_0001.IMG-DESKEW.png" LOCTYPE="OTHER" OTHERLOCTYPE="FILE"/>
+      </mets:file>
+      <mets:file ID="OCR-D-BIN-DENOISE-DESKEW_0001" MIMETYPE="application/vnd.prima.page+xml">
+        <mets:FLocat xlink:href="OCR-D-BIN-DENOISE-DESKEW/OCR-D-BIN-DENOISE-DESKEW_0001.xml" LOCTYPE="OTHER" OTHERLOCTYPE="FILE"/>
+      </mets:file>
+      <mets:file ID="OCR-D-BIN-DENOISE-DESKEW_0002.IMG-DESKEW" MIMETYPE="image/png">
+        <mets:FLocat xlink:href="OCR-D-BIN-DENOISE-DESKEW/OCR-D-BIN-DENOISE-DESKEW_0002.IMG-DESKEW.png" LOCTYPE="OTHER" OTHERLOCTYPE="FILE"/>
+      </mets:file>
+      <mets:file ID="OCR-D-BIN-DENOISE-DESKEW_0002" MIMETYPE="application/vnd.prima.page+xml">
+        <mets:FLocat xlink:href="OCR-D-BIN-DENOISE-DESKEW/OCR-D-BIN-DENOISE-DESKEW_0002.xml" LOCTYPE="OTHER" OTHERLOCTYPE="FILE"/>
+      </mets:file>
+      <mets:file ID="OCR-D-BIN-DENOISE-DESKEW_0003.IMG-DESKEW" MIMETYPE="image/png">
+        <mets:FLocat xlink:href="OCR-D-BIN-DENOISE-DESKEW/OCR-D-BIN-DENOISE-DESKEW_0003.IMG-DESKEW.png" LOCTYPE="OTHER" OTHERLOCTYPE="FILE"/>
+      </mets:file>
+      <mets:file ID="OCR-D-BIN-DENOISE-DESKEW_0003" MIMETYPE="application/vnd.prima.page+xml">
+        <mets:FLocat xlink:href="OCR-D-BIN-DENOISE-DESKEW/OCR-D-BIN-DENOISE-DESKEW_0003.xml" LOCTYPE="OTHER" OTHERLOCTYPE="FILE"/>
+      </mets:file>
+    </mets:fileGrp>
+    <mets:fileGrp USE="OCR-D-SEG">
+      <mets:file ID="OCR-D-SEG_0001" MIMETYPE="application/vnd.prima.page+xml">
+        <mets:FLocat xlink:href="OCR-D-SEG/OCR-D-SEG_0001.xml" LOCTYPE="OTHER" OTHERLOCTYPE="FILE"/>
+      </mets:file>
+      <mets:file ID="OCR-D-SEG_0002" MIMETYPE="application/vnd.prima.page+xml">
+        <mets:FLocat xlink:href="OCR-D-SEG/OCR-D-SEG_0002.xml" LOCTYPE="OTHER" OTHERLOCTYPE="FILE"/>
+      </mets:file>
+      <mets:file ID="OCR-D-SEG_0003" MIMETYPE="application/vnd.prima.page+xml">
+        <mets:FLocat xlink:href="OCR-D-SEG/OCR-D-SEG_0003.xml" LOCTYPE="OTHER" OTHERLOCTYPE="FILE"/>
+      </mets:file>
+    </mets:fileGrp>
+    <mets:fileGrp USE="OCR-D-SEG-LINE-RESEG-DEWARP">
+      <mets:file ID="OCR-D-SEG-LINE-RESEG-DEWARP_0001" MIMETYPE="application/vnd.prima.page+xml">
+        <mets:FLocat xlink:href="OCR-D-SEG-LINE-RESEG-DEWARP/OCR-D-SEG-LINE-RESEG-DEWARP_0001.xml" LOCTYPE="OTHER" OTHERLOCTYPE="FILE"/>
+      </mets:file>
+      <mets:file ID="OCR-D-SEG-LINE-RESEG-DEWARP_0002" MIMETYPE="application/vnd.prima.page+xml">
+        <mets:FLocat xlink:href="OCR-D-SEG-LINE-RESEG-DEWARP/OCR-D-SEG-LINE-RESEG-DEWARP_0002.xml" LOCTYPE="OTHER" OTHERLOCTYPE="FILE"/>
+      </mets:file>
+      <mets:file ID="OCR-D-SEG-LINE-RESEG-DEWARP_0003" MIMETYPE="application/vnd.prima.page+xml">
+        <mets:FLocat xlink:href="OCR-D-SEG-LINE-RESEG-DEWARP/OCR-D-SEG-LINE-RESEG-DEWARP_0003.xml" LOCTYPE="OTHER" OTHERLOCTYPE="FILE"/>
+      </mets:file>
+    </mets:fileGrp>
+    <mets:fileGrp USE="OCR-D-OCR">
+      <mets:file ID="OCR-D-OCR_0001" MIMETYPE="application/vnd.prima.page+xml">
+        <mets:FLocat xlink:href="OCR-D-OCR/OCR-D-OCR_0001.xml" LOCTYPE="OTHER" OTHERLOCTYPE="FILE"/>
+      </mets:file>
+      <mets:file ID="OCR-D-OCR_0002" MIMETYPE="application/vnd.prima.page+xml">
+        <mets:FLocat xlink:href="OCR-D-OCR/OCR-D-OCR_0002.xml" LOCTYPE="OTHER" OTHERLOCTYPE="FILE"/>
+      </mets:file>
+      <mets:file ID="OCR-D-OCR_0003" MIMETYPE="application/vnd.prima.page+xml">
+        <mets:FLocat xlink:href="OCR-D-OCR/OCR-D-OCR_0003.xml" LOCTYPE="OTHER" OTHERLOCTYPE="FILE"/>
+      </mets:file>
+    </mets:fileGrp>
+    <mets:fileGrp USE="OCR-D-EVAL-SEG-LINE">
+      <mets:file ID="OCR-D-EVAL-SEG-LINE_0001.html" MIMETYPE="text/html">
+        <mets:FLocat xlink:href="OCR-D-EVAL-SEG-LINE/OCR-D-EVAL-SEG-LINE_0001.html" LOCTYPE="OTHER" OTHERLOCTYPE="FILE"/>
+      </mets:file>
+      <mets:file ID="OCR-D-EVAL-SEG-LINE_0001.json" MIMETYPE="application/json">
+        <mets:FLocat xlink:href="OCR-D-EVAL-SEG-LINE/OCR-D-EVAL-SEG-LINE_0001.json" LOCTYPE="OTHER" OTHERLOCTYPE="FILE"/>
+      </mets:file>
+      <mets:file ID="OCR-D-EVAL-SEG-LINE_0002.html" MIMETYPE="text/html">
+        <mets:FLocat xlink:href="OCR-D-EVAL-SEG-LINE/OCR-D-EVAL-SEG-LINE_0002.html" LOCTYPE="OTHER" OTHERLOCTYPE="FILE"/>
+      </mets:file>
+      <mets:file ID="OCR-D-EVAL-SEG-LINE_0002.json" MIMETYPE="application/json">
+        <mets:FLocat xlink:href="OCR-D-EVAL-SEG-LINE/OCR-D-EVAL-SEG-LINE_0002.json" LOCTYPE="OTHER" OTHERLOCTYPE="FILE"/>
+      </mets:file>
+      <mets:file ID="OCR-D-EVAL-SEG-LINE_0003.html" MIMETYPE="text/html">
+        <mets:FLocat xlink:href="OCR-D-EVAL-SEG-LINE/OCR-D-EVAL-SEG-LINE_0003.html" LOCTYPE="OTHER" OTHERLOCTYPE="FILE"/>
+      </mets:file>
+      <mets:file ID="OCR-D-EVAL-SEG-LINE_0003.json" MIMETYPE="application/json">
+        <mets:FLocat xlink:href="OCR-D-EVAL-SEG-LINE/OCR-D-EVAL-SEG-LINE_0003.json" LOCTYPE="OTHER" OTHERLOCTYPE="FILE"/>
+      </mets:file>
+    </mets:fileGrp>
+  </mets:fileSec>
+  <mets:structMap TYPE="LOGICAL">
+    <mets:div TYPE="Monograph" DMDID="dmdSec_0001" ADMID="amdSec_0001" ID="loc_0001">
+      <mets:div ID="loc_d1e9" TYPE="Chapter" LABEL=""/>
+    </mets:div>
+  </mets:structMap>
+  <mets:structMap TYPE="PHYSICAL">
+    <mets:div TYPE="physSequence" ID="phys_0000">
+      <mets:div TYPE="page" ORDER="1" ID="phys_0001">
+        <mets:fptr FILEID="OCR-D-GT-SEG-PAGE_0001"/>
+        <mets:fptr FILEID="OCR-D-GT-SEG-BLOCK_0001"/>
+        <mets:fptr FILEID="OCR-D-GT-SEG-LINE_0001"/>
+        <mets:fptr FILEID="OCR-D-IMG_0001"/>
+        <mets:fptr FILEID="OCR-D-BIN_0001.IMG-BIN"/>
+        <mets:fptr FILEID="OCR-D-BIN_0001"/>
+        <mets:fptr FILEID="OCR-D-CROP_0001.IMG-CROP"/>
+        <mets:fptr FILEID="OCR-D-CROP_0001"/>
+        <mets:fptr FILEID="OCR-D-BIN2_0001.IMG-BIN"/>
+        <mets:fptr FILEID="OCR-D-BIN2_0001"/>
+        <mets:fptr FILEID="OCR-D-BIN-DENOISE_0001.IMG-DEN"/>
+        <mets:fptr FILEID="OCR-D-BIN-DENOISE_0001"/>
+        <mets:fptr FILEID="OCR-D-BIN-DENOISE-DESKEW_0001.IMG-DESKEW"/>
+        <mets:fptr FILEID="OCR-D-BIN-DENOISE-DESKEW_0001"/>
+        <mets:fptr FILEID="OCR-D-SEG_0001"/>
+        <mets:fptr FILEID="OCR-D-SEG-LINE-RESEG-DEWARP_0001"/>
+        <mets:fptr FILEID="OCR-D-OCR_0001"/>
+        <mets:fptr FILEID="OCR-D-EVAL-SEG-LINE_0001.html"/>
+        <mets:fptr FILEID="OCR-D-EVAL-SEG-LINE_0001.json"/>
+      </mets:div>
+      <mets:div TYPE="page" ORDER="2" ID="phys_0002">
+        <mets:fptr FILEID="OCR-D-GT-SEG-PAGE_0002"/>
+        <mets:fptr FILEID="OCR-D-GT-SEG-BLOCK_0002"/>
+        <mets:fptr FILEID="OCR-D-GT-SEG-LINE_0002"/>
+        <mets:fptr FILEID="OCR-D-IMG_0002"/>
+        <mets:fptr FILEID="OCR-D-BIN_0002.IMG-BIN"/>
+        <mets:fptr FILEID="OCR-D-BIN_0002"/>
+        <mets:fptr FILEID="OCR-D-CROP_0002.IMG-CROP"/>
+        <mets:fptr FILEID="OCR-D-CROP_0002"/>
+        <mets:fptr FILEID="OCR-D-BIN2_0002.IMG-BIN"/>
+        <mets:fptr FILEID="OCR-D-BIN2_0002"/>
+        <mets:fptr FILEID="OCR-D-BIN-DENOISE_0002.IMG-DEN"/>
+        <mets:fptr FILEID="OCR-D-BIN-DENOISE_0002"/>
+        <mets:fptr FILEID="OCR-D-BIN-DENOISE-DESKEW_0002.IMG-DESKEW"/>
+        <mets:fptr FILEID="OCR-D-BIN-DENOISE-DESKEW_0002"/>
+        <mets:fptr FILEID="OCR-D-SEG_0002"/>
+        <mets:fptr FILEID="OCR-D-SEG-LINE-RESEG-DEWARP_0002"/>
+        <mets:fptr FILEID="OCR-D-OCR_0002"/>
+        <mets:fptr FILEID="OCR-D-EVAL-SEG-LINE_0002.html"/>
+        <mets:fptr FILEID="OCR-D-EVAL-SEG-LINE_0002.json"/>
+      </mets:div>
+      <mets:div TYPE="page" ORDER="3" ID="phys_0003">
+        <mets:fptr FILEID="OCR-D-GT-SEG-PAGE_0003"/>
+        <mets:fptr FILEID="OCR-D-GT-SEG-BLOCK_0003"/>
+        <mets:fptr FILEID="OCR-D-GT-SEG-LINE_0003"/>
+        <mets:fptr FILEID="OCR-D-IMG_0003"/>
+        <mets:fptr FILEID="OCR-D-BIN_0003.IMG-BIN"/>
+        <mets:fptr FILEID="OCR-D-BIN_0003"/>
+        <mets:fptr FILEID="OCR-D-CROP_0003.IMG-CROP"/>
+        <mets:fptr FILEID="OCR-D-CROP_0003"/>
+        <mets:fptr FILEID="OCR-D-BIN2_0003.IMG-BIN"/>
+        <mets:fptr FILEID="OCR-D-BIN2_0003"/>
+        <mets:fptr FILEID="OCR-D-BIN-DENOISE_0003.IMG-DEN"/>
+        <mets:fptr FILEID="OCR-D-BIN-DENOISE_0003"/>
+        <mets:fptr FILEID="OCR-D-BIN-DENOISE-DESKEW_0003.IMG-DESKEW"/>
+        <mets:fptr FILEID="OCR-D-BIN-DENOISE-DESKEW_0003"/>
+        <mets:fptr FILEID="OCR-D-SEG_0003"/>
+        <mets:fptr FILEID="OCR-D-SEG-LINE-RESEG-DEWARP_0003"/>
+        <mets:fptr FILEID="OCR-D-OCR_0003"/>
+        <mets:fptr FILEID="OCR-D-EVAL-SEG-LINE_0003.html"/>
+        <mets:fptr FILEID="OCR-D-EVAL-SEG-LINE_0003.json"/>
+      </mets:div>
+    </mets:div>
+  </mets:structMap>
+  <mets:structLink>
+    <mets:smLink xlink:from="loc_0001" xlink:to="phys_0000"/>
+    <mets:smLink xlink:from="loc_d1e9" xlink:to="phys_0000"/>
+    <mets:smLink xlink:from="loc_d1e9" xlink:to="phys_0001"/>
+    <mets:smLink xlink:from="loc_d1e9" xlink:to="phys_0002"/>
+  </mets:structLink>
+</mets:mets>

@@ -12,8 +12,9 @@ WORKSPACES_ROOT="$SCRIPT_DIR/workspaces"
 WORKFLOWS_ROOT="$SCRIPT_DIR/workflows"
 
 NF_PATH_REPORTS="$SCRIPT_DIR/nf_reports"
-NF_PATH_DEFAULT_WF="$WORKFLOWS_ROOT/default_workflow.nf"
+NF_PATH_OPERANDI_WF="$WORKFLOWS_ROOT/operandi_workflow.nf"
 NF_PATH_ODEM_WF="$WORKFLOWS_ROOT/odem_workflow.nf"
+NF_PATH_SBB_WF="$WORKFLOWS_ROOT/sbb_workflow.nf"
 NF_PATH_DINGLEHOPPER_WF="$WORKFLOWS_ROOT/dinglehopper.nf"
 
 function run_nf_workflow() {
@@ -21,7 +22,7 @@ function run_nf_workflow() {
 	# $2 - workspace dir path
 	# $3 - mets path
 	# $4 - input file group
-	REPORT_PATH="$NF_PATH_REPORTS/$(basename $1 .nf)/$(basename $2)"
+	REPORT_PATH="$NF_PATH_REPORTS/$(basename $1 .nf)/$(basename $2).html"
 	echo "Running nextflow workflow: $1"
 	echo "Workspace dir: $2"
 	echo "Input file grp: $4"

@@ -2,8 +2,9 @@ from json import dumps, load
 from pathlib import Path
 
 script_dir = Path(__file__).resolve().parent
-default_workflow_results_path = Path(f"{script_dir}/results_default_workflow")
 odem_workflow_results_path = Path(f"{script_dir}/results_odem_workflow")
+operandi_workflow_results_path = Path(f"{script_dir}/results_operandi_workflow")
+sbb_workflow_results_path = Path(f"{script_dir}/results_sbb_workflow")
 
 summarized_results = {}
 
@@ -26,8 +27,9 @@ def fill_summarized_results(path: Path, wf_name: str):
             summarized_results[wf_name][ws_name] = ws_json
     summarized_results[wf_name] = dict(sorted(summarized_results[wf_name].items()))
 
-fill_summarized_results(default_workflow_results_path, "default_workflow.nf")
 fill_summarized_results(odem_workflow_results_path, "odem_workflow.nf")
+fill_summarized_results(operandi_workflow_results_path, "operandi_workflow.nf")
+fill_summarized_results(sbb_workflow_results_path, "sbb_workflow.nf")
 
 with open('summarized_results.json', 'w') as results_file: 
      results_file.write(dumps(summarized_results, indent=4))

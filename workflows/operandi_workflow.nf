@@ -125,7 +125,7 @@ process ocrd_cis_ocropy_segment_5 {
 
     script:
         """
-        ${params.docker_command} ocrd-cis-ocropy-segment -m ${mets_file} -I ${input_file_grp} -O ${output_file_grp}
+        ${params.docker_command} ocrd-cis-ocropy-segment -m ${mets_file} -I ${input_file_grp} -O ${output_file_grp} -p '{"level-of-operation": "page"}'
         """
 }
 

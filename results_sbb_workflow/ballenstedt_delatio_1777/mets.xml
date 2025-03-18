@@ -10,7 +10,7 @@
       <mets:name>ocrd-tesserocr-recognize v0.19.1 (tesseract 5.4.1)</mets:name>
       <mets:note xmlns:ocrd="https://ocr-d.de" ocrd:option="input-file-grp">OCR-D-IMG</mets:note>
       <mets:note xmlns:ocrd="https://ocr-d.de" ocrd:option="output-file-grp">OCR-D-OCR</mets:note>
-      <mets:note xmlns:ocrd="https://ocr-d.de" ocrd:option="parameter">{"dpi": 0, "padding": 0, "segmentation_level": "word", "textequiv_level": "word", "overwrite_segments": false, "overwrite_text": true, "shrink_polygons": false, "block_polygons": false, "find_tables": true, "find_staves": false, "sparse_text": false, "raw_lines": false, "char_whitelist": "", "char_blacklist": "", "char_unblacklist": "", "tesseract_parameters": {}, "xpath_parameters": {}, "xpath_model": {}, "auto_model": false, "oem": "DEFAULT"}</mets:note>
+      <mets:note xmlns:ocrd="https://ocr-d.de" ocrd:option="parameter">{"segmentation_level": "region", "textequiv_level": "word", "find_tables": true, "model": "deu", "dpi": 0, "padding": 0, "overwrite_segments": false, "overwrite_text": true, "shrink_polygons": false, "block_polygons": false, "find_staves": false, "sparse_text": false, "raw_lines": false, "char_whitelist": "", "char_blacklist": "", "char_unblacklist": "", "tesseract_parameters": {}, "xpath_parameters": {}, "xpath_model": {}, "auto_model": false, "oem": "DEFAULT"}</mets:note>
       <mets:note xmlns:ocrd="https://ocr-d.de" ocrd:option="page-id"/>
     </mets:agent>
     <mets:agent TYPE="OTHER" OTHERTYPE="SOFTWARE" ROLE="OTHER" OTHERROLE="recognition/text-recognition">
@@ -226,11 +226,20 @@
       </mets:file>
     </mets:fileGrp>
     <mets:fileGrp USE="OCR-D-OCR">
+      <mets:file ID="OCR-D-OCR_00005.IMG-BIN" MIMETYPE="image/png">
+        <mets:FLocat xlink:href="OCR-D-OCR/OCR-D-OCR_00005.IMG-BIN.png" LOCTYPE="OTHER" OTHERLOCTYPE="FILE"/>
+      </mets:file>
       <mets:file ID="OCR-D-OCR_00005" MIMETYPE="application/vnd.prima.page+xml">
         <mets:FLocat xlink:href="OCR-D-OCR/OCR-D-OCR_00005.xml" LOCTYPE="OTHER" OTHERLOCTYPE="FILE"/>
       </mets:file>
+      <mets:file ID="OCR-D-OCR_00003.IMG-BIN" MIMETYPE="image/png">
+        <mets:FLocat xlink:href="OCR-D-OCR/OCR-D-OCR_00003.IMG-BIN.png" LOCTYPE="OTHER" OTHERLOCTYPE="FILE"/>
+      </mets:file>
       <mets:file ID="OCR-D-OCR_00003" MIMETYPE="application/vnd.prima.page+xml">
         <mets:FLocat xlink:href="OCR-D-OCR/OCR-D-OCR_00003.xml" LOCTYPE="OTHER" OTHERLOCTYPE="FILE"/>
+      </mets:file>
+      <mets:file ID="OCR-D-OCR_00010.IMG-BIN" MIMETYPE="image/png">
+        <mets:FLocat xlink:href="OCR-D-OCR/OCR-D-OCR_00010.IMG-BIN.png" LOCTYPE="OTHER" OTHERLOCTYPE="FILE"/>
       </mets:file>
       <mets:file ID="OCR-D-OCR_00010" MIMETYPE="application/vnd.prima.page+xml">
         <mets:FLocat xlink:href="OCR-D-OCR/OCR-D-OCR_00010.xml" LOCTYPE="OTHER" OTHERLOCTYPE="FILE"/>
@@ -269,6 +278,7 @@
         <mets:fptr FILEID="OCR-D-GT-SEG-PAGE_00005"/>
         <mets:fptr FILEID="OCR-D-GT-SEG-BLOCK_00005"/>
         <mets:fptr FILEID="OCR-D-GT-SEG-LINE_00005"/>
+        <mets:fptr FILEID="OCR-D-OCR_00005.IMG-BIN"/>
         <mets:fptr FILEID="OCR-D-OCR_00005"/>
         <mets:fptr FILEID="OCR-D-EVAL-SEG-LINE_00005.html"/>
         <mets:fptr FILEID="OCR-D-EVAL-SEG-LINE_00005.json"/>
@@ -278,6 +288,7 @@
         <mets:fptr FILEID="OCR-D-GT-SEG-PAGE_00003"/>
         <mets:fptr FILEID="OCR-D-GT-SEG-BLOCK_00003"/>
         <mets:fptr FILEID="OCR-D-GT-SEG-LINE_00003"/>
+        <mets:fptr FILEID="OCR-D-OCR_00003.IMG-BIN"/>
         <mets:fptr FILEID="OCR-D-OCR_00003"/>
         <mets:fptr FILEID="OCR-D-EVAL-SEG-LINE_00003.html"/>
         <mets:fptr FILEID="OCR-D-EVAL-SEG-LINE_00003.json"/>
@@ -287,6 +298,7 @@
         <mets:fptr FILEID="OCR-D-GT-SEG-PAGE_00010"/>
         <mets:fptr FILEID="OCR-D-GT-SEG-BLOCK_00010"/>
         <mets:fptr FILEID="OCR-D-GT-SEG-LINE_00010"/>
+        <mets:fptr FILEID="OCR-D-OCR_00010.IMG-BIN"/>
         <mets:fptr FILEID="OCR-D-OCR_00010"/>
         <mets:fptr FILEID="OCR-D-EVAL-SEG-LINE_00010.html"/>
         <mets:fptr FILEID="OCR-D-EVAL-SEG-LINE_00010.json"/>

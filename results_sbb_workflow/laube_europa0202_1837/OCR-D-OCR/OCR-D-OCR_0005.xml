@@ -2,19 +2,20 @@
 <pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd" pcGtsId="OCR-D-OCR_0005">
     <pc:Metadata>
         <pc:Creator>OCR-D/core 2.71.0</pc:Creator>
-        <pc:Created>2025-03-14T14:23:31.801465</pc:Created>
-        <pc:LastChange>2025-03-14T14:23:31.801465</pc:LastChange>
+        <pc:Created>2025-03-18T17:46:32.077095</pc:Created>
+        <pc:LastChange>2025-03-18T17:46:32.077095</pc:LastChange>
         <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-recognize">
             <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="region" type="segmentation_level"/>
+                <pc:Label value="word" type="textequiv_level"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="deu" type="model"/>
                 <pc:Label value="0" type="dpi"/>
                 <pc:Label value="0" type="padding"/>
-                <pc:Label value="word" type="segmentation_level"/>
-                <pc:Label value="word" type="textequiv_level"/>
                 <pc:Label value="False" type="overwrite_segments"/>
                 <pc:Label value="True" type="overwrite_text"/>
                 <pc:Label value="False" type="shrink_polygons"/>
                 <pc:Label value="False" type="block_polygons"/>
-                <pc:Label value="True" type="find_tables"/>
                 <pc:Label value="False" type="find_staves"/>
                 <pc:Label value="False" type="sparse_text"/>
                 <pc:Label value="False" type="raw_lines"/>
@@ -33,5 +34,98 @@
             </pc:Labels>
         </pc:MetadataItem>
     </pc:Metadata>
-    <pc:Page imageFilename="GT-PAGE/laube_europa0202_1837_0310.jpg" imageWidth="1280" imageHeight="2083"/>
+    <pc:Page imageFilename="GT-PAGE/laube_europa0202_1837_0310.jpg" imageWidth="1280" imageHeight="2083">
+        <pc:AlternativeImage filename="OCR-D-OCR/OCR-D-OCR_0005.IMG-BIN.png" comments=",binarized,clipped"/>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region0000"/>
+                <pc:RegionRefIndexed index="1" regionRef="region0001"/>
+                <pc:RegionRefIndexed index="2" regionRef="region0002"/>
+                <pc:RegionRefIndexed index="3" regionRef="region0003"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region0001" orientation="1.367526601798204" readingDirection="left-to-right" textLineOrder="top-to-bottom">
+            <pc:Coords points="1112,1853 1255,1853 1255,2083 1112,2083"/>
+            <pc:TextLine id="region0001_line0000">
+                <pc:Coords points="1127,1853 1141,1853 1141,1878 1127,1878"/>
+                <pc:Word id="region0001_line0000_word0000">
+                    <pc:Coords points="1127,1853 1141,1853 1141,1878 1127,1878"/>
+                    <pc:TextEquiv conf="0.266466445922852">
+                        <pc:Unicode>&gt;</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:TextEquiv conf="0.266466445922852">
+                    <pc:Unicode>&gt;</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0001_line0001">
+                <pc:Coords points="1112,1865 1255,1865 1255,2083 1112,2083"/>
+                <pc:Word id="region0001_line0001_word0000">
+                    <pc:Coords points="1112,1865 1255,1865 1255,2083 1112,2083"/>
+                    <pc:TextEquiv conf="0.">
+                        <pc:Unicode>*</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:TextEquiv conf="1.">
+                    <pc:Unicode>*</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0001_line0002">
+                <pc:Coords points="1140,2065 1149,2065 1149,2083 1140,2083"/>
+                <pc:Word id="region0001_line0002_word0000">
+                    <pc:Coords points="1140,2065 1149,2065 1149,2083 1140,2083"/>
+                    <pc:TextEquiv conf="0.256856842041016">
+                        <pc:Unicode>NM</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:TextEquiv conf="0.256856842041016">
+                    <pc:Unicode>NM</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv conf="0.507774429321289">
+                <pc:Unicode>&gt;
+*
+NM</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0002" orientation="1.367526601798204" readingDirection="left-to-right" textLineOrder="top-to-bottom">
+            <pc:Coords points="993,2022 1105,2022 1105,2045 993,2045"/>
+            <pc:TextLine id="region0002_line0000">
+                <pc:Coords points="993,2022 1105,2022 1105,2045 993,2045"/>
+                <pc:Word id="region0002_line0000_word0000">
+                    <pc:Coords points="993,2022 1105,2022 1105,2045 993,2045"/>
+                    <pc:TextEquiv conf="0.917941741943359">
+                        <pc:Unicode>Digitalisiert</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:TextEquiv conf="0.917941741943359">
+                    <pc:Unicode>Digitalisiert</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv conf="0.917941741943359">
+                <pc:Unicode>Digitalisiert</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0003" orientation="1.367526601798204" readingDirection="left-to-right" textLineOrder="top-to-bottom">
+            <pc:Coords points="1002,1915 1040,1915 1040,1954 1002,1954"/>
+            <pc:TextLine id="region0003_line0000">
+                <pc:Coords points="1002,1915 1040,1915 1040,1954 1002,1954"/>
+                <pc:Word id="region0003_line0000_word0000">
+                    <pc:Coords points="1002,1915 1040,1915 1040,1954 1002,1954"/>
+                    <pc:TextEquiv conf="0.">
+                        <pc:Unicode>R</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:TextEquiv conf="1.">
+                    <pc:Unicode>R</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv conf="1.">
+                <pc:Unicode>R</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:ImageRegion id="region0000" orientation="1.367526601798204">
+            <pc:Coords points="0,0 1165,0 1165,2083 0,2083"/>
+        </pc:ImageRegion>
+    </pc:Page>
 </pc:PcGts>

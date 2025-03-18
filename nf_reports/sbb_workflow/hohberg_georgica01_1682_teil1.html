@@ -18,11 +18,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Nextflow workflow report for run id [hungry_tesla]">
+  <meta name="description" content="Nextflow workflow report for run id [big_lamport]">
   <meta name="author" content="Paolo Di Tommaso, Phil Ewels">
   <link rel="icon" type="image/png" href="https://www.nextflow.io/img/favicon.png" />
 
-  <title>[hungry_tesla] Nextflow Workflow Report</title>
+  <title>[big_lamport] Nextflow Workflow Report</title>
 
   <style type="text/css">
   /*!
@@ -137,7 +137,7 @@ table.DTCR_clonedTable.dataTable{position:absolute !important;background-color:r
         <li class="nav-item"><a class="nav-link" href="#tasks">Tasks</a></li>
       </ul>
       <span class="navbar-text">
-        [hungry_tesla]
+        [big_lamport]
       </span>
     </div>
   </nav>
@@ -146,7 +146,7 @@ table.DTCR_clonedTable.dataTable{position:absolute !important;background-color:r
     <div class="container">
 
       <h1 class="display-3">Nextflow workflow report</h1>
-      <h2 class="text-muted mb-4"><samp>[hungry_tesla]</samp> </h2>
+      <h2 class="text-muted mb-4"><samp>[big_lamport]</samp> </h2>
 
       
           <div class="alert alert-success mb-4">
@@ -157,8 +157,8 @@ table.DTCR_clonedTable.dataTable{position:absolute !important;background-color:r
       <dl>
         <dt>Run times</dt>
         <dd>
-          <span id="workflow_start">14-Mar-2025 15:22:32</span> - <span id="workflow_complete">14-Mar-2025 15:22:34</span>
-          (<span id="completed_fromnow"></span>duration: <strong>2.8s</strong>)
+          <span id="workflow_start">18-Mar-2025 18:44:22</span> - <span id="workflow_complete">18-Mar-2025 18:44:35</span>
+          (<span id="completed_fromnow"></span>duration: <strong>12.8s</strong>)
         </dd>
 
         <dl>
@@ -194,11 +194,11 @@ table.DTCR_clonedTable.dataTable{position:absolute !important;background-color:r
 
         
           <dt class="col-sm-3">Script ID</dt>
-          <dd class="col-sm-9"><code>e68dfa3b6ce6b6f77197e25c54e9aee5</code></dd>
+          <dd class="col-sm-9"><code>097da3b112cbc689f489ed7ea3cc9d7d</code></dd>
         
 
         <dt class="col-sm-3">Workflow session</dt>
-        <dd class="col-sm-9"><code>b6d7353e-ecf2-4425-bb30-f868cc5daa52</code></dd>
+        <dd class="col-sm-9"><code>177bddcb-7180-4dbf-a387-35a8a5a7bddc</code></dd>
 
         
 
@@ -1030,7 +1030,7 @@ $(function() {
 
   // Nextflow report data
   window.data = { "trace":[
-{"task_id":"1","hash":"43\/9d76de","native_id":"1053931","process":"ocrd_tesserocr_recognize_0","module":"-","container":"-","tag":"-","name":"ocrd_tesserocr_recognize_0","status":"COMPLETED","exit":"0","submit":"1741962153033","start":"1741962153123","complete":"1741962154782","duration":"1749","realtime":"1703","%cpu":"1.2","%mem":"0.1","rss":"29941760","vmem":"2053943296","peak_rss":"29941760","peak_vmem":"2120265728","rchar":"96110","wchar":"4044","syscr":"258","syscw":"26","read_bytes":"0","write_bytes":"0","attempt":"1","workdir":"\/home\/mm\/Desktop\/ocrd_accuracy_benchmarks2\/work\/43\/9d76de954affdd69083a892e7af69f","script":"\n        docker run --rm -u $(id -u) -v \/home\/mm\/Desktop\/ocrd_accuracy_benchmarks2\/workspaces\/hohberg_georgica01_1682_teil1:\/data -v ~\/ocrd_models\/ocrd-resources:\/usr\/local\/share\/ocrd-resources -w \/data -- ocrd\/all:latest ocrd-tesserocr-recognize -m mets.xml -I OCR-D-IMG -O OCR-D-OCR\n        ","scratch":"-","queue":"-","cpus":"1","memory":"-","disk":"-","time":"-","env":"-","error_action":"-","vol_ctxt":"63","inv_ctxt":"0","hostname":"-"}], "summary":[{"cpuUsage":{"mean":1.2,"min":1.2,"q1":1.2,"q2":1.2,"q3":1.2,"max":1.2,"minLabel":"ocrd_tesserocr_recognize_0","maxLabel":"ocrd_tesserocr_recognize_0","q1Label":"ocrd_tesserocr_recognize_0","q2Label":"ocrd_tesserocr_recognize_0","q3Label":"ocrd_tesserocr_recognize_0"},"process":"ocrd_tesserocr_recognize_0","mem":{"mean":29941760,"min":29941760,"q1":29941760,"q2":29941760,"q3":29941760,"max":29941760,"minLabel":"ocrd_tesserocr_recognize_0","maxLabel":"ocrd_tesserocr_recognize_0","q1Label":"ocrd_tesserocr_recognize_0","q2Label":"ocrd_tesserocr_recognize_0","q3Label":"ocrd_tesserocr_recognize_0"},"memUsage":null,"timeUsage":null,"vmem":{"mean":2120265728,"min":2120265728,"q1":2120265728,"q2":2120265728,"q3":2120265728,"max":2120265728,"minLabel":"ocrd_tesserocr_recognize_0","maxLabel":"ocrd_tesserocr_recognize_0","q1Label":"ocrd_tesserocr_recognize_0","q2Label":"ocrd_tesserocr_recognize_0","q3Label":"ocrd_tesserocr_recognize_0"},"reads":{"mean":96110,"min":96110,"q1":96110,"q2":96110,"q3":96110,"max":96110,"minLabel":"ocrd_tesserocr_recognize_0","maxLabel":"ocrd_tesserocr_recognize_0","q1Label":"ocrd_tesserocr_recognize_0","q2Label":"ocrd_tesserocr_recognize_0","q3Label":"ocrd_tesserocr_recognize_0"},"cpu":{"mean":1.2,"min":1.2,"q1":1.2,"q2":1.2,"q3":1.2,"max":1.2,"minLabel":"ocrd_tesserocr_recognize_0","maxLabel":"ocrd_tesserocr_recognize_0","q1Label":"ocrd_tesserocr_recognize_0","q2Label":"ocrd_tesserocr_recognize_0","q3Label":"ocrd_tesserocr_recognize_0"},"time":{"mean":1703,"min":1703,"q1":1703,"q2":1703,"q3":1703,"max":1703,"minLabel":"ocrd_tesserocr_recognize_0","maxLabel":"ocrd_tesserocr_recognize_0","q1Label":"ocrd_tesserocr_recognize_0","q2Label":"ocrd_tesserocr_recognize_0","q3Label":"ocrd_tesserocr_recognize_0"},"writes":{"mean":4044,"min":4044,"q1":4044,"q2":4044,"q3":4044,"max":4044,"minLabel":"ocrd_tesserocr_recognize_0","maxLabel":"ocrd_tesserocr_recognize_0","q1Label":"ocrd_tesserocr_recognize_0","q2Label":"ocrd_tesserocr_recognize_0","q3Label":"ocrd_tesserocr_recognize_0"}}] };
+{"task_id":"1","hash":"3c\/0e8112","native_id":"515048","process":"ocrd_tesserocr_recognize_0","module":"-","container":"-","tag":"-","name":"ocrd_tesserocr_recognize_0","status":"COMPLETED","exit":"0","submit":"1742319863637","start":"1742319863724","complete":"1742319875354","duration":"11717","realtime":"11676","%cpu":"0.1","%mem":"0.1","rss":"30064640","vmem":"2053681152","peak_rss":"30064640","peak_vmem":"2120003584","rchar":"96850","wchar":"4816","syscr":"268","syscw":"31","read_bytes":"0","write_bytes":"0","attempt":"1","workdir":"\/home\/mm\/Desktop\/ocrd_accuracy_benchmarks2\/work\/3c\/0e8112b171404d1afd0e6cddb4ead7","script":"\n        docker run --rm -u $(id -u) -v \/home\/mm\/Desktop\/ocrd_accuracy_benchmarks2\/workspaces\/hohberg_georgica01_1682_teil1:\/data -v ~\/ocrd_models\/ocrd-resources:\/usr\/local\/share\/ocrd-resources -w \/data -- ocrd\/all:latest ocrd-tesserocr-recognize -m mets.xml -I OCR-D-IMG -O OCR-D-OCR -p \'{\"segmentation_level\": \"region\", \"textequiv_level\": \"word\", \"find_tables\": true, \"model\": \"deu\"}\'\n        ","scratch":"-","queue":"-","cpus":"1","memory":"-","disk":"-","time":"-","env":"-","error_action":"-","vol_ctxt":"62","inv_ctxt":"0","hostname":"-"}], "summary":[{"cpuUsage":{"mean":0.1,"min":0.1,"q1":0.1,"q2":0.1,"q3":0.1,"max":0.1,"minLabel":"ocrd_tesserocr_recognize_0","maxLabel":"ocrd_tesserocr_recognize_0","q1Label":"ocrd_tesserocr_recognize_0","q2Label":"ocrd_tesserocr_recognize_0","q3Label":"ocrd_tesserocr_recognize_0"},"process":"ocrd_tesserocr_recognize_0","mem":{"mean":30064640,"min":30064640,"q1":30064640,"q2":30064640,"q3":30064640,"max":30064640,"minLabel":"ocrd_tesserocr_recognize_0","maxLabel":"ocrd_tesserocr_recognize_0","q1Label":"ocrd_tesserocr_recognize_0","q2Label":"ocrd_tesserocr_recognize_0","q3Label":"ocrd_tesserocr_recognize_0"},"memUsage":null,"timeUsage":null,"vmem":{"mean":2120003584,"min":2120003584,"q1":2120003584,"q2":2120003584,"q3":2120003584,"max":2120003584,"minLabel":"ocrd_tesserocr_recognize_0","maxLabel":"ocrd_tesserocr_recognize_0","q1Label":"ocrd_tesserocr_recognize_0","q2Label":"ocrd_tesserocr_recognize_0","q3Label":"ocrd_tesserocr_recognize_0"},"reads":{"mean":96850,"min":96850,"q1":96850,"q2":96850,"q3":96850,"max":96850,"minLabel":"ocrd_tesserocr_recognize_0","maxLabel":"ocrd_tesserocr_recognize_0","q1Label":"ocrd_tesserocr_recognize_0","q2Label":"ocrd_tesserocr_recognize_0","q3Label":"ocrd_tesserocr_recognize_0"},"cpu":{"mean":0.1,"min":0.1,"q1":0.1,"q2":0.1,"q3":0.1,"max":0.1,"minLabel":"ocrd_tesserocr_recognize_0","maxLabel":"ocrd_tesserocr_recognize_0","q1Label":"ocrd_tesserocr_recognize_0","q2Label":"ocrd_tesserocr_recognize_0","q3Label":"ocrd_tesserocr_recognize_0"},"time":{"mean":11676,"min":11676,"q1":11676,"q2":11676,"q3":11676,"max":11676,"minLabel":"ocrd_tesserocr_recognize_0","maxLabel":"ocrd_tesserocr_recognize_0","q1Label":"ocrd_tesserocr_recognize_0","q2Label":"ocrd_tesserocr_recognize_0","q3Label":"ocrd_tesserocr_recognize_0"},"writes":{"mean":4816,"min":4816,"q1":4816,"q2":4816,"q3":4816,"max":4816,"minLabel":"ocrd_tesserocr_recognize_0","maxLabel":"ocrd_tesserocr_recognize_0","q1Label":"ocrd_tesserocr_recognize_0","q2Label":"ocrd_tesserocr_recognize_0","q3Label":"ocrd_tesserocr_recognize_0"}}] };
 
   </script>
 

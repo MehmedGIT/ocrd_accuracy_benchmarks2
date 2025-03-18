@@ -2,19 +2,20 @@
 <pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd" pcGtsId="OCR-D-OCR_0003">
     <pc:Metadata>
         <pc:Creator>OCR-D/core 2.71.0</pc:Creator>
-        <pc:Created>2025-03-14T14:24:28.441891</pc:Created>
-        <pc:LastChange>2025-03-14T14:24:28.441891</pc:LastChange>
+        <pc:Created>2025-03-18T17:48:18.070389</pc:Created>
+        <pc:LastChange>2025-03-18T17:48:18.070389</pc:LastChange>
         <pc:MetadataItem type="processingStep" name="layout/segmentation/region" value="ocrd-tesserocr-recognize">
             <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="region" type="segmentation_level"/>
+                <pc:Label value="word" type="textequiv_level"/>
+                <pc:Label value="True" type="find_tables"/>
+                <pc:Label value="deu" type="model"/>
                 <pc:Label value="0" type="dpi"/>
                 <pc:Label value="0" type="padding"/>
-                <pc:Label value="word" type="segmentation_level"/>
-                <pc:Label value="word" type="textequiv_level"/>
                 <pc:Label value="False" type="overwrite_segments"/>
                 <pc:Label value="True" type="overwrite_text"/>
                 <pc:Label value="False" type="shrink_polygons"/>
                 <pc:Label value="False" type="block_polygons"/>
-                <pc:Label value="True" type="find_tables"/>
                 <pc:Label value="False" type="find_staves"/>
                 <pc:Label value="False" type="sparse_text"/>
                 <pc:Label value="False" type="raw_lines"/>
@@ -33,5 +34,1280 @@
             </pc:Labels>
         </pc:MetadataItem>
     </pc:Metadata>
-    <pc:Page imageFilename="GT-PAGE/meyfart_rhetorica_1634_0022.tif" imageWidth="1169" imageHeight="1889"/>
+    <pc:Page imageFilename="GT-PAGE/meyfart_rhetorica_1634_0022.tif" imageWidth="1169" imageHeight="1889">
+        <pc:AlternativeImage filename="OCR-D-OCR/OCR-D-OCR_0003.IMG-BIN.png" comments=",binarized,clipped"/>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="reading-order">
+                <pc:RegionRefIndexed index="0" regionRef="region0000"/>
+                <pc:RegionRefIndexed index="2" regionRef="region0002"/>
+                <pc:RegionRefIndexed index="3" regionRef="region0003"/>
+                <pc:RegionRefIndexed index="5" regionRef="region0005"/>
+                <pc:RegionRefIndexed index="6" regionRef="region0006"/>
+                <pc:RegionRefIndexed index="7" regionRef="region0007"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="region0002" orientation="-0.360689750267937" readingDirection="left-to-right" textLineOrder="top-to-bottom">
+            <pc:Coords points="61,212 1120,212 1120,1004 61,1004"/>
+            <pc:TextLine id="region0002_line0000">
+                <pc:Coords points="255,212 1120,212 1120,270 255,270"/>
+                <pc:Word id="region0002_line0000_word0000">
+                    <pc:Coords points="255,212 352,212 352,251 255,251"/>
+                    <pc:TextEquiv conf="0.245819549560547">
+                        <pc:Unicode>Haller</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0000_word0001">
+                    <pc:Coords points="423,212 383,212 383,270 423,270"/>
+                    <pc:TextEquiv conf="0.346617965698242">
+                        <pc:Unicode>ger</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0000_word0002">
+                    <pc:Coords points="430,226 487,226 487,261 430,261"/>
+                    <pc:TextEquiv conf="0.1940185546875">
+                        <pc:Unicode>Daß</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0000_word0003">
+                    <pc:Coords points="520,224 682,224 682,270 520,270"/>
+                    <pc:TextEquiv conf="0.915107574462891">
+                        <pc:Unicode>diejenigen</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0000_word0004">
+                    <pc:Coords points="693,223 842,223 842,263 693,263"/>
+                    <pc:TextEquiv conf="0.415253829956055">
+                        <pc:Unicode>Dolcker</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0000_word0005">
+                    <pc:Coords points="845,212 836,212 836,270 845,270"/>
+                    <pc:TextEquiv conf="0.753003082275391">
+                        <pc:Unicode>/</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0000_word0006">
+                    <pc:Coords points="856,227 963,227 963,268 856,268"/>
+                    <pc:TextEquiv conf="0.911065292358398">
+                        <pc:Unicode>weiche</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0000_word0007">
+                    <pc:Coords points="976,230 1019,230 1019,264 976,264"/>
+                    <pc:TextEquiv conf="0.930066452026367">
+                        <pc:Unicode>die</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0000_word0008">
+                    <pc:Coords points="1028,226 1120,226 1120,268 1028,268"/>
+                    <pc:TextEquiv conf="0.123762664794922">
+                        <pc:Unicode>Yeuts</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:TextEquiv conf="0.537190551757812">
+                    <pc:Unicode>Haller ger Daß diejenigen Dolcker / weiche die Yeuts</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0002_line0001">
+                <pc:Coords points="65,221 1117,221 1117,327 65,327"/>
+                <pc:Word id="region0002_line0001_word0000">
+                    <pc:Coords points="65,277 118,277 118,312 65,312"/>
+                    <pc:TextEquiv conf="0.818545227050781">
+                        <pc:Unicode>al</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0001_word0001">
+                    <pc:Coords points="192,231 423,231 423,327 192,327"/>
+                    <pc:TextEquiv conf="0.">
+                        <pc:Unicode>IND</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0001_word0002">
+                    <pc:Coords points="465,221 1117,221 1117,326 465,326"/>
+                    <pc:TextEquiv conf="0.">
+                        <pc:Unicode>GREEN</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:TextEquiv conf="0.939515075683594">
+                    <pc:Unicode>al IND GREEN</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0002_line0002">
+                <pc:Coords points="65,317 1116,317 1116,382 65,382"/>
+                <pc:Word id="region0002_line0002_word0000">
+                    <pc:Coords points="65,317 152,317 152,371 65,371"/>
+                    <pc:TextEquiv conf="0.098511123657227">
+                        <pc:Unicode>14</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0002_word0001">
+                    <pc:Coords points="374,328 481,328 481,380 374,380"/>
+                    <pc:TextEquiv conf="0.471474075317383">
+                        <pc:Unicode>Hifche</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0002_word0002">
+                    <pc:Coords points="496,329 743,329 743,382 496,382"/>
+                    <pc:TextEquiv conf="0.657117156982422">
+                        <pc:Unicode>verachtet</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0002_word0003">
+                    <pc:Coords points="691,323 678,323 678,382 691,382"/>
+                    <pc:TextEquiv conf="0.842837600708008">
+                        <pc:Unicode>/</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0002_word0004">
+                    <pc:Coords points="740,323 699,323 699,382 740,382"/>
+                    <pc:TextEquiv conf="0.511204872131348">
+                        <pc:Unicode>ben</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0002_word0005">
+                    <pc:Coords points="758,339 808,339 808,375 758,375"/>
+                    <pc:TextEquiv conf="0.825805206298828">
+                        <pc:Unicode>der</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0002_word0006">
+                    <pc:Coords points="831,338 942,338 942,376 831,376"/>
+                    <pc:TextEquiv conf="0.646857070922852">
+                        <pc:Unicode>erbarn</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0002_word0007">
+                    <pc:Coords points="958,339 1052,339 1052,379 958,379"/>
+                    <pc:TextEquiv conf="0.841036834716797">
+                        <pc:Unicode>Welr</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0002_word0008">
+                    <pc:Coords points="1070,349 1116,349 1116,382 1070,382"/>
+                    <pc:TextEquiv conf="0.622508316040039">
+                        <pc:Unicode>zus</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:TextEquiv conf="0.613039139641656">
+                    <pc:Unicode>14 Hifche verachtet / ben der erbarn Welr zus</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0002_line0003">
+                <pc:Coords points="64,386 1118,386 1118,444 64,444"/>
+                <pc:Word id="region0002_line0003_word0000">
+                    <pc:Coords points="64,389 66,389 66,411 64,411"/>
+                    <pc:TextEquiv conf="0.892373428344727">
+                        <pc:Unicode>|</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0003_word0001">
+                    <pc:Coords points="372,386 526,386 526,436 372,436"/>
+                    <pc:TextEquiv conf="0.459538345336914">
+                        <pc:Unicode>fanden</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0003_word0002">
+                    <pc:Coords points="536,393 935,393 935,438 536,438"/>
+                    <pc:TextEquiv conf="0.765101776123047">
+                        <pc:Unicode>worden</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0003_word0003">
+                    <pc:Coords points="683,386 669,386 669,444 683,444"/>
+                    <pc:TextEquiv conf="0.846537780761719">
+                        <pc:Unicode>/</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0003_word0004">
+                    <pc:Coords points="758,386 694,386 694,444 758,444"/>
+                    <pc:TextEquiv conf="0.656475677490234">
+                        <pc:Unicode>ober</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0003_word0005">
+                    <pc:Coords points="829,386 770,386 770,444 829,444"/>
+                    <pc:TextEquiv conf="0.377993545532227">
+                        <pc:Unicode>ihre</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0003_word0006">
+                    <pc:Coords points="942,386 837,386 837,444 942,444"/>
+                    <pc:TextEquiv conf="0.696020660400391">
+                        <pc:Unicode>eygene</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0003_word0007">
+                    <pc:Coords points="948,388 1118,388 1118,444 948,444"/>
+                    <pc:TextEquiv conf="0.601196327209473">
+                        <pc:Unicode>Zhorheit</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:TextEquiv conf="0.661904692649841">
+                    <pc:Unicode>| fanden worden / ober ihre eygene Zhorheit</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0002_line0004">
+                <pc:Coords points="371,437 1118,437 1118,498 371,498"/>
+                <pc:Word id="region0002_line0004_word0000">
+                    <pc:Coords points="371,437 493,437 493,490 371,490"/>
+                    <pc:TextEquiv conf="0.691065826416016">
+                        <pc:Unicode>Zeugen</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0004_word0001">
+                    <pc:Coords points="501,447 516,447 516,486 501,486"/>
+                    <pc:TextEquiv conf="0.830094451904297">
+                        <pc:Unicode>/</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0004_word0002">
+                    <pc:Coords points="525,450 589,450 589,483 525,483"/>
+                    <pc:TextEquiv conf="0.358584442138672">
+                        <pc:Unicode>vnd</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0004_word0003">
+                    <pc:Coords points="596,445 666,445 666,490 596,490"/>
+                    <pc:TextEquiv conf="0.56528263092041">
+                        <pc:Unicode>auff</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0004_word0004">
+                    <pc:Coords points="904,437 677,437 677,498 904,498"/>
+                    <pc:TextEquiv conf="0.">
+                        <pc:Unicode>jGreläfterliche</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0004_word0005">
+                    <pc:Coords points="936,498 1118,498 1118,437 936,437"/>
+                    <pc:TextEquiv conf="0.">
+                        <pc:Unicode>Bnfinnig«</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:TextEquiv conf="0.740837891896566">
+                    <pc:Unicode>Zeugen / vnd auff jGreläfterliche Bnfinnig«</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0002_line0005">
+                <pc:Coords points="370,493 1117,493 1117,550 370,550"/>
+                <pc:Word id="region0002_line0005_word0000">
+                    <pc:Coords points="370,493 432,493 432,540 370,540"/>
+                    <pc:TextEquiv conf="0.246776580810547">
+                        <pc:Unicode>Feit‘</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0005_word0001">
+                    <pc:Coords points="467,494 574,494 574,546 467,546"/>
+                    <pc:TextEquiv conf="0.">
+                        <pc:Unicode>eigen</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0005_word0002">
+                    <pc:Coords points="601,500 730,500 730,547 601,547"/>
+                    <pc:TextEquiv conf="0.672676849365234">
+                        <pc:Unicode>müflen.</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0005_word0003">
+                    <pc:Coords points="775,503 887,503 887,545 775,545"/>
+                    <pc:TextEquiv conf="0.732613983154297">
+                        <pc:Unicode>Dann</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0005_word0004">
+                    <pc:Coords points="907,507 944,507 944,545 907,545"/>
+                    <pc:TextEquiv conf="0.955207443237305">
+                        <pc:Unicode>ob</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0005_word0005">
+                    <pc:Coords points="967,515 1047,515 1047,550 967,550"/>
+                    <pc:TextEquiv conf="0.">
+                        <pc:Unicode>mar</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0005_word0006">
+                    <pc:Coords points="1063,506 1117,506 1117,550 1063,550"/>
+                    <pc:TextEquiv conf="0.913125305175781">
+                        <pc:Unicode>die</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:TextEquiv conf="0.788628594534738">
+                    <pc:Unicode>Feit‘ eigen müflen. Dann ob mar die</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0002_line0006">
+                <pc:Coords points="368,551 1114,551 1114,607 368,607"/>
+                <pc:Word id="region0002_line0006_word0000">
+                    <pc:Coords points="368,551 561,551 561,601 368,601"/>
+                    <pc:TextEquiv conf="0.526081771850586">
+                        <pc:Unicode>Teutfchen</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0006_word0001">
+                    <pc:Coords points="579,553 648,553 648,605 579,605"/>
+                    <pc:TextEquiv conf="0.747201385498047">
+                        <pc:Unicode>jbre</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0006_word0002">
+                    <pc:Coords points="667,553 818,553 818,605 667,605"/>
+                    <pc:TextEquiv conf="0.509556159973145">
+                        <pc:Unicode>Sprach</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0006_word0003">
+                    <pc:Coords points="843,558 933,558 933,607 843,607"/>
+                    <pc:TextEquiv conf="0.956646347045898">
+                        <pc:Unicode>nicht</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0006_word0004">
+                    <pc:Coords points="954,568 1024,568 1024,601 954,601"/>
+                    <pc:TextEquiv conf="0.956646347045898">
+                        <pc:Unicode>aus</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0006_word0005">
+                    <pc:Coords points="1048,564 1114,564 1114,602 1048,602"/>
+                    <pc:TextEquiv conf="0.955984954833984">
+                        <pc:Unicode>den</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:TextEquiv conf="0.775352827707926">
+                    <pc:Unicode>Teutfchen jbre Sprach nicht aus den</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0002_line0007">
+                <pc:Coords points="369,606 1112,606 1112,667 369,667"/>
+                <pc:Word id="region0002_line0007_word0000">
+                    <pc:Coords points="369,606 542,606 542,656 369,656"/>
+                    <pc:TextEquiv conf="0.701594543457031">
+                        <pc:Unicode>DBüchern</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0007_word0001">
+                    <pc:Coords points="558,608 676,608 676,657 558,657"/>
+                    <pc:TextEquiv conf="0.460109634399414">
+                        <pc:Unicode>fuchen</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0007_word0002">
+                    <pc:Coords points="687,620 700,620 700,647 687,647"/>
+                    <pc:TextEquiv conf="0.460109634399414">
+                        <pc:Unicode>/</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0007_word0003">
+                    <pc:Coords points="710,610 851,610 851,658 710,658"/>
+                    <pc:TextEquiv conf="0.631065330505371">
+                        <pc:Unicode>fondern</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0007_word0004">
+                    <pc:Coords points="862,619 929,619 929,653 862,653"/>
+                    <pc:TextEquiv conf="0.04543571472168">
+                        <pc:Unicode>aus</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0007_word0005">
+                    <pc:Coords points="939,618 995,618 995,654 939,654"/>
+                    <pc:TextEquiv conf="0.04543571472168">
+                        <pc:Unicode>der</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0007_word0006">
+                    <pc:Coords points="1004,618 1112,618 1112,667 1004,667"/>
+                    <pc:TextEquiv conf="0.818081436157227">
+                        <pc:Unicode>einge»</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:TextEquiv conf="0.451690286908831">
+                    <pc:Unicode>DBüchern fuchen / fondern aus der einge»</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0002_line0008">
+                <pc:Coords points="368,660 1110,660 1110,720 368,720"/>
+                <pc:Word id="region0002_line0008_word0000">
+                    <pc:Coords points="368,660 550,660 550,715 368,715"/>
+                    <pc:TextEquiv conf="0.626642761230469">
+                        <pc:Unicode>pflangten</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0008_word0001">
+                    <pc:Coords points="564,662 685,662 685,707 564,707"/>
+                    <pc:TextEquiv conf="0.553471717834473">
+                        <pc:Unicode>Natur</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0008_word0002">
+                    <pc:Coords points="699,666 844,666 844,719 699,719"/>
+                    <pc:TextEquiv conf="0.416469535827637">
+                        <pc:Unicode>nehmen</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0008_word0003">
+                    <pc:Coords points="873,679 885,679 885,708 873,708"/>
+                    <pc:TextEquiv conf="0.405712814331055">
+                        <pc:Unicode>:</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0008_word0004">
+                    <pc:Coords points="900,668 1017,668 1017,720 900,720"/>
+                    <pc:TextEquiv conf="0.902453536987305">
+                        <pc:Unicode>Nicht</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0008_word0005">
+                    <pc:Coords points="1039,684 1110,684 1110,714 1039,714"/>
+                    <pc:TextEquiv conf="0.967336196899414">
+                        <pc:Unicode>von</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:TextEquiv conf="0.645347760518392">
+                    <pc:Unicode>pflangten Natur nehmen : Nicht von</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0002_line0009">
+                <pc:Coords points="366,718 1110,718 1110,771 366,771"/>
+                <pc:Word id="region0002_line0009_word0000">
+                    <pc:Coords points="366,722 446,722 446,764 366,764"/>
+                    <pc:TextEquiv conf="0.620429573059082">
+                        <pc:Unicode>Sem</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0009_word0001">
+                    <pc:Coords points="455,718 599,718 599,771 455,771"/>
+                    <pc:TextEquiv conf="0.264488677978516">
+                        <pc:Unicode>SMeifler</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0009_word0002">
+                    <pc:Coords points="619,722 758,722 758,771 619,771"/>
+                    <pc:TextEquiv conf="0.309949035644531">
+                        <pc:Unicode>Audiren</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0009_word0003">
+                    <pc:Coords points="775,733 790,733 790,769 775,769"/>
+                    <pc:TextEquiv conf="0.811584396362305">
+                        <pc:Unicode>/</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0009_word0004">
+                    <pc:Coords points="803,724 942,724 942,770 803,770"/>
+                    <pc:TextEquiv conf="0.811584396362305">
+                        <pc:Unicode>fondern</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0009_word0005">
+                    <pc:Coords points="957,737 1026,737 1026,769 957,769"/>
+                    <pc:TextEquiv conf="0.956143951416016">
+                        <pc:Unicode>von</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0009_word0006">
+                    <pc:Coords points="1045,734 1110,734 1110,771 1045,771"/>
+                    <pc:TextEquiv conf="0.948249664306641">
+                        <pc:Unicode>den</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:TextEquiv conf="0.674632813589914">
+                    <pc:Unicode>Sem SMeifler Audiren / fondern von den</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0002_line0010">
+                <pc:Coords points="364,772 1109,772 1109,834 364,834"/>
+                <pc:Word id="region0002_line0010_word0000">
+                    <pc:Coords points="364,772 523,772 523,818 364,818"/>
+                    <pc:TextEquiv conf="0.235373840332031">
+                        <pc:Unicode>QAmmen</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0010_word0001">
+                    <pc:Coords points="542,777 652,777 652,817 542,817"/>
+                    <pc:TextEquiv conf="0.6550048828125">
+                        <pc:Unicode>lernen</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0010_word0002">
+                    <pc:Coords points="667,789 678,789 678,818 667,818"/>
+                    <pc:TextEquiv conf="0.771769714355469">
+                        <pc:Unicode>:</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0010_word0003">
+                    <pc:Coords points="693,778 784,778 784,827 693,827"/>
+                    <pc:TextEquiv conf="0.961643524169922">
+                        <pc:Unicode>nicht</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0010_word0004">
+                    <pc:Coords points="802,779 837,779 837,819 802,819"/>
+                    <pc:TextEquiv conf="0.958375091552734">
+                        <pc:Unicode>in</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0010_word0005">
+                    <pc:Coords points="854,783 917,783 917,821 854,821"/>
+                    <pc:TextEquiv conf="0.835126342773437">
+                        <pc:Unicode>den</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0010_word0006">
+                    <pc:Coords points="940,779 1109,779 1109,834 940,834"/>
+                    <pc:TextEquiv conf="0.589247131347656">
+                        <pc:Unicode>Sehulen</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:TextEquiv conf="0.715220075334821">
+                    <pc:Unicode>QAmmen lernen : nicht in den Sehulen</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0002_line0011">
+                <pc:Coords points="364,830 1108,830 1108,893 364,893"/>
+                <pc:Word id="region0002_line0011_word0000">
+                    <pc:Coords points="364,833 519,833 519,873 364,873"/>
+                    <pc:TextEquiv conf="0.873237609863281">
+                        <pc:Unicode>ausdem</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0011_word0001">
+                    <pc:Coords points="528,830 673,830 673,876 528,876"/>
+                    <pc:TextEquiv conf="0.362207565307617">
+                        <pc:Unicode>Munde</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0011_word0002">
+                    <pc:Coords points="682,837 738,837 738,875 682,875"/>
+                    <pc:TextEquiv conf="0.362207565307617">
+                        <pc:Unicode>Der</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0011_word0003">
+                    <pc:Coords points="754,834 878,834 878,887 754,887"/>
+                    <pc:TextEquiv conf="0.678434295654297">
+                        <pc:Unicode>Eehren</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0011_word0004">
+                    <pc:Coords points="894,836 1000,836 1000,891 894,891"/>
+                    <pc:TextEquiv conf="0.672151947021484">
+                        <pc:Unicode>faffen</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0011_word0005">
+                    <pc:Coords points="1009,844 1108,844 1108,893 1009,893"/>
+                    <pc:TextEquiv conf="0.672151947021484">
+                        <pc:Unicode>/fons</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:TextEquiv conf="0.60339848836263">
+                    <pc:Unicode>ausdem Munde Der Eehren faffen /fons</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0002_line0012">
+                <pc:Coords points="61,878 1107,878 1107,946 61,946"/>
+                <pc:Word id="region0002_line0012_word0000">
+                    <pc:Coords points="61,878 142,878 142,936 61,936"/>
+                    <pc:TextEquiv conf="0.431834564208984">
+                        <pc:Unicode>8</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0012_word0001">
+                    <pc:Coords points="362,890 447,890 447,928 362,928"/>
+                    <pc:TextEquiv conf="0.931225280761719">
+                        <pc:Unicode>dern</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0012_word0002">
+                    <pc:Coords points="474,888 510,888 510,928 474,928"/>
+                    <pc:TextEquiv conf="0.858956756591797">
+                        <pc:Unicode>in</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0012_word0003">
+                    <pc:Coords points="534,890 591,890 591,930 534,930"/>
+                    <pc:TextEquiv conf="0.858956756591797">
+                        <pc:Unicode>der</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0012_word0004">
+                    <pc:Coords points="608,888 763,888 763,940 608,940"/>
+                    <pc:TextEquiv conf="0.322316436767578">
+                        <pc:Unicode>Wiegen</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0012_word0005">
+                    <pc:Coords points="777,900 846,900 846,932 777,932"/>
+                    <pc:TextEquiv conf="0.916042709350586">
+                        <pc:Unicode>aus</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0012_word0006">
+                    <pc:Coords points="863,896 925,896 925,935 863,935"/>
+                    <pc:TextEquiv conf="0.888930816650391">
+                        <pc:Unicode>den</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0012_word0007">
+                    <pc:Coords points="950,896 1107,896 1107,946 950,946"/>
+                    <pc:TextEquiv conf="0.557543525695801">
+                        <pc:Unicode>Brüßen</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:TextEquiv conf="0.720725855827332">
+                    <pc:Unicode>8 dern in der Wiegen aus den Brüßen</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0002_line0013">
+                <pc:Coords points="140,935 1105,935 1105,1004 140,1004"/>
+                <pc:Word id="region0002_line0013_word0000">
+                    <pc:Coords points="141,979 141,935 140,935 140,979"/>
+                    <pc:TextEquiv conf="0.130721435546875">
+                        <pc:Unicode>zZ</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0013_word0001">
+                    <pc:Coords points="363,945 422,945 422,984 363,984"/>
+                    <pc:TextEquiv conf="0.793415679931641">
+                        <pc:Unicode>der</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0013_word0002">
+                    <pc:Coords points="449,940 571,940 571,987 449,987"/>
+                    <pc:TextEquiv conf="0.591109161376953">
+                        <pc:Unicode>Mukter</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0013_word0003">
+                    <pc:Coords points="588,944 833,944 833,997 588,997"/>
+                    <pc:TextEquiv conf="0.750218353271484">
+                        <pc:Unicode>fangen</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0013_word0004">
+                    <pc:Coords points="742,936 728,936 728,1004 742,1004"/>
+                    <pc:TextEquiv conf="0.472508392333984">
+                        <pc:Unicode>/</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0013_word0005">
+                    <pc:Coords points="750,944 833,944 833,997 750,997"/>
+                    <pc:TextEquiv conf="0.472508392333984">
+                        <pc:Unicode>nach</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0013_word0006">
+                    <pc:Coords points="852,951 927,951 927,992 852,992"/>
+                    <pc:TextEquiv conf="0.921163940429688">
+                        <pc:Unicode>dem</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0002_line0013_word0007">
+                    <pc:Coords points="947,953 1105,953 1105,1004 947,1004"/>
+                    <pc:TextEquiv conf="0.492312316894531">
+                        <pc:Unicode>dapffern</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:TextEquiv conf="0.577994709014893">
+                    <pc:Unicode>zZ der Mukter fangen / nach dem dapffern</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv conf="0.674677054530639">
+                <pc:Unicode>Haller ger Daß diejenigen Dolcker / weiche die Yeuts
+al IND GREEN
+14 Hifche verachtet / ben der erbarn Welr zus
+| fanden worden / ober ihre eygene Zhorheit
+Zeugen / vnd auff jGreläfterliche Bnfinnig«
+Feit‘ eigen müflen. Dann ob mar die
+Teutfchen jbre Sprach nicht aus den
+DBüchern fuchen / fondern aus der einge»
+pflangten Natur nehmen : Nicht von
+Sem SMeifler Audiren / fondern von den
+QAmmen lernen : nicht in den Sehulen
+ausdem Munde Der Eehren faffen /fons
+8 dern in der Wiegen aus den Brüßen
+zZ der Mukter fangen / nach dem dapffern</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0003" orientation="-0.360689750267937" readingDirection="left-to-right" textLineOrder="top-to-bottom">
+            <pc:Coords points="57,1056 1105,1056 1105,1581 57,1581"/>
+            <pc:TextLine id="region0003_line0000">
+                <pc:Coords points="362,1056 1105,1056 1105,1112 362,1112"/>
+                <pc:Word id="region0003_line0000_word0000">
+                    <pc:Coords points="403,1056 362,1056 362,1112 403,1112"/>
+                    <pc:TextEquiv conf="0.586930656433105">
+                        <pc:Unicode>zu</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0003_line0000_word0001">
+                    <pc:Coords points="411,1056 537,1056 537,1098 411,1098"/>
+                    <pc:TextEquiv conf="0.697383270263672">
+                        <pc:Unicode>Nom:</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0003_line0000_word0002">
+                    <pc:Coords points="552,1060 610,1060 610,1108 552,1108"/>
+                    <pc:TextEquiv conf="0.904352264404297">
+                        <pc:Unicode>If</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0003_line0000_word0003">
+                    <pc:Coords points="622,1061 659,1061 659,1107 622,1107"/>
+                    <pc:TextEquiv conf="0.686846542358398">
+                        <pc:Unicode>fie</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0003_line0000_word0004">
+                    <pc:Coords points="672,1064 748,1064 748,1103 672,1103"/>
+                    <pc:TextEquiv conf="0.686846542358398">
+                        <pc:Unicode>doch</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0003_line0000_word0005">
+                    <pc:Coords points="761,1067 893,1067 893,1103 761,1103"/>
+                    <pc:TextEquiv conf="0.823267059326172">
+                        <pc:Unicode>darumb</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0003_line0000_word0006">
+                    <pc:Coords points="906,1071 990,1071 990,1112 906,1112"/>
+                    <pc:TextEquiv conf="0.77736213684082">
+                        <pc:Unicode>nicht</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0003_line0000_word0007">
+                    <pc:Coords points="1003,1079 1105,1079 1105,1112 1003,1112"/>
+                    <pc:TextEquiv conf="0.241284790039063">
+                        <pc:Unicode>zuvers</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:TextEquiv conf="0.675534157752991">
+                    <pc:Unicode>zu Nom: If fie doch darumb nicht zuvers</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0003_line0001">
+                <pc:Coords points="360,1109 1102,1109 1102,1164 360,1164"/>
+                <pc:Word id="region0003_line0001_word0000">
+                    <pc:Coords points="360,1109 517,1109 517,1155 360,1155"/>
+                    <pc:TextEquiv conf="0.616445922851563">
+                        <pc:Unicode>fehmehen</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0003_line0001_word0001">
+                    <pc:Coords points="529,1118 542,1118 542,1150 529,1150"/>
+                    <pc:TextEquiv conf="0.849860229492188">
+                        <pc:Unicode>/</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0003_line0001_word0002">
+                    <pc:Coords points="560,1111 624,1111 624,1149 560,1149"/>
+                    <pc:TextEquiv conf="0.201126327514648">
+                        <pc:Unicode>aber</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0003_line0001_word0003">
+                    <pc:Coords points="631,1112 816,1112 816,1158 631,1158"/>
+                    <pc:TextEquiv conf="0.">
+                        <pc:Unicode>iubeflagen/</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0003_line0001_word0004">
+                    <pc:Coords points="824,1116 884,1116 884,1160 824,1160"/>
+                    <pc:TextEquiv conf="0.467400436401367">
+                        <pc:Unicode>daß</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0003_line0001_word0005">
+                    <pc:Coords points="899,1118 982,1118 982,1156 899,1156"/>
+                    <pc:TextEquiv conf="0.605739212036133">
+                        <pc:Unicode>Saute</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0003_line0001_word0006">
+                    <pc:Coords points="1001,1120 1102,1120 1102,1164 1001,1164"/>
+                    <pc:TextEquiv conf="0.266372604370117">
+                        <pc:Unicode>feyn-/</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:TextEquiv conf="0.572420676095145">
+                    <pc:Unicode>fehmehen / aber iubeflagen/ daß Saute feyn-/</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0003_line0002">
+                <pc:Coords points="357,1162 1103,1162 1103,1224 357,1224"/>
+                <pc:Word id="region0003_line0002_word0000">
+                    <pc:Coords points="357,1167 487,1167 487,1209 357,1209"/>
+                    <pc:TextEquiv conf="0.319367904663086">
+                        <pc:Unicode>welche</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0003_line0002_word0001">
+                    <pc:Coords points="489,1162 479,1162 479,1224 489,1224"/>
+                    <pc:TextEquiv conf="0.37521915435791">
+                        <pc:Unicode>/</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0003_line0002_word0002">
+                    <pc:Coords points="500,1176 590,1176 590,1204 500,1204"/>
+                    <pc:TextEquiv conf="0.699268569946289">
+                        <pc:Unicode>wenn</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0003_line0002_word0003">
+                    <pc:Coords points="605,1167 641,1167 641,1211 605,1211"/>
+                    <pc:TextEquiv conf="0.937622833251953">
+                        <pc:Unicode>fie</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0003_line0002_word0004">
+                    <pc:Coords points="654,1162 703,1162 703,1201 654,1201"/>
+                    <pc:TextEquiv conf="0.929032745361328">
+                        <pc:Unicode>die</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0003_line0002_word0005">
+                    <pc:Coords points="712,1164 897,1164 897,1215 712,1215"/>
+                    <pc:TextEquiv conf="0.845204620361328">
+                        <pc:Unicode>Heroifche</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0003_line0002_word0006">
+                    <pc:Coords points="907,1170 1003,1170 1003,1211 907,1211"/>
+                    <pc:TextEquiv conf="0.540965042114258">
+                        <pc:Unicode>Kede</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0003_line0002_word0007">
+                    <pc:Coords points="1017,1181 1103,1181 1103,1224 1017,1224"/>
+                    <pc:TextEquiv conf="0.904142684936523">
+                        <pc:Unicode>niche</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:TextEquiv conf="0.693852944374085">
+                    <pc:Unicode>welche / wenn fie die Heroifche Kede niche</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0003_line0003">
+                <pc:Coords points="355,1218 1101,1218 1101,1271 355,1271"/>
+                <pc:Word id="region0003_line0003_word0000">
+                    <pc:Coords points="355,1222 484,1222 484,1265 355,1265"/>
+                    <pc:TextEquiv conf="0.878128890991211">
+                        <pc:Unicode>bringen</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0003_line0003_word0001">
+                    <pc:Coords points="492,1218 611,1218 611,1259 492,1259"/>
+                    <pc:TextEquiv conf="0.851720199584961">
+                        <pc:Unicode>fönnen</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0003_line0003_word0002">
+                    <pc:Coords points="621,1225 689,1225 689,1258 621,1258"/>
+                    <pc:TextEquiv conf="0.940948944091797">
+                        <pc:Unicode>aus</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0003_line0003_word0003">
+                    <pc:Coords points="697,1220 760,1220 760,1259 697,1259"/>
+                    <pc:TextEquiv conf="0.932419891357422">
+                        <pc:Unicode>den</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0003_line0003_word0004">
+                    <pc:Coords points="769,1222 1012,1222 1012,1271 769,1271"/>
+                    <pc:TextEquiv conf="0.340802688598633">
+                        <pc:Unicode>vngefchiekten</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0003_line0003_word0005">
+                    <pc:Coords points="1022,1226 1101,1226 1101,1271 1022,1271"/>
+                    <pc:TextEquiv conf="0.810332412719727">
+                        <pc:Unicode>Nas</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:TextEquiv conf="0.792392171223958">
+                    <pc:Unicode>bringen fönnen aus den vngefchiekten Nas</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0003_line0004">
+                <pc:Coords points="358,1270 1098,1270 1098,1334 358,1334"/>
+                <pc:Word id="region0003_line0004_word0000">
+                    <pc:Coords points="358,1270 443,1270 443,1318 358,1318"/>
+                    <pc:TextEquiv conf="0.921594314575195">
+                        <pc:Unicode>chen</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0003_line0004_word0001">
+                    <pc:Coords points="455,1277 468,1277 468,1310 455,1310"/>
+                    <pc:TextEquiv conf="0.91039176940918">
+                        <pc:Unicode>/</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0003_line0004_word0002">
+                    <pc:Coords points="480,1276 624,1276 624,1324 480,1324"/>
+                    <pc:TextEquiv conf="0.899612884521484">
+                        <pc:Unicode>diefelbige</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0003_line0004_word0003">
+                    <pc:Coords points="635,1272 807,1272 807,1327 635,1327"/>
+                    <pc:TextEquiv conf="0.919167709350586">
+                        <pc:Unicode>verfolgen</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0003_line0004_word0004">
+                    <pc:Coords points="822,1288 881,1288 881,1322 822,1322"/>
+                    <pc:TextEquiv conf="0.665135498046875">
+                        <pc:Unicode>mie</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0003_line0004_word0005">
+                    <pc:Coords points="892,1283 967,1283 967,1324 892,1324"/>
+                    <pc:TextEquiv conf="0.930701217651367">
+                        <pc:Unicode>dem</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0003_line0004_word0006">
+                    <pc:Coords points="983,1294 1098,1294 1098,1334 983,1334"/>
+                    <pc:TextEquiv conf="0.374130554199219">
+                        <pc:Unicode>grama</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:TextEquiv conf="0.802961992536272">
+                    <pc:Unicode>chen / diefelbige verfolgen mie dem grama</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0003_line0005">
+                <pc:Coords points="355,1325 1097,1325 1097,1376 355,1376"/>
+                <pc:Word id="region0003_line0005_word0000">
+                    <pc:Coords points="355,1325 473,1325 473,1376 355,1376"/>
+                    <pc:TextEquiv conf="0.797286529541016">
+                        <pc:Unicode>famen</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0003_line0005_word0001">
+                    <pc:Coords points="485,1327 654,1327 654,1374 485,1374"/>
+                    <pc:TextEquiv conf="0.799934463500977">
+                        <pc:Unicode>Händen,</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0003_line0005_word0002">
+                    <pc:Coords points="1095,1365 1097,1365 1097,1367 1095,1367"/>
+                    <pc:TextEquiv conf="0.218947601318359">
+                        <pc:Unicode>;</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:TextEquiv conf="0.605389531453451">
+                    <pc:Unicode>famen Händen, ;</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0003_line0006">
+                <pc:Coords points="166,1369 1096,1369 1096,1443 166,1443"/>
+                <pc:Word id="region0003_line0006_word0000">
+                    <pc:Coords points="166,1369 308,1369 308,1432 166,1432"/>
+                    <pc:TextEquiv conf="0.510364151000977">
+                        <pc:Unicode>Shader</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0003_line0006_word0001">
+                    <pc:Coords points="419,1381 512,1381 512,1419 419,1419"/>
+                    <pc:TextEquiv conf="0.710224914550781">
+                        <pc:Unicode>‚Bir</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0003_line0006_word0002">
+                    <pc:Coords points="526,1381 628,1381 628,1427 526,1427"/>
+                    <pc:TextEquiv conf="0.945528717041016">
+                        <pc:Unicode>finden</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0003_line0006_word0003">
+                    <pc:Coords points="642,1388 675,1388 675,1421 642,1421"/>
+                    <pc:TextEquiv conf="0.89734245300293">
+                        <pc:Unicode>in</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0003_line0006_word0004">
+                    <pc:Coords points="690,1388 747,1388 747,1423 690,1423"/>
+                    <pc:TextEquiv conf="0.930608215332031">
+                        <pc:Unicode>den</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0003_line0006_word0005">
+                    <pc:Coords points="763,1387 922,1387 922,1432 763,1432"/>
+                    <pc:TextEquiv conf="0.52568000793457">
+                        <pc:Unicode>Hifktorien</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0003_line0006_word0006">
+                    <pc:Coords points="935,1400 947,1400 947,1429 935,1429"/>
+                    <pc:TextEquiv conf="0.765087661743164">
+                        <pc:Unicode>/</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0003_line0006_word0007">
+                    <pc:Coords points="959,1396 1015,1396 1015,1432 959,1432"/>
+                    <pc:TextEquiv conf="0.942242202758789">
+                        <pc:Unicode>wie</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0003_line0006_word0008">
+                    <pc:Coords points="1030,1394 1096,1394 1096,1443 1030,1443"/>
+                    <pc:TextEquiv conf="0.">
+                        <pc:Unicode>Heß</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:TextEquiv conf="0.803008702596029">
+                    <pc:Unicode>Shader ‚Bir finden in den Hifktorien / wie Heß</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0003_line0007">
+                <pc:Coords points="168,1428 1097,1428 1097,1487 168,1487"/>
+                <pc:Word id="region0003_line0007_word0001">
+                    <pc:Coords points="168,1429 201,1429 201,1455 168,1455"/>
+                    <pc:TextEquiv conf="0.">
+                        <pc:Unicode>A</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0003_line0007_word0002">
+                    <pc:Coords points="357,1429 414,1429 414,1471 357,1471"/>
+                    <pc:TextEquiv conf="0.673668060302734">
+                        <pc:Unicode>lich</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0003_line0007_word0003">
+                    <pc:Coords points="427,1436 493,1436 493,1467 427,1467"/>
+                    <pc:TextEquiv conf="0.544381141662598">
+                        <pc:Unicode>ond</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0003_line0007_word0004">
+                    <pc:Coords points="509,1428 644,1428 644,1475 509,1475"/>
+                    <pc:TextEquiv conf="0.905409393310547">
+                        <pc:Unicode>bäurifch</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0003_line0007_word0005">
+                    <pc:Coords points="659,1437 702,1437 702,1470 659,1470"/>
+                    <pc:TextEquiv conf="0.929116668701172">
+                        <pc:Unicode>die</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0003_line0007_word0006">
+                    <pc:Coords points="715,1435 876,1435 876,1482 715,1482"/>
+                    <pc:TextEquiv conf="0.392283172607422">
+                        <pc:Unicode>Sareinifch</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0003_line0007_word0007">
+                    <pc:Coords points="896,1439 1032,1439 1032,1487 896,1487"/>
+                    <pc:TextEquiv conf="0.950271759033203">
+                        <pc:Unicode>Sprach</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0003_line0007_word0008">
+                    <pc:Coords points="1050,1452 1097,1452 1097,1484 1050,1484"/>
+                    <pc:TextEquiv conf="0.950271759033203">
+                        <pc:Unicode>im</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:TextEquiv conf="0.79317524433136">
+                    <pc:Unicode>A lich ond bäurifch die Sareinifch Sprach im</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="region0003_line0008">
+                <pc:Coords points="57,1459 1096,1459 1096,1581 57,1581"/>
+                <pc:Word id="region0003_line0008_word0000">
+                    <pc:Coords points="57,1476 146,1476 146,1531 57,1531"/>
+                    <pc:TextEquiv conf="0.142681274414063">
+                        <pc:Unicode>a</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0003_line0008_word0001">
+                    <pc:Coords points="163,1459 240,1459 240,1581 163,1581"/>
+                    <pc:TextEquiv conf="0.287208633422852">
+                        <pc:Unicode>ec»</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0003_line0008_word0002">
+                    <pc:Coords points="243,1469 343,1469 343,1542 243,1542"/>
+                    <pc:TextEquiv conf="0.2536669921875">
+                        <pc:Unicode>gewer,</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0003_line0008_word0003">
+                    <pc:Coords points="370,1465 488,1465 488,1546 370,1546"/>
+                    <pc:TextEquiv conf="0.486259765625">
+                        <pc:Unicode>Anfang</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0003_line0008_word0004">
+                    <pc:Coords points="497,1465 619,1465 619,1546 497,1546"/>
+                    <pc:TextEquiv conf="0.440477561950684">
+                        <pc:Unicode>gewefen</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0003_line0008_word0005">
+                    <pc:Coords points="628,1490 639,1490 639,1521 628,1521"/>
+                    <pc:TextEquiv conf="0.490688095092773">
+                        <pc:Unicode>/</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0003_line0008_word0006">
+                    <pc:Coords points="649,1482 675,1482 675,1529 649,1529"/>
+                    <pc:TextEquiv conf="0.70517578125">
+                        <pc:Unicode>fo</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0003_line0008_word0007">
+                    <pc:Coords points="684,1482 795,1482 795,1532 684,1532"/>
+                    <pc:TextEquiv conf="0.198059234619141">
+                        <pc:Unicode>heßlich</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0003_line0008_word0008">
+                    <pc:Coords points="806,1492 869,1492 869,1527 806,1527"/>
+                    <pc:TextEquiv conf="0.43631706237793">
+                        <pc:Unicode>vnd</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0003_line0008_word0009">
+                    <pc:Coords points="881,1465 1014,1465 1014,1546 881,1546"/>
+                    <pc:TextEquiv conf="0.584846038818359">
+                        <pc:Unicode>bäurifch</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0003_line0008_word0010">
+                    <pc:Coords points="1033,1493 1096,1493 1096,1540 1033,1540"/>
+                    <pc:TextEquiv conf="0.655894165039063">
+                        <pc:Unicode>daß</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:TextEquiv conf="0.425570418617942">
+                    <pc:Unicode>a ec» gewer, Anfang gewefen / fo heßlich vnd bäurifch daß</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv conf="0.684922870997915">
+                <pc:Unicode>zu Nom: If fie doch darumb nicht zuvers
+fehmehen / aber iubeflagen/ daß Saute feyn-/
+welche / wenn fie die Heroifche Kede niche
+bringen fönnen aus den vngefchiekten Nas
+chen / diefelbige verfolgen mie dem grama
+famen Händen, ;
+Shader ‚Bir finden in den Hifktorien / wie Heß
+A lich ond bäurifch die Sareinifch Sprach im
+a ec» gewer, Anfang gewefen / fo heßlich vnd bäurifch daß</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0005" orientation="-0.360689750267937" type="floating" readingDirection="left-to-right" textLineOrder="top-to-bottom">
+            <pc:Coords points="363,997 1143,997 1143,1057 363,1057"/>
+            <pc:TextLine id="region0005_line0000">
+                <pc:Coords points="363,997 1143,997 1143,1057 363,1057"/>
+                <pc:Word id="region0005_line0000_word0000">
+                    <pc:Coords points="363,997 527,997 527,1052 363,1052"/>
+                    <pc:TextEquiv conf="0.675476226806641">
+                        <pc:Unicode>Eyempel</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0005_line0000_word0001">
+                    <pc:Coords points="547,1003 603,1003 603,1042 547,1042"/>
+                    <pc:TextEquiv conf="0.925503921508789">
+                        <pc:Unicode>der</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0005_line0000_word0002">
+                    <pc:Coords points="624,1000 888,1000 888,1053 624,1053"/>
+                    <pc:TextEquiv conf="0.791727752685547">
+                        <pc:Unicode>Wolgebornen</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0005_line0000_word0003">
+                    <pc:Coords points="916,1006 1103,1006 1103,1057 916,1057"/>
+                    <pc:TextEquiv conf="0.512851715087891">
+                        <pc:Unicode>Gracchen</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:TextEquiv conf="0.726389904022217">
+                    <pc:Unicode>Eyempel der Wolgebornen Gracchen</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv conf="0.726389904022217">
+                <pc:Unicode>Eyempel der Wolgebornen Gracchen</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="region0007" orientation="-0.360689750267937" type="floating" readingDirection="left-to-right" textLineOrder="top-to-bottom">
+            <pc:Coords points="192,160 1119,160 1119,221 192,221"/>
+            <pc:TextLine id="region0007_line0000">
+                <pc:Coords points="192,160 1119,160 1119,221 192,221"/>
+                <pc:Word id="region0007_line0000_word0000">
+                    <pc:Coords points="301,160 192,160 192,221 301,221"/>
+                    <pc:TextEquiv conf="0.621726150512695">
+                        <pc:Unicode>‚Daher</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0007_line0000_word0001">
+                    <pc:Coords points="365,160 313,160 313,221 365,221"/>
+                    <pc:TextEquiv conf="0.865532150268555">
+                        <pc:Unicode>find</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0007_line0000_word0002">
+                    <pc:Coords points="377,160 487,160 487,210 377,210"/>
+                    <pc:TextEquiv conf="0.274550933837891">
+                        <pc:Unicode>dioten</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0007_line0000_word0003">
+                    <pc:Coords points="497,162 680,162 680,219 497,219"/>
+                    <pc:TextEquiv conf="0.508494644165039">
+                        <pc:Unicode>offenbahrer</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0007_line0000_word0004">
+                    <pc:Coords points="694,173 759,173 759,219 694,219"/>
+                    <pc:TextEquiv conf="0.798057174682617">
+                        <pc:Unicode>har,</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0007_line0000_word0005">
+                    <pc:Coords points="796,173 879,173 879,220 796,220"/>
+                    <pc:TextEquiv conf="0.440806655883789">
+                        <pc:Unicode>Auf</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0007_line0000_word0006">
+                    <pc:Coords points="892,173 1018,173 1018,220 892,220"/>
+                    <pc:TextEquiv conf="0.928233261108398">
+                        <pc:Unicode>weiches</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:Word id="region0007_line0000_word0007">
+                    <pc:Coords points="1032,177 1119,177 1119,221 1032,221"/>
+                    <pc:TextEquiv conf="0.038110275268555">
+                        <pc:Unicode>erfole</pc:Unicode>
+                    </pc:TextEquiv>
+                </pc:Word>
+                <pc:TextEquiv conf="0.559438905715942">
+                    <pc:Unicode>‚Daher find dioten offenbahrer har, Auf weiches erfole</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv conf="0.559438905715942">
+                <pc:Unicode>‚Daher find dioten offenbahrer har, Auf weiches erfole</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:ImageRegion id="region0000" orientation="-0.360689750267937">
+            <pc:Coords points="0,0 1169,0 1169,175 0,175"/>
+        </pc:ImageRegion>
+        <pc:ImageRegion id="region0006" orientation="-0.360689750267937">
+            <pc:Coords points="0,67 1169,67 1169,1889 0,1889"/>
+        </pc:ImageRegion>
+        <pc:SeparatorRegion id="region0001">
+            <pc:Coords points="375,145 1119,145 1119,158 375,158"/>
+        </pc:SeparatorRegion>
+        <pc:SeparatorRegion id="region0004">
+            <pc:Coords points="100,761 109,761 109,1798 100,1798"/>
+        </pc:SeparatorRegion>
+    </pc:Page>
 </pc:PcGts>

@@ -41,7 +41,7 @@ process ocrd_tesserocr_recognize_0 {
 
     script:
         """
-        ${params.docker_command} ocrd-tesserocr-recognize -m ${mets_file} -I ${input_file_grp} -O ${output_file_grp} -p '{"segmentation_level": "region", "textequiv_level": "word", "find_tables": "true", "model": "deu"}'
+        ${params.docker_command} ocrd-tesserocr-recognize -m ${mets_file} -I ${input_file_grp} -O ${output_file_grp} -p '{"segmentation_level": "region", "textequiv_level": "word", "find_tables": true, "model": "deu"}'
         """
 }
 

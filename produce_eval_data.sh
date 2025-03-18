@@ -52,5 +52,5 @@ function recognize_and_evaluate() {
 }
 
 for ws_dir in $WORKSPACES_ROOT/*; do
-    recognize_and_evaluate $NF_PATH_ODEM_WF $ws_dir
+    recognize_and_evaluate $NF_PATH_OPERANDI_WF $ws_dir
 done

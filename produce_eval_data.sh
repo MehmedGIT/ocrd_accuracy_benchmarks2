@@ -15,6 +15,8 @@ NF_PATH_REPORTS="$SCRIPT_DIR/nf_reports"
 NF_PATH_OPERANDI_WF="$WORKFLOWS_ROOT/operandi_workflow.nf"
 NF_PATH_ODEM_WF="$WORKFLOWS_ROOT/odem_workflow.nf"
 NF_PATH_SBB_WF="$WORKFLOWS_ROOT/sbb_workflow.nf"
+NF_PATH_SBB_WF2="$WORKFLOWS_ROOT/sbb_workflow2.nf"
+NF_PATH_SBB_WF3="$WORKFLOWS_ROOT/sbb_workflow3.nf"
 NF_PATH_DINGLEHOPPER_WF="$WORKFLOWS_ROOT/dinglehopper.nf"
 
 function run_nf_workflow() {
@@ -52,5 +54,5 @@ function recognize_and_evaluate() {
 }
 
 for ws_dir in $WORKSPACES_ROOT/*; do
-    recognize_and_evaluate $NF_PATH_SBB_WF $ws_dir
+    recognize_and_evaluate $NF_PATH_SBB_WF2 $ws_dir
 done

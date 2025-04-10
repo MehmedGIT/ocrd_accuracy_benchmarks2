@@ -5,6 +5,8 @@ script_dir = Path(__file__).resolve().parent
 odem_workflow_results_path = Path(f"{script_dir}/results_odem_workflow")
 operandi_workflow_results_path = Path(f"{script_dir}/results_operandi_workflow")
 sbb_workflow_results_path = Path(f"{script_dir}/results_sbb_workflow")
+sbb_workflow2_results_path = Path(f"{script_dir}/results_sbb_workflow2")
+sbb_workflow3_results_path = Path(f"{script_dir}/results_sbb_workflow3")
 
 summarized_results = {}
 

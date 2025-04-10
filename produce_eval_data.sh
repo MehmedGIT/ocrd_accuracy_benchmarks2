@@ -54,5 +54,5 @@ function recognize_and_evaluate() {
 }
 
 for ws_dir in $WORKSPACES_ROOT/*; do
-    recognize_and_evaluate $NF_PATH_SBB_WF2 $ws_dir
+    recognize_and_evaluate $NF_PATH_SBB_WF3 $ws_dir
 done

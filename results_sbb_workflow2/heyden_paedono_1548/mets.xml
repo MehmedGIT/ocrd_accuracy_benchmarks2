@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:DC="http://purl.org/dc/elements/1.1/" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:mets="http://www.loc.gov/METS/" xmlns:DV="http://dfg-viewer.de/" xmlns:gt="http://www.ocr-d.de/GT/" xmlns:pre="http://www.loc.gov/premis/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" xsi:schemaLocation="http://www.loc.gov/mods/v3 https://www.loc.gov/standards/mods/mods-3-7.xsd http://www.loc.gov/mets/ http://www.loc.gov/standards/mets/version111/mets.xsd">
+  <mets:metsHdr CREATEDATE="2019-11-25T16:37:07.230817">
+    <mets:agent OTHERTYPE="SOFTWARE" ROLE="CREATOR" TYPE="OTHER">
+      <mets:name>DFG-Koordinierungsprojekt zur Weiterentwicklung von Verfahren der Optical
+        Character Recognition (OCR-D)</mets:name>
+      <mets:note>OCR-D</mets:note>
+    </mets:agent>
+    <mets:agent TYPE="OTHER" OTHERTYPE="SOFTWARE" ROLE="OTHER" OTHERROLE="layout/segmentation/region">
+      <mets:name>ocrd-tesserocr-recognize v0.19.1 (tesseract 5.4.1)</mets:name>
+      <mets:note xmlns:ocrd="https://ocr-d.de" ocrd:option="input-file-grp">OCR-D-IMG</mets:note>
+      <mets:note xmlns:ocrd="https://ocr-d.de" ocrd:option="output-file-grp">OCR-D-OCR</mets:note>
+      <mets:note xmlns:ocrd="https://ocr-d.de" ocrd:option="parameter">{"segmentation_level": "region", "textequiv_level": "word", "find_tables": true, "model": "german_print", "dpi": 0, "padding": 0, "overwrite_segments": false, "overwrite_text": true, "shrink_polygons": false, "block_polygons": false, "find_staves": false, "sparse_text": false, "raw_lines": false, "char_whitelist": "", "char_blacklist": "", "char_unblacklist": "", "tesseract_parameters": {}, "xpath_parameters": {}, "xpath_model": {}, "auto_model": false, "oem": "DEFAULT"}</mets:note>
+      <mets:note xmlns:ocrd="https://ocr-d.de" ocrd:option="page-id"/>
+    </mets:agent>
+    <mets:agent TYPE="OTHER" OTHERTYPE="SOFTWARE" ROLE="OTHER" OTHERROLE="recognition/text-recognition">
+      <mets:name>ocrd-dinglehopper v0.9.7</mets:name>
+      <mets:note xmlns:ocrd="https://ocr-d.de" ocrd:option="input-file-grp">OCR-D-GT-SEG-PAGE,OCR-D-OCR</mets:note>
+      <mets:note xmlns:ocrd="https://ocr-d.de" ocrd:option="output-file-grp">OCR-D-EVAL-SEG-LINE</mets:note>
+      <mets:note xmlns:ocrd="https://ocr-d.de" ocrd:option="parameter">{"textequiv_level": "line", "metrics": true}</mets:note>
+      <mets:note xmlns:ocrd="https://ocr-d.de" ocrd:option="page-id"/>
+    </mets:agent>
+  </mets:metsHdr>
+  <mets:dmdSec ID="DMDLOG_0000">
+    <mets:mdWrap MDTYPE="MODS">
+      <mets:xmlData>
+        <mods:mods xmlns:mods="http://www.loc.gov/mods/v3">
+          <mods:location>
+            <mods:physicalLocation authority="marcorg" displayLabel="Staatsbibliothek zu Berlin - Preußischer Kulturbesitz, Berlin, Germany">DE-1</mods:physicalLocation>
+            <mods:shelfLocator>Ne 196</mods:shelfLocator>
+          </mods:location>
+          <mods:originInfo eventType="publication">
+            <mods:place>
+              <mods:placeTerm type="text">Nürnberg</mods:placeTerm>
+            </mods:place>
+            <mods:dateIssued encoding="iso8601" keyDate="yes">1548</mods:dateIssued>
+            <mods:publisher>Vom Berg, Johann</mods:publisher>
+            <mods:publisher>Neuber, Ulrich</mods:publisher>
+          </mods:originInfo>
+          <mods:originInfo eventType="digitization">
+            <mods:place>
+              <mods:placeTerm type="text">Berlin</mods:placeTerm>
+            </mods:place>
+            <mods:dateCaptured encoding="iso8601">2015</mods:dateCaptured>
+            <mods:publisher>Staatsbibliothek zu Berlin - Preußischer Kulturbesitz, Germany</mods:publisher>
+            <mods:edition>[Electronic ed.]</mods:edition>
+          </mods:originInfo>
+          <mods:classification authority="ZVDD">Historische Drucke</mods:classification>
+          <mods:classification authority="ZVDD">Pädagogik</mods:classification>
+          <mods:recordInfo>
+            <mods:recordIdentifier source="gbv-ppn">PPN824486560</mods:recordIdentifier>
+          </mods:recordInfo>
+          <mods:identifier type="purl">http://resolver.staatsbibliothek-berlin.de/SBB00019BBD00000000</mods:identifier>
+          <mods:identifier type="vd16">ZV 7914</mods:identifier>
+          <mods:relatedItem type="original">
+            <mods:recordInfo>
+              <mods:recordIdentifier source="gbv-ppn">PPN567577821</mods:recordIdentifier>
+            </mods:recordInfo>
+          </mods:relatedItem>
+          <mods:titleInfo>
+            <mods:title>PAEDONO||MIA SCHOLASTICA || PIETATIS, STVDII || literarij, ac morum honesta-||tis pręcepta continens.|| Autor.|| Sebaldus Heyden.|| ... ||</mods:title>
+          </mods:titleInfo>
+          <mods:titleInfo type="alternative">
+            <mods:title>Paedonomia scholastica</mods:title>
+          </mods:titleInfo>
+          <mods:titleInfo type="alternative">
+            <mods:title>PAEDONOMIA SCHOLASTICA PIETATIS, STVDII literarij, ac morum honestatis pręcepta continens. Autor. Sebaldus Heyden. ...</mods:title>
+          </mods:titleInfo>
+          <mods:titleInfo type="alternative">
+            <mods:title>PAEDONO||MIA SCHOLASTICA || PIETATIS, STVDII || literarij, ac morum honesta-||tis pr̨ecepta continens.|| Autor.|| Sebaldus Heyden.|| ... ||</mods:title>
+          </mods:titleInfo>
+          <mods:note type="source characteristics">P_Drucke_VD16</mods:note>
+          <mods:note type="bibliography">VD16 ZV 7914</mods:note>
+          <mods:language>
+            <mods:languageTerm authority="iso639-2b" type="code">lat</mods:languageTerm>
+          </mods:language>
+          <mods:relatedItem type="series">
+            <mods:titleInfo>
+              <mods:title>VD16 digital</mods:title>
+            </mods:titleInfo>
+          </mods:relatedItem>
+          <mods:name type="personal">
+            <mods:role>
+              <mods:roleTerm authority="marcrelator" type="code">aut</mods:roleTerm>
+            </mods:role>
+            <mods:namePart type="family">Heyden</mods:namePart>
+            <mods:namePart type="given">Sebald</mods:namePart>
+            <mods:displayForm>Heyden, Sebald</mods:displayForm>
+          </mods:name>
+          <mods:name type="corporate">
+            <mods:role>
+              <mods:roleTerm authority="marcrelator" type="code">fnd</mods:roleTerm>
+            </mods:role>
+            <mods:displayForm>Deutsche Forschungsgemeinschaft</mods:displayForm>
+          </mods:name>
+          <mods:physicalDescription>
+            <mods:digitalOrigin>reformatted digital</mods:digitalOrigin>
+            <mods:extent>[64] Bl.</mods:extent>
+            <mods:extent>8</mods:extent>
+          </mods:physicalDescription>
+          <mods:extension>
+            <zvdd:zvddWrap xmlns:zvdd="http://zvdd.gdz-cms.de/">
+              <zvdd:titleWord>studii literarii praecepta</zvdd:titleWord>
+            </zvdd:zvddWrap>
+          </mods:extension>
+          <mods:accessCondition xmlns:xlink="http://www.w3.org/1999/xlink" type="use and reproduction" xlink:href="https://creativecommons.org/publicdomain/mark/1.0/">Public Domain Mark 1.0</mods:accessCondition>
+          <mods:typeOfResource>text</mods:typeOfResource>
+          <mods:accessCondition xmlns:xlink="http://www.w3.org/1999/xlink" displayLabel="Access Status" type="restriction on access" xlink:href="http://purl.org/coar/access_right/c_abf2">open access</mods:accessCondition>
+        </mods:mods>
+      </mets:xmlData>
+    </mets:mdWrap>
+  </mets:dmdSec>
+  <mets:dmdSec ID="DMDGT_0001">
+    <mets:mdWrap MDTYPE="OTHER" OTHERMDTYPE="GT">
+      <mets:xmlData>
+        <gt:gt>
+          <gt:state prop="granularity/physical/document-related/word"/>
+          <gt:state prop="granularity/physical/document-related/text-line"/>
+          <gt:state prop="granularity/physical/document-related/region"/>
+          <gt:state prop="data-attributes/document-related/visual/text/font/multi-font/font-sizes"/>
+          <gt:state prop="condition/production-related/document-faults/ink-from-facing"/>
+          <gt:state prop="condition/wear/medium-damage/stains"/>
+        </gt:gt>
+      </mets:xmlData>
+    </mets:mdWrap>
+  </mets:dmdSec>
+  <mets:dmdSec ID="DMDGT_0002">
+    <mets:mdWrap MDTYPE="OTHER" OTHERMDTYPE="GT">
+      <mets:xmlData>
+        <gt:gt>
+          <gt:state prop="granularity/physical/document-related/word"/>
+          <gt:state prop="granularity/physical/document-related/text-line"/>
+          <gt:state prop="granularity/physical/document-related/region"/>
+          <gt:state prop="data-attributes/document-related/visual/text/font/multi-font/font-sizes"/>
+          <gt:state prop="condition/production-related/document-faults/ink-from-facing"/>
+          <gt:state prop="condition/wear/medium-damage/stains"/>
+        </gt:gt>
+      </mets:xmlData>
+    </mets:mdWrap>
+  </mets:dmdSec>
+  <mets:dmdSec ID="DMDGT_0003">
+    <mets:mdWrap MDTYPE="OTHER" OTHERMDTYPE="GT">
+      <mets:xmlData>
+        <gt:gt>
+          <gt:state prop="granularity/physical/document-related/word"/>
+          <gt:state prop="granularity/physical/document-related/text-line"/>
+          <gt:state prop="granularity/physical/document-related/region"/>
+          <gt:state prop="data-attributes/document-related/visual/text/font/multi-font/font-sizes"/>
+          <gt:state prop="condition/production-related/document-faults/ink-from-facing"/>
+          <gt:state prop="condition/wear/medium-damage/stains"/>
+        </gt:gt>
+      </mets:xmlData>
+    </mets:mdWrap>
+  </mets:dmdSec>
+  <mets:amdSec ID="amdSec_0001">
+    <mets:rightsMD ID="rights_0001">
+      <mets:mdWrap MDTYPE="OTHER" OTHERMDTYPE="DVRIGHTS" MIMETYPE="text/xml">
+        <mets:xmlData>
+          <DV:rights>
+            <DV:owner>Koordinierte Förderinitiative zur Weiterentwicklung von Verfahren für die
+              Optical-Character-Recognition OCR-D</DV:owner>
+            <DV:ownerLogo>https://ocr-d.de/goto/logo</DV:ownerLogo>
+            <DV:ownerSiteURL>http://ocr-d.de/</DV:ownerSiteURL>
+            <DV:ownerContact>mailto:ocrd@bbaw.de</DV:ownerContact>
+          </DV:rights>
+        </mets:xmlData>
+      </mets:mdWrap>
+    </mets:rightsMD>
+    <mets:rightsMD ID="rights_0002">
+      <mets:mdWrap MDTYPE="PREMIS:RIGHTS">
+        <mets:xmlData>
+          <pre:rightsStatement>
+            <pre:rightsBasis>license</pre:rightsBasis>
+            <pre:licenseInformation>
+              <pre:licenseDocumentationIdentifier>
+                <pre:licenseDocumentationIdentifierValue>http://creativecommons.org/publicdomain/mark/1.0/</pre:licenseDocumentationIdentifierValue>
+              </pre:licenseDocumentationIdentifier>
+            </pre:licenseInformation>
+          </pre:rightsStatement>
+        </mets:xmlData>
+      </mets:mdWrap>
+    </mets:rightsMD>
+    <mets:digiprovMD ID="DIGIPROV">
+      <mets:mdWrap MDTYPE="OTHER" MIMETYPE="text/xml" OTHERMDTYPE="DVLINKS">
+        <mets:xmlData>
+          <dv:links xmlns:dv="http://dfg-viewer.de/">
+            <dv:reference>http://www.stabikat.de/DB=1/PPN?PPN=824486560 </dv:reference>
+            <dv:presentation>http://digital.staatsbibliothek-berlin.de/dms/werkansicht/?PPN=PPN824486560</dv:presentation>
+            <dv:iiif>https://content.staatsbibliothek-berlin.de/dc/PPN824486560/manifest</dv:iiif>
+          </dv:links>
+        </mets:xmlData>
+      </mets:mdWrap>
+    </mets:digiprovMD>
+  </mets:amdSec>
+  <mets:fileSec>
+    <mets:fileGrp USE="OCR-D-IMG">
+      <mets:file MIMETYPE="image/tiff" ID="OCR-D-IMG_0013">
+        <mets:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="FILE" xlink:href="GT-PAGE/heyden_paedono_1548_0013.tif"/>
+      </mets:file>
+      <mets:file MIMETYPE="image/tiff" ID="OCR-D-IMG_0007">
+        <mets:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="FILE" xlink:href="GT-PAGE/heyden_paedono_1548_0007.tif"/>
+      </mets:file>
+      <mets:file MIMETYPE="image/tiff" ID="OCR-D-IMG_0014">
+        <mets:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="FILE" xlink:href="GT-PAGE/heyden_paedono_1548_0014.tif"/>
+      </mets:file>
+    </mets:fileGrp>
+    <mets:fileGrp USE="OCR-D-GT-SEG-PAGE">
+      <mets:file MIMETYPE="application/vnd.prima.page+xml" ID="OCR-D-GT-SEG-PAGE_0013">
+        <mets:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="FILE" xlink:href="GT-PAGE/heyden_paedono_1548_0013.xml"/>
+      </mets:file>
+      <mets:file MIMETYPE="application/vnd.prima.page+xml" ID="OCR-D-GT-SEG-PAGE_0007">
+        <mets:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="FILE" xlink:href="GT-PAGE/heyden_paedono_1548_0007.xml"/>
+      </mets:file>
+      <mets:file MIMETYPE="application/vnd.prima.page+xml" ID="OCR-D-GT-SEG-PAGE_0014">
+        <mets:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="FILE" xlink:href="GT-PAGE/heyden_paedono_1548_0014.xml"/>
+      </mets:file>
+    </mets:fileGrp>
+    <mets:fileGrp USE="OCR-D-GT-SEG-BLOCK">
+      <mets:file MIMETYPE="application/vnd.prima.page+xml" ID="OCR-D-GT-SEG-BLOCK_0013">
+        <mets:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="FILE" xlink:href="GT-PAGE/heyden_paedono_1548_0013.xml"/>
+      </mets:file>
+      <mets:file MIMETYPE="application/vnd.prima.page+xml" ID="OCR-D-GT-SEG-BLOCK_0007">
+        <mets:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="FILE" xlink:href="GT-PAGE/heyden_paedono_1548_0007.xml"/>
+      </mets:file>
+      <mets:file MIMETYPE="application/vnd.prima.page+xml" ID="OCR-D-GT-SEG-BLOCK_0014">
+        <mets:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="FILE" xlink:href="GT-PAGE/heyden_paedono_1548_0014.xml"/>
+      </mets:file>
+    </mets:fileGrp>
+    <mets:fileGrp USE="OCR-D-GT-SEG-LINE">
+      <mets:file MIMETYPE="application/vnd.prima.page+xml" ID="OCR-D-GT-SEG-LINE_0013">
+        <mets:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="FILE" xlink:href="GT-PAGE/heyden_paedono_1548_0013.xml"/>
+      </mets:file>
+      <mets:file MIMETYPE="application/vnd.prima.page+xml" ID="OCR-D-GT-SEG-LINE_0007">
+        <mets:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="FILE" xlink:href="GT-PAGE/heyden_paedono_1548_0007.xml"/>
+      </mets:file>
+      <mets:file MIMETYPE="application/vnd.prima.page+xml" ID="OCR-D-GT-SEG-LINE_0014">
+        <mets:FLocat LOCTYPE="OTHER" OTHERLOCTYPE="FILE" xlink:href="GT-PAGE/heyden_paedono_1548_0014.xml"/>
+      </mets:file>
+    </mets:fileGrp>
+    <mets:fileGrp USE="OCR-D-OCR">
+      <mets:file ID="OCR-D-OCR_0013.IMG-BIN" MIMETYPE="image/png">
+        <mets:FLocat xlink:href="OCR-D-OCR/OCR-D-OCR_0013.IMG-BIN.png" LOCTYPE="OTHER" OTHERLOCTYPE="FILE"/>
+      </mets:file>
+      <mets:file ID="OCR-D-OCR_0013" MIMETYPE="application/vnd.prima.page+xml">
+        <mets:FLocat xlink:href="OCR-D-OCR/OCR-D-OCR_0013.xml" LOCTYPE="OTHER" OTHERLOCTYPE="FILE"/>
+      </mets:file>
+      <mets:file ID="OCR-D-OCR_0007.IMG-BIN" MIMETYPE="image/png">
+        <mets:FLocat xlink:href="OCR-D-OCR/OCR-D-OCR_0007.IMG-BIN.png" LOCTYPE="OTHER" OTHERLOCTYPE="FILE"/>
+      </mets:file>
+      <mets:file ID="OCR-D-OCR_0007" MIMETYPE="application/vnd.prima.page+xml">
+        <mets:FLocat xlink:href="OCR-D-OCR/OCR-D-OCR_0007.xml" LOCTYPE="OTHER" OTHERLOCTYPE="FILE"/>
+      </mets:file>
+      <mets:file ID="OCR-D-OCR_0014.IMG-BIN" MIMETYPE="image/png">
+        <mets:FLocat xlink:href="OCR-D-OCR/OCR-D-OCR_0014.IMG-BIN.png" LOCTYPE="OTHER" OTHERLOCTYPE="FILE"/>
+      </mets:file>
+      <mets:file ID="OCR-D-OCR_0014" MIMETYPE="application/vnd.prima.page+xml">
+        <mets:FLocat xlink:href="OCR-D-OCR/OCR-D-OCR_0014.xml" LOCTYPE="OTHER" OTHERLOCTYPE="FILE"/>
+      </mets:file>
+    </mets:fileGrp>
+    <mets:fileGrp USE="OCR-D-EVAL-SEG-LINE">
+      <mets:file ID="OCR-D-EVAL-SEG-LINE_0013.html" MIMETYPE="text/html">
+        <mets:FLocat xlink:href="OCR-D-EVAL-SEG-LINE/OCR-D-EVAL-SEG-LINE_0013.html" LOCTYPE="OTHER" OTHERLOCTYPE="FILE"/>
+      </mets:file>
+      <mets:file ID="OCR-D-EVAL-SEG-LINE_0013.json" MIMETYPE="application/json">
+        <mets:FLocat xlink:href="OCR-D-EVAL-SEG-LINE/OCR-D-EVAL-SEG-LINE_0013.json" LOCTYPE="OTHER" OTHERLOCTYPE="FILE"/>
+      </mets:file>
+      <mets:file ID="OCR-D-EVAL-SEG-LINE_0007.html" MIMETYPE="text/html">
+        <mets:FLocat xlink:href="OCR-D-EVAL-SEG-LINE/OCR-D-EVAL-SEG-LINE_0007.html" LOCTYPE="OTHER" OTHERLOCTYPE="FILE"/>
+      </mets:file>
+      <mets:file ID="OCR-D-EVAL-SEG-LINE_0007.json" MIMETYPE="application/json">
+        <mets:FLocat xlink:href="OCR-D-EVAL-SEG-LINE/OCR-D-EVAL-SEG-LINE_0007.json" LOCTYPE="OTHER" OTHERLOCTYPE="FILE"/>
+      </mets:file>
+      <mets:file ID="OCR-D-EVAL-SEG-LINE_0014.html" MIMETYPE="text/html">
+        <mets:FLocat xlink:href="OCR-D-EVAL-SEG-LINE/OCR-D-EVAL-SEG-LINE_0014.html" LOCTYPE="OTHER" OTHERLOCTYPE="FILE"/>
+      </mets:file>
+      <mets:file ID="OCR-D-EVAL-SEG-LINE_0014.json" MIMETYPE="application/json">
+        <mets:FLocat xlink:href="OCR-D-EVAL-SEG-LINE/OCR-D-EVAL-SEG-LINE_0014.json" LOCTYPE="OTHER" OTHERLOCTYPE="FILE"/>
+      </mets:file>
+    </mets:fileGrp>
+  </mets:fileSec>
+  <mets:structMap TYPE="LOGICAL">
+    <mets:div TYPE="Monograph" DMDID="DMDLOG_0000" ADMID="amdSec_0001" ID="loc_0001">
+      <mets:div ID="loc_d1e9" TYPE="Chapter" LABEL=""/>
+    </mets:div>
+  </mets:structMap>
+  <mets:structMap TYPE="PHYSICAL">
+    <mets:div TYPE="physSequence" ID="phys_0000">
+      <mets:div TYPE="page" ID="phys_0013" DMDID="DMDGT_0001">
+        <mets:fptr FILEID="OCR-D-IMG_0013"/>
+        <mets:fptr FILEID="OCR-D-GT-SEG-PAGE_0013"/>
+        <mets:fptr FILEID="OCR-D-GT-SEG-BLOCK_0013"/>
+        <mets:fptr FILEID="OCR-D-GT-SEG-LINE_0013"/>
+        <mets:fptr FILEID="OCR-D-OCR_0013.IMG-BIN"/>
+        <mets:fptr FILEID="OCR-D-OCR_0013"/>
+        <mets:fptr FILEID="OCR-D-EVAL-SEG-LINE_0013.html"/>
+        <mets:fptr FILEID="OCR-D-EVAL-SEG-LINE_0013.json"/>
+      </mets:div>
+      <mets:div TYPE="page" ID="phys_0007" DMDID="DMDGT_0002">
+        <mets:fptr FILEID="OCR-D-IMG_0007"/>
+        <mets:fptr FILEID="OCR-D-GT-SEG-PAGE_0007"/>
+        <mets:fptr FILEID="OCR-D-GT-SEG-BLOCK_0007"/>
+        <mets:fptr FILEID="OCR-D-GT-SEG-LINE_0007"/>
+        <mets:fptr FILEID="OCR-D-OCR_0007.IMG-BIN"/>
+        <mets:fptr FILEID="OCR-D-OCR_0007"/>
+        <mets:fptr FILEID="OCR-D-EVAL-SEG-LINE_0007.html"/>
+        <mets:fptr FILEID="OCR-D-EVAL-SEG-LINE_0007.json"/>
+      </mets:div>
+      <mets:div TYPE="page" ID="phys_0014" DMDID="DMDGT_0003">
+        <mets:fptr FILEID="OCR-D-IMG_0014"/>
+        <mets:fptr FILEID="OCR-D-GT-SEG-PAGE_0014"/>
+        <mets:fptr FILEID="OCR-D-GT-SEG-BLOCK_0014"/>
+        <mets:fptr FILEID="OCR-D-GT-SEG-LINE_0014"/>
+        <mets:fptr FILEID="OCR-D-OCR_0014.IMG-BIN"/>
+        <mets:fptr FILEID="OCR-D-OCR_0014"/>
+        <mets:fptr FILEID="OCR-D-EVAL-SEG-LINE_0014.html"/>
+        <mets:fptr FILEID="OCR-D-EVAL-SEG-LINE_0014.json"/>
+      </mets:div>
+    </mets:div>
+  </mets:structMap>
+  <mets:structLink>
+    <mets:smLink xlink:from="loc_0001" xlink:to="phys_0000"/>
+    <mets:smLink xlink:from="loc_d1e9" xlink:to="phys_0000"/>
+    <mets:smLink xlink:from="loc_d1e9" xlink:to="phys_0013"/>
+    <mets:smLink xlink:from="loc_d1e9" xlink:to="phys_0007"/>
+    <mets:smLink xlink:from="loc_d1e9" xlink:to="phys_0014"/>
+  </mets:structLink>
+</mets:mets>

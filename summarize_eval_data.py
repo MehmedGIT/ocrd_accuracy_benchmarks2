@@ -32,6 +32,8 @@ def fill_summarized_results(path: Path, wf_name: str):
 fill_summarized_results(odem_workflow_results_path, "odem_workflow.nf")
 fill_summarized_results(operandi_workflow_results_path, "operandi_workflow.nf")
 fill_summarized_results(sbb_workflow_results_path, "sbb_workflow.nf")
+fill_summarized_results(sbb_workflow2_results_path, "sbb_workflow2.nf")
+fill_summarized_results(sbb_workflow3_results_path, "sbb_workflow3.nf")
 
 with open('summarized_results.json', 'w') as results_file: 
      results_file.write(dumps(summarized_results, indent=4))
